@@ -1,0 +1,18 @@
+[project]
+name = "sts2llm"
+version = "0.1.0"
+description = "OpenAI Responses API agent for controlling Slay the Spire 2 through STS2MCP"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "httpx>=0.28.1",
+  "openai>=1.109.0",
+  "python-dotenv>=1.1.1",
+]
+
+[project.scripts]
+sts2llm = "sts2llm.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
