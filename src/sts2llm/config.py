@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 @dataclass(slots=True)
 class Settings:
     openai_api_key: str
-    openai_model: str = "gpt-5"
+    openai_model: str = "gpt-5-mini"
     sts2_base_url: str = "http://127.0.0.1:15526"
 
 
@@ -20,7 +20,7 @@ def load_settings() -> Settings:
     if not api_key:
         raise RuntimeError("OPENAI_API_KEY is not set. Create .env from .env.example first.")
 
-    model = os.getenv("OPENAI_MODEL", "gpt-5").strip() or "gpt-5"
+    model = os.getenv("OPENAI_MODEL", "gpt-5-mini").strip() or "gpt-5-mini"
     base_url = os.getenv("STS2_BASE_URL", "http://127.0.0.1:15526").strip() or "http://127.0.0.1:15526"
 
     return Settings(
