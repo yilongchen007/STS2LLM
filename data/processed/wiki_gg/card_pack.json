@@ -1,0 +1,4612 @@
+{
+  "cards": [
+    {
+      "id": "bash",
+      "name": "Bash",
+      "color": "Ironclad",
+      "type": "Attack",
+      "rarity": "Basic",
+      "content": "Base: Deal 8 damage. Apply 2 Vulnerable .\nUpgrade: Deal 10 damage. Apply 3 Vulnerable ."
+    },
+    {
+      "id": "defend_ironclad",
+      "name": "Defend (Ironclad)",
+      "color": "Ironclad",
+      "type": "Skill",
+      "rarity": "Basic",
+      "content": "Base: Gain 5 Block .\nUpgrade: Gain 8 Block ."
+    },
+    {
+      "id": "strike_ironclad",
+      "name": "Strike (Ironclad)",
+      "color": "Ironclad",
+      "type": "Attack",
+      "rarity": "Basic",
+      "content": "Base: Deal 6 damage.\nUpgrade: Deal 9 damage."
+    },
+    {
+      "id": "anger",
+      "name": "Anger",
+      "color": "Ironclad",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Deal 6 damage. Add a copy of this card into your Discard Pile.\nUpgrade: Deal 8 damage. Add a copy of this card into your Discard Pile."
+    },
+    {
+      "id": "armaments",
+      "name": "Armaments",
+      "color": "Ironclad",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Base: Gain 5 Block . Upgrade a card in your Hand.\nUpgrade: Gain 5 Block . Upgrade ALL cards in your Hand."
+    },
+    {
+      "id": "blood_wall",
+      "name": "Blood Wall",
+      "color": "Ironclad",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Base: Lose 2 HP. Gain 16 Block .\nUpgrade: Lose 2 HP. Gain 20 Block ."
+    },
+    {
+      "id": "bloodletting",
+      "name": "Bloodletting",
+      "color": "Ironclad",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Lose 3 HP. Gain ."
+    },
+    {
+      "id": "body_slam",
+      "name": "Body Slam",
+      "color": "Ironclad",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Deal damage equal to your Block ."
+    },
+    {
+      "id": "breakthrough",
+      "name": "Breakthrough",
+      "color": "Ironclad",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Lose 1 HP. Deal 9 damage to ALL enemies.\nUpgrade: Lose 1 HP. Deal 13 damage to ALL enemies."
+    },
+    {
+      "id": "cinder",
+      "name": "Cinder",
+      "color": "Ironclad",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Deal 17 damage. Exhaust the top card of your Draw Pile.\nUpgrade: Deal 22 damage. Exhaust the top card of your Draw Pile."
+    },
+    {
+      "id": "havoc",
+      "name": "Havoc",
+      "color": "Ironclad",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Play the top card of your Draw Pile and Exhaust it."
+    },
+    {
+      "id": "headbutt",
+      "name": "Headbutt",
+      "color": "Ironclad",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Deal 9 damage. Put a card from your Discard Pile on top of your Draw Pile.\nUpgrade: Deal 12 damage. Put a card from your Discard Pile on top of your Draw Pile."
+    },
+    {
+      "id": "iron_wave",
+      "name": "Iron Wave",
+      "color": "Ironclad",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Gain 5 Block . Deal 5 damage.\nUpgrade: Gain 7 Block . Deal 7 damage."
+    },
+    {
+      "id": "molten_fist",
+      "name": "Molten Fist",
+      "color": "Ironclad",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Deal 10 damage. Double the enemy's Vulnerable . Exhaust .\nUpgrade: Deal 14 damage. Double the enemy's Vulnerable . Exhaust ."
+    },
+    {
+      "id": "perfected_strike",
+      "name": "Perfected Strike",
+      "color": "Ironclad",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Deal 6 damage. Deals 2 additional damage for ALL your cards containing “Strike”.\nUpgrade: Deal 6 damage. Deals 3 additional damage for ALL your cards containing “Strike”."
+    },
+    {
+      "id": "pommel_strike",
+      "name": "Pommel Strike",
+      "color": "Ironclad",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Deal 9 damage. Draw 1 card.\nUpgrade: Deal 10 damage. Draw 2 cards."
+    },
+    {
+      "id": "setup_strike",
+      "name": "Setup Strike",
+      "color": "Ironclad",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Deal 7 damage. Gain 2 Strength this turn.\nUpgrade: Deal 9 damage. Gain 3 Strength this turn."
+    },
+    {
+      "id": "shrug_it_off",
+      "name": "Shrug It Off",
+      "color": "Ironclad",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Base: Gain 8 Block . Draw 1 card.\nUpgrade: Gain 11 Block . Draw 1 card."
+    },
+    {
+      "id": "sword_boomerang",
+      "name": "Sword Boomerang",
+      "color": "Ironclad",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Deal 3 damage to a random enemy 3 times.\nUpgrade: Deal 3 damage to a random enemy 4 times."
+    },
+    {
+      "id": "thunderclap",
+      "name": "Thunderclap",
+      "color": "Ironclad",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Deal 4 damage and apply 1 Vulnerable to ALL enemies.\nUpgrade: Deal 7 damage and apply 1 Vulnerable to ALL enemies."
+    },
+    {
+      "id": "tremble",
+      "name": "Tremble",
+      "color": "Ironclad",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Base: Apply 2 Vulnerable .\nUpgrade: Apply 3 Vulnerable ."
+    },
+    {
+      "id": "true_grit",
+      "name": "True Grit",
+      "color": "Ironclad",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Base: Gain 7 Block . Exhaust 1 card at random.\nUpgrade: Gain 9 Block . Exhaust 1 card ."
+    },
+    {
+      "id": "twin_strike",
+      "name": "Twin Strike",
+      "color": "Ironclad",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Deal 5 damage twice.\nUpgrade: Deal 7 damage twice."
+    },
+    {
+      "id": "ashen_strike",
+      "name": "Ashen Strike",
+      "color": "Ironclad",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 6 damage. Deals 3 additional damage for each card in your Exhaust Pile.\nUpgrade: Deal 6 damage. Deals 4 additional damage for each card in your Exhaust Pile."
+    },
+    {
+      "id": "battle_trance",
+      "name": "Battle Trance",
+      "color": "Ironclad",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Draw 3 cards. You cannot draw additional cards this turn.\nUpgrade: Draw 4 cards. You cannot draw additional cards this turn."
+    },
+    {
+      "id": "bludgeon",
+      "name": "Bludgeon",
+      "color": "Ironclad",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 32 damage.\nUpgrade: Deal 42 damage."
+    },
+    {
+      "id": "bully",
+      "name": "Bully",
+      "color": "Ironclad",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 4 damage. Deals 2 additional damage for each Vulnerable on the enemy.\nUpgrade: Deal 4 damage. Deals 3 additional damage for each Vulnerable on the enemy."
+    },
+    {
+      "id": "burning_pact",
+      "name": "Burning Pact",
+      "color": "Ironclad",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Exhaust 1 card. Draw 2 cards.\nUpgrade: Exhaust 1 card. Draw 3 cards."
+    },
+    {
+      "id": "demonic_shield",
+      "name": "Demonic Shield",
+      "color": "Ironclad",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Lose 1 HP. Give another player Block equal to your Block . Exhaust .\nUpgrade: Lose 1 HP. Give another player Block equal to your Block ."
+    },
+    {
+      "id": "dismantle",
+      "name": "Dismantle",
+      "color": "Ironclad",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 8 damage. If the enemy is Vulnerable , hits twice.\nUpgrade: Deal 10 damage. If the enemy is Vulnerable , hits twice."
+    },
+    {
+      "id": "dominate",
+      "name": "Dominate",
+      "color": "Ironclad",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Gain 1 Strength for each Vulnerable on the enemy. Exhaust .\nUpgrade: Gain 1 Strength for each Vulnerable on the enemy."
+    },
+    {
+      "id": "drum_of_battle",
+      "name": "Drum of Battle",
+      "color": "Ironclad",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Base: Draw 2 cards. At the start of your turn, Exhaust the top card of your Draw Pile.\nUpgrade: Draw 3 cards. At the start of your turn, Exhaust the top card of your Draw Pile."
+    },
+    {
+      "id": "evil_eye",
+      "name": "Evil Eye",
+      "color": "Ironclad",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Gain 8 Block . Gain another 8 Block if you have Exhausted a card this turn.\nUpgrade: Gain 11 Block . Gain another 11 Block if you have Exhausted a card this turn."
+    },
+    {
+      "id": "expect_a_fight",
+      "name": "Expect a Fight",
+      "color": "Ironclad",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Gain for each Attack in your Hand."
+    },
+    {
+      "id": "feel_no_pain",
+      "name": "Feel No Pain",
+      "color": "Ironclad",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Base: Whenever a card is Exhausted , gain 3 Block .\nUpgrade: Whenever a card is Exhausted , gain 4 Block ."
+    },
+    {
+      "id": "fight_me",
+      "name": "Fight Me!",
+      "color": "Ironclad",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 5 damage twice. Gain 2 Strength . The enemy gains 1 Strength .\nUpgrade: Deal 6 damage twice. Gain 3 Strength . The enemy gains 1 Strength ."
+    },
+    {
+      "id": "flame_barrier",
+      "name": "Flame Barrier",
+      "color": "Ironclad",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Gain 12 Block . Whenever you are attacked this turn, deal 4 damage back.\nUpgrade: Gain 16 Block . Whenever you are attacked this turn, deal 6 damage back."
+    },
+    {
+      "id": "forgotten_ritual",
+      "name": "Forgotten Ritual",
+      "color": "Ironclad",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: If you Exhausted a card this turn, gain .\nUpgrade: If you Exhausted a card this turn, gain 4 ."
+    },
+    {
+      "id": "grapple",
+      "name": "Grapple",
+      "color": "Ironclad",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 7 damage. Whenever you gain Block this turn, deal 5 damage to the enemy.\nUpgrade: Deal 9 damage. Whenever you gain Block this turn, deal 7 damage to the enemy."
+    },
+    {
+      "id": "hemokinesis",
+      "name": "Hemokinesis",
+      "color": "Ironclad",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Lose 2 HP. Deal 14 damage.\nUpgrade: Lose 2 HP. Deal 19 damage."
+    },
+    {
+      "id": "howl_from_beyond",
+      "name": "Howl from Beyond",
+      "color": "Ironclad",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 16 damage to ALL enemies. At the start of your turn, plays from the Exhaust Pile.\nUpgrade: Deal 21 damage to ALL enemies. At the start of your turn, plays from the Exhaust Pile."
+    },
+    {
+      "id": "infernal_blade",
+      "name": "Infernal Blade",
+      "color": "Ironclad",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Add a random Attack into your Hand. It's free to play this turn. Exhaust ."
+    },
+    {
+      "id": "inferno",
+      "name": "Inferno",
+      "color": "Ironclad",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Base: At the start of your turn, lose 1 HP. Whenever you lose HP on your turn, deal 6 damage to ALL enemies.\nUpgrade: At the start of your turn, lose 1 HP. Whenever you lose HP on your turn, deal 9 damage to ALL enemies."
+    },
+    {
+      "id": "inflame",
+      "name": "Inflame",
+      "color": "Ironclad",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Base: Gain 2 Strength .\nUpgrade: Gain 3 Strength ."
+    },
+    {
+      "id": "juggling",
+      "name": "Juggling",
+      "color": "Ironclad",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Base: Add a copy of the third Attack you play each turn into your Hand.\nUpgrade: Innate . Add a copy of the third Attack you play each turn into your Hand."
+    },
+    {
+      "id": "pillage",
+      "name": "Pillage",
+      "color": "Ironclad",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 6 damage. Draw cards until you draw a non-Attack card.\nUpgrade: Deal 9 damage. Draw cards until you draw a non-Attack card."
+    },
+    {
+      "id": "rage",
+      "name": "Rage",
+      "color": "Ironclad",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Whenever you play an Attack this turn, gain 3 Block .\nUpgrade: Whenever you play an Attack this turn, gain 5 Block ."
+    },
+    {
+      "id": "rampage",
+      "name": "Rampage",
+      "color": "Ironclad",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 9 damage. Increase this card's damage by 5 this combat.\nUpgrade: Deal 9 damage. Increase this card's damage by 9 this combat."
+    },
+    {
+      "id": "rupture",
+      "name": "Rupture",
+      "color": "Ironclad",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Base: Whenever you lose HP on your turn, gain 1 Strength .\nUpgrade: Whenever you lose HP on your turn, gain 2 Strength ."
+    },
+    {
+      "id": "second_wind",
+      "name": "Second Wind",
+      "color": "Ironclad",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Exhaust all non-Attack cards in your Hand. Gain 5 Block for each card Exhausted .\nUpgrade: Exhaust all non-Attack cards in your Hand. Gain 7 Block for each card Exhausted ."
+    },
+    {
+      "id": "spite",
+      "name": "Spite",
+      "color": "Ironclad",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 6 damage. If you lost HP this turn, draw 1 card.\nUpgrade: Deal 9 damage. If you lost HP this turn, draw 1 card."
+    },
+    {
+      "id": "stampede",
+      "name": "Stampede",
+      "color": "Ironclad",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "At the end of your turn, 1 random Attack in your Hand is played against a random enemy."
+    },
+    {
+      "id": "stomp",
+      "name": "Stomp",
+      "color": "Ironclad",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 12 damage to ALL enemies. Costs 1 less for each Attack played this turn.\nUpgrade: Deal 15 damage to ALL enemies. Costs 1 less for each Attack played this turn."
+    },
+    {
+      "id": "stone_armor",
+      "name": "Stone Armor",
+      "color": "Ironclad",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Base: Gain 4 Plating .\nUpgrade: Gain 6 Plating ."
+    },
+    {
+      "id": "taunt",
+      "name": "Taunt",
+      "color": "Ironclad",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Gain 7 Block . Apply 1 Vulnerable .\nUpgrade: Gain 8 Block . Apply 2 Vulnerable ."
+    },
+    {
+      "id": "unrelenting",
+      "name": "Unrelenting",
+      "color": "Ironclad",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 12 damage. The next Attack you play costs 0 .\nUpgrade: Deal 18 damage. The next Attack you play costs 0 ."
+    },
+    {
+      "id": "uppercut",
+      "name": "Uppercut",
+      "color": "Ironclad",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 13 damage. Apply 1 Weak . Apply 1 Vulnerable .\nUpgrade: Deal 13 damage. Apply 2 Weak . Apply 2 Vulnerable ."
+    },
+    {
+      "id": "vicious",
+      "name": "Vicious",
+      "color": "Ironclad",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Base: Whenever you apply Vulnerable , draw 1 card.\nUpgrade: Whenever you apply Vulnerable , draw 2 cards."
+    },
+    {
+      "id": "whirlwind",
+      "name": "Whirlwind",
+      "color": "Ironclad",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 5 damage to ALL enemies X times.\nUpgrade: Deal 8 damage to ALL enemies X times."
+    },
+    {
+      "id": "aggression",
+      "name": "Aggression",
+      "color": "Ironclad",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Base: At the start of your turn, put a random Attack from your Discard Pile into your Hand and Upgrade it.\nUpgrade: Innate . At the start of your turn, put a random Attack from your Discard Pile into your Hand and Upgrade it."
+    },
+    {
+      "id": "barricade",
+      "name": "Barricade",
+      "color": "Ironclad",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Block is not removed at the start of your turn."
+    },
+    {
+      "id": "brand",
+      "name": "Brand",
+      "color": "Ironclad",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: Lose 1 HP. Exhaust 1 card. Gain 1 Strength .\nUpgrade: Lose 1 HP. Exhaust 1 card. Gain 2 Strength ."
+    },
+    {
+      "id": "cascade",
+      "name": "Cascade",
+      "color": "Ironclad",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: Play the top X cards of your Draw Pile.\nUpgrade: Play the top X+1 cards of your Draw Pile."
+    },
+    {
+      "id": "colossus",
+      "name": "Colossus",
+      "color": "Ironclad",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: Gain 5 Block . You receive 50% less damage from Vulnerable enemies this turn.\nUpgrade: Gain 8 Block . You receive 50% less damage from Vulnerable enemies this turn."
+    },
+    {
+      "id": "conflagration",
+      "name": "Conflagration",
+      "color": "Ironclad",
+      "type": "Attack",
+      "rarity": "Rare",
+      "content": "Base: Deal 8 damage to ALL enemies. Deals 2 additional damage for each other Attack you've played this turn.\nUpgrade: Deal 9 damage to ALL enemies. Deals 3 additional damage for each other Attack you've played this turn."
+    },
+    {
+      "id": "crimson_mantle",
+      "name": "Crimson Mantle",
+      "color": "Ironclad",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Base: At the start of your turn, lose 1 HP and gain 8 Block .\nUpgrade: At the start of your turn, lose 1 HP and gain 10 Block ."
+    },
+    {
+      "id": "cruelty",
+      "name": "Cruelty",
+      "color": "Ironclad",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Base: Vulnerable enemies take an additional 25% damage.\nUpgrade: Vulnerable enemies take an additional 50% damage."
+    },
+    {
+      "id": "dark_embrace",
+      "name": "Dark Embrace",
+      "color": "Ironclad",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Whenever a card is Exhausted , draw 1 card."
+    },
+    {
+      "id": "demon_form",
+      "name": "Demon Form",
+      "color": "Ironclad",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Base: At the start of your turn, gain 2 Strength .\nUpgrade: At the start of your turn, gain 3 Strength ."
+    },
+    {
+      "id": "feed",
+      "name": "Feed",
+      "color": "Ironclad",
+      "type": "Attack",
+      "rarity": "Rare",
+      "content": "Base: Deal 10 damage. If Fatal , raise your Max HP by 3. Exhaust .\nUpgrade: Deal 12 damage. If Fatal , raise your Max HP by 4. Exhaust ."
+    },
+    {
+      "id": "fiend_fire",
+      "name": "Fiend Fire",
+      "color": "Ironclad",
+      "type": "Attack",
+      "rarity": "Rare",
+      "content": "Base: Exhaust your Hand. Deal 7 damage for each card Exhausted . Exhaust .\nUpgrade: Exhaust your Hand. Deal 10 damage for each card Exhausted . Exhaust ."
+    },
+    {
+      "id": "hellraiser",
+      "name": "Hellraiser",
+      "color": "Ironclad",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Whenever you draw a card containing “Strike”, it is played against a random enemy."
+    },
+    {
+      "id": "impervious",
+      "name": "Impervious",
+      "color": "Ironclad",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: Gain 30 Block . Exhaust .\nUpgrade: Gain 40 Block . Exhaust ."
+    },
+    {
+      "id": "juggernaut",
+      "name": "Juggernaut",
+      "color": "Ironclad",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Base: Whenever you gain Block , deal 5 damage to a random enemy.\nUpgrade: Whenever you gain Block , deal 7 damage to a random enemy."
+    },
+    {
+      "id": "mangle",
+      "name": "Mangle",
+      "color": "Ironclad",
+      "type": "Attack",
+      "rarity": "Rare",
+      "content": "Base: Deal 15 damage. Enemy loses 10 Strength this turn.\nUpgrade: Deal 20 damage. Enemy loses 15 Strength this turn."
+    },
+    {
+      "id": "offering",
+      "name": "Offering",
+      "color": "Ironclad",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: Lose 6 HP. Gain . Draw 3 cards. Exhaust .\nUpgrade: Lose 6 HP. Gain . Draw 5 cards. Exhaust ."
+    },
+    {
+      "id": "one_two_punch",
+      "name": "One-Two Punch",
+      "color": "Ironclad",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: This turn, your next Attack is played an extra time.\nUpgrade: This turn, your next 2 Attacks are played an extra time."
+    },
+    {
+      "id": "pact_s_end",
+      "name": "Pact's End",
+      "color": "Ironclad",
+      "type": "Attack",
+      "rarity": "Rare",
+      "content": "Base: Can only be played if you have 3 or more cards in your Exhaust Pile. Deal 17 damage to ALL enemies.\nUpgrade: Can only be played if you have 3 or more cards in your Exhaust Pile. Deal 23 damage to ALL enemies."
+    },
+    {
+      "id": "primal_force",
+      "name": "Primal Force",
+      "color": "Ironclad",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: Transform all Attacks in your Hand into Giant Rock .\nUpgrade: Transform all Attacks in your Hand into Giant Rock+ ."
+    },
+    {
+      "id": "pyre",
+      "name": "Pyre",
+      "color": "Ironclad",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Gain at the start of each turn."
+    },
+    {
+      "id": "stoke",
+      "name": "Stoke",
+      "color": "Ironclad",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Exhaust your Hand. Draw a card for each card Exhausted . Exhaust ."
+    },
+    {
+      "id": "tank",
+      "name": "Tank",
+      "color": "Ironclad",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Take double damage from enemies. Allies take half damage from enemies."
+    },
+    {
+      "id": "tear_asunder",
+      "name": "Tear Asunder",
+      "color": "Ironclad",
+      "type": "Attack",
+      "rarity": "Rare",
+      "content": "Base: Deal 5 damage. Hits an additional time for each time you lost HP this combat.\nUpgrade: Deal 7 damage. Hits an additional time for each time you lost HP this combat."
+    },
+    {
+      "id": "thrash",
+      "name": "Thrash",
+      "color": "Ironclad",
+      "type": "Attack",
+      "rarity": "Rare",
+      "content": "Base: Deal 4 damage twice. Exhaust a random Attack in your Hand and add its damage to this card.\nUpgrade: Deal 6 damage twice. Exhaust a random Attack in your Hand and add its damage to this card."
+    },
+    {
+      "id": "unmovable",
+      "name": "Unmovable",
+      "color": "Ironclad",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "The first time you gain Block from a card each turn, double the amount gained."
+    },
+    {
+      "id": "break",
+      "name": "Break",
+      "color": "Ironclad",
+      "type": "Attack",
+      "rarity": "Ancient",
+      "content": "Base: Deal 20 damage. Apply 5 Vulnerable .\nUpgrade: Deal 25 damage. Apply 7 Vulnerable ."
+    },
+    {
+      "id": "corruption",
+      "name": "Corruption",
+      "color": "Ironclad",
+      "type": "Power",
+      "rarity": "Ancient",
+      "content": "Skills cost 0 . Whenever you play a Skill, Exhaust it."
+    },
+    {
+      "id": "clash",
+      "name": "Clash",
+      "color": "Ironclad",
+      "type": "Attack",
+      "rarity": "Event",
+      "content": "Base: Can only be played if every card in your Hand is an Attack. Deal 14 damage.\nUpgrade: Can only be played if every card in your Hand is an Attack. Deal 18 damage."
+    },
+    {
+      "id": "dual_wield",
+      "name": "Dual Wield",
+      "color": "Ironclad",
+      "type": "Skill",
+      "rarity": "Event",
+      "content": "Base: Choose an Attack or Power card. Add a copy of that card into your Hand.\nUpgrade: Choose an Attack or Power card. Add 2 copies of that card into your Hand."
+    },
+    {
+      "id": "entrench",
+      "name": "Entrench",
+      "color": "Ironclad",
+      "type": "Skill",
+      "rarity": "Event",
+      "content": "Double your Block ."
+    },
+    {
+      "id": "defend_silent",
+      "name": "Defend (Silent)",
+      "color": "Silent",
+      "type": "Skill",
+      "rarity": "Basic",
+      "content": "Base: Gain 5 Block .\nUpgrade: Gain 8 Block ."
+    },
+    {
+      "id": "neutralize",
+      "name": "Neutralize",
+      "color": "Silent",
+      "type": "Attack",
+      "rarity": "Basic",
+      "content": "Base: Deal 3 damage. Apply 1 Weak .\nUpgrade: Deal 4 damage. Apply 2 Weak ."
+    },
+    {
+      "id": "strike_silent",
+      "name": "Strike (Silent)",
+      "color": "Silent",
+      "type": "Attack",
+      "rarity": "Basic",
+      "content": "Base: Deal 6 damage.\nUpgrade: Deal 9 damage."
+    },
+    {
+      "id": "survivor",
+      "name": "Survivor",
+      "color": "Silent",
+      "type": "Skill",
+      "rarity": "Basic",
+      "content": "Base: Gain 8 Block . Discard 1 card.\nUpgrade: Gain 11 Block . Discard 1 card."
+    },
+    {
+      "id": "acrobatics",
+      "name": "Acrobatics",
+      "color": "Silent",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Base: Draw 3 cards. Discard 1 card.\nUpgrade: Draw 4 cards. Discard 1 card."
+    },
+    {
+      "id": "anticipate",
+      "name": "Anticipate",
+      "color": "Silent",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Base: Gain 3 Dexterity this turn.\nUpgrade: Gain 5 Dexterity this turn."
+    },
+    {
+      "id": "backflip",
+      "name": "Backflip",
+      "color": "Silent",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Base: Gain 5 Block . Draw 2 cards.\nUpgrade: Gain 8 Block . Draw 2 cards."
+    },
+    {
+      "id": "blade_dance",
+      "name": "Blade Dance",
+      "color": "Silent",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Base: Add 3 Shivs into your Hand. Exhaust .\nUpgrade: Add 4 Shivs into your Hand. Exhaust ."
+    },
+    {
+      "id": "cloak_and_dagger",
+      "name": "Cloak and Dagger",
+      "color": "Silent",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Base: Gain 6 Block . Add 1 Shiv into your Hand.\nUpgrade: Gain 6 Block . Add 2 Shivs into your Hand."
+    },
+    {
+      "id": "dagger_spray",
+      "name": "Dagger Spray",
+      "color": "Silent",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Deal 4 damage to ALL enemies twice.\nUpgrade: Deal 6 damage to ALL enemies twice."
+    },
+    {
+      "id": "dagger_throw",
+      "name": "Dagger Throw",
+      "color": "Silent",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Deal 9 damage. Draw 1 card. Discard 1 card.\nUpgrade: Deal 12 damage. Draw 1 card. Discard 1 card."
+    },
+    {
+      "id": "deadly_poison",
+      "name": "Deadly Poison",
+      "color": "Silent",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Base: Apply 5 Poison .\nUpgrade: Apply 7 Poison ."
+    },
+    {
+      "id": "deflect",
+      "name": "Deflect",
+      "color": "Silent",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Base: Gain 4 Block .\nUpgrade: Gain 7 Block ."
+    },
+    {
+      "id": "dodge_and_roll",
+      "name": "Dodge and Roll",
+      "color": "Silent",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Base: Gain 4 Block . Next turn, gain 4 Block .\nUpgrade: Gain 6 Block . Next turn, gain 6 Block ."
+    },
+    {
+      "id": "flick_flack",
+      "name": "Flick-Flack",
+      "color": "Silent",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Sly . Deal 7 damage to ALL enemies.\nUpgrade: Sly . Deal 9 damage to ALL enemies."
+    },
+    {
+      "id": "leading_strike",
+      "name": "Leading Strike",
+      "color": "Silent",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Deal 7 damage. Add 1 Shiv into your Hand.\nUpgrade: Deal 10 damage. Add 1 Shiv into your Hand."
+    },
+    {
+      "id": "piercing_wail",
+      "name": "Piercing Wail",
+      "color": "Silent",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Base: ALL enemies lose 6 Strength this turn. Exhaust .\nUpgrade: ALL enemies lose 8 Strength this turn. Exhaust ."
+    },
+    {
+      "id": "poisoned_stab",
+      "name": "Poisoned Stab",
+      "color": "Silent",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Deal 6 damage. Apply 3 Poison .\nUpgrade: Deal 8 damage. Apply 4 Poison ."
+    },
+    {
+      "id": "prepared",
+      "name": "Prepared",
+      "color": "Silent",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Base: Draw 1 card. Discard 1 card.\nUpgrade: Draw 2 cards. Discard 2 cards."
+    },
+    {
+      "id": "ricochet",
+      "name": "Ricochet",
+      "color": "Silent",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Sly . Deal 3 damage to a random enemy 4 times.\nUpgrade: Sly . Deal 3 damage to a random enemy 5 times."
+    },
+    {
+      "id": "slice",
+      "name": "Slice",
+      "color": "Silent",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Deal 6 damage.\nUpgrade: Deal 9 damage."
+    },
+    {
+      "id": "snakebite",
+      "name": "Snakebite",
+      "color": "Silent",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Base: Retain. Apply 7 Poison .\nUpgrade: Retain. Apply 10 Poison ."
+    },
+    {
+      "id": "sucker_punch",
+      "name": "Sucker Punch",
+      "color": "Silent",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Deal 8 damage. Apply 1 Weak .\nUpgrade: Deal 10 damage. Apply 2 Weak ."
+    },
+    {
+      "id": "untouchable",
+      "name": "Untouchable",
+      "color": "Silent",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Base: Sly . Gain 9 Block .\nUpgrade: Sly . Gain 12 Block ."
+    },
+    {
+      "id": "accuracy",
+      "name": "Accuracy",
+      "color": "Silent",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Base: Shivs deal 4 additional damage.\nUpgrade: Shivs deal 6 additional damage."
+    },
+    {
+      "id": "backstab",
+      "name": "Backstab",
+      "color": "Silent",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Innate . Deal 11 damage. Exhaust .\nUpgrade: Innate . Deal 15 damage. Exhaust ."
+    },
+    {
+      "id": "blur",
+      "name": "Blur",
+      "color": "Silent",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Gain 5 Block . Block is not removed at the start of your next turn.\nUpgrade: Gain 8 Block . Block is not removed at the start of your next turn."
+    },
+    {
+      "id": "bouncing_flask",
+      "name": "Bouncing Flask",
+      "color": "Silent",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Apply 3 Poison to a random enemy 3 times.\nUpgrade: Apply 3 Poison to a random enemy 4 times."
+    },
+    {
+      "id": "bubble_bubble",
+      "name": "Bubble Bubble",
+      "color": "Silent",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: If the enemy has Poison , apply 9 Poison .\nUpgrade: If the enemy has Poison , apply 12 Poison ."
+    },
+    {
+      "id": "calculated_gamble",
+      "name": "Calculated Gamble",
+      "color": "Silent",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Discard your Hand, then draw that many cards. Exhaust .\nUpgrade: Retain. Discard your Hand, then draw that many cards. Exhaust ."
+    },
+    {
+      "id": "dash",
+      "name": "Dash",
+      "color": "Silent",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Gain 10 Block . Deal 10 damage.\nUpgrade: Gain 13 Block . Deal 13 damage."
+    },
+    {
+      "id": "escape_plan",
+      "name": "Escape Plan",
+      "color": "Silent",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Draw 1 card. If you draw a Skill, gain 3 Block .\nUpgrade: Draw 1 card. If you draw a Skill, gain 5 Block ."
+    },
+    {
+      "id": "expertise",
+      "name": "Expertise",
+      "color": "Silent",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Draw cards until you have 6 in your Hand.\nUpgrade: Draw cards until you have 7 in your Hand."
+    },
+    {
+      "id": "expose",
+      "name": "Expose",
+      "color": "Silent",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Remove all Artifact and Block from the enemy. Apply 2 Vulnerable . Exhaust .\nUpgrade: Remove all Artifact and Block from the enemy. Apply 3 Vulnerable . Exhaust ."
+    },
+    {
+      "id": "finisher",
+      "name": "Finisher",
+      "color": "Silent",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 6 damage for each Attack already played this turn.\nUpgrade: Deal 8 damage for each Attack already played this turn."
+    },
+    {
+      "id": "flanking",
+      "name": "Flanking",
+      "color": "Silent",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "The enemy takes double damage from other players this turn."
+    },
+    {
+      "id": "flechettes",
+      "name": "Flechettes",
+      "color": "Silent",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 5 damage for each Skill in your Hand.\nUpgrade: Deal 7 damage for each Skill in your Hand."
+    },
+    {
+      "id": "follow_through",
+      "name": "Follow Through",
+      "color": "Silent",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 6 damage to ALL enemies. If the last card you played this turn was a Skill, apply 1 Weak to ALL enemies.\nUpgrade: Deal 8 damage to ALL enemies. If the last card you played this turn was a Skill, apply 2 Weak to ALL enemies."
+    },
+    {
+      "id": "footwork",
+      "name": "Footwork",
+      "color": "Silent",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Base: Gain 2 Dexterity .\nUpgrade: Gain 3 Dexterity ."
+    },
+    {
+      "id": "hand_trick",
+      "name": "Hand Trick",
+      "color": "Silent",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Gain 7 Block . Add Sly to a Skill in your Hand this turn.\nUpgrade: Gain 10 Block . Add Sly to a Skill in your Hand this turn."
+    },
+    {
+      "id": "haze",
+      "name": "Haze",
+      "color": "Silent",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Sly . Apply 4 Poison to ALL enemies.\nUpgrade: Sly . Apply 6 Poison to ALL enemies."
+    },
+    {
+      "id": "hidden_daggers",
+      "name": "Hidden Daggers",
+      "color": "Silent",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Discard 2 cards. Add 2 Shivs into your Hand.\nUpgrade: Discard 2 cards. Add 2 Shivs+ into your Hand."
+    },
+    {
+      "id": "infinite_blades",
+      "name": "Infinite Blades",
+      "color": "Silent",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Base: At the start of your turn, add 1 Shiv into your Hand.\nUpgrade: Innate . At the start of your turn, add 1 Shiv into your Hand."
+    },
+    {
+      "id": "leg_sweep",
+      "name": "Leg Sweep",
+      "color": "Silent",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Apply 2 Weak . Gain 11 Block .\nUpgrade: Apply 3 Weak . Gain 14 Block ."
+    },
+    {
+      "id": "memento_mori",
+      "name": "Memento Mori",
+      "color": "Silent",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 8 damage. Deals 4 additional damage for each card discarded this turn.\nUpgrade: Deal 10 damage. Deals 5 additional damage for each card discarded this turn."
+    },
+    {
+      "id": "mirage",
+      "name": "Mirage",
+      "color": "Silent",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Gain Block equal to Poison on ALL enemies. Exhaust ."
+    },
+    {
+      "id": "noxious_fumes",
+      "name": "Noxious Fumes",
+      "color": "Silent",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Base: At the start of your turn, apply 2 Poison to ALL enemies.\nUpgrade: At the start of your turn, apply 3 Poison to ALL enemies."
+    },
+    {
+      "id": "outbreak",
+      "name": "Outbreak",
+      "color": "Silent",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Base: Every 3 times you apply Poison , deal 11 damage to ALL enemies.\nUpgrade: Every 3 times you apply Poison , deal 15 damage to ALL enemies."
+    },
+    {
+      "id": "phantom_blades",
+      "name": "Phantom Blades",
+      "color": "Silent",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Base: Shivs gain Retain. The first Shiv you play each turn deals 9 additional damage.\nUpgrade: Shivs gain Retain. The first Shiv you play each turn deals 12 additional damage."
+    },
+    {
+      "id": "pinpoint",
+      "name": "Pinpoint",
+      "color": "Silent",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 17 damage. Costs 1 less for each Skill played this turn.\nUpgrade: Deal 22 damage. Costs 1 less for each Skill played this turn."
+    },
+    {
+      "id": "pounce",
+      "name": "Pounce",
+      "color": "Silent",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 12 damage. The next Skill you play costs 0 .\nUpgrade: Deal 18 damage. The next Skill you play costs 0 ."
+    },
+    {
+      "id": "precise_cut",
+      "name": "Precise Cut",
+      "color": "Silent",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 13 damage. Deals 2 less damage for each other card in your Hand.\nUpgrade: Deal 16 damage. Deals 2 less damage for each other card in your Hand."
+    },
+    {
+      "id": "predator",
+      "name": "Predator",
+      "color": "Silent",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 15 damage. Next turn, draw 2 cards.\nUpgrade: Deal 20 damage. Next turn, draw 2 cards."
+    },
+    {
+      "id": "reflex",
+      "name": "Reflex",
+      "color": "Silent",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Sly . Draw 2 cards.\nUpgrade: Sly . Draw 3 cards."
+    },
+    {
+      "id": "skewer",
+      "name": "Skewer",
+      "color": "Silent",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 7 damage X times.\nUpgrade: Deal 10 damage X times."
+    },
+    {
+      "id": "speedster",
+      "name": "Speedster",
+      "color": "Silent",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Base: Whenever you draw a card during your turn, deal 2 damage to ALL enemies.\nUpgrade: Whenever you draw a card during your turn, deal 3 damage to ALL enemies."
+    },
+    {
+      "id": "strangle",
+      "name": "Strangle",
+      "color": "Silent",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 8 damage. Whenever you play a card this turn, the enemy loses 2 HP.\nUpgrade: Deal 10 damage. Whenever you play a card this turn, the enemy loses 3 HP."
+    },
+    {
+      "id": "tactician",
+      "name": "Tactician",
+      "color": "Silent",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Sly . Gain ."
+    },
+    {
+      "id": "up_my_sleeve",
+      "name": "Up My Sleeve",
+      "color": "Silent",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Add 3 Shivs into your Hand. Reduce this card's cost by 1.\nUpgrade: Add 4 Shivs into your Hand. Reduce this card's cost by 1."
+    },
+    {
+      "id": "well_laid_plans",
+      "name": "Well-Laid Plans",
+      "color": "Silent",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Base: At the end of your turn, Retain up to 1 card.\nUpgrade: At the end of your turn, Retain up to 2 cards."
+    },
+    {
+      "id": "abrasive",
+      "name": "Abrasive",
+      "color": "Silent",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Base: Sly . Gain 1 Dexterity . Gain 4 Thorns .\nUpgrade: Sly . Gain 1 Dexterity . Gain 6 Thorns ."
+    },
+    {
+      "id": "accelerant",
+      "name": "Accelerant",
+      "color": "Silent",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Base: Poison is triggered 1 additional time.\nUpgrade: Poison is triggered 2 additional times."
+    },
+    {
+      "id": "adrenaline",
+      "name": "Adrenaline",
+      "color": "Silent",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Gain . Draw 2 cards. Exhaust ."
+    },
+    {
+      "id": "afterimage",
+      "name": "Afterimage",
+      "color": "Silent",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Base: Whenever you play a card, gain 1 Block .\nUpgrade: Innate . Whenever you play a card, gain 1 Block ."
+    },
+    {
+      "id": "assassinate",
+      "name": "Assassinate",
+      "color": "Silent",
+      "type": "Attack",
+      "rarity": "Rare",
+      "content": "Base: Innate . Deal 10 damage. Apply 1 Vulnerable . Exhaust .\nUpgrade: Innate . Deal 13 damage. Apply 2 Vulnerable . Exhaust ."
+    },
+    {
+      "id": "blade_of_ink",
+      "name": "Blade of Ink",
+      "color": "Silent",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: This turn, whenever you play an Attack, gain 2 Strength this turn.\nUpgrade: This turn, whenever you play an Attack, gain 3 Strength this turn."
+    },
+    {
+      "id": "bullet_time",
+      "name": "Bullet Time",
+      "color": "Silent",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "You cannot draw additional cards this turn. ALL cards in your Hand are free to play this turn."
+    },
+    {
+      "id": "burst",
+      "name": "Burst",
+      "color": "Silent",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: This turn, your next Skill is played an extra time.\nUpgrade: This turn, your next 2 Skills are played an extra time."
+    },
+    {
+      "id": "corrosive_wave",
+      "name": "Corrosive Wave",
+      "color": "Silent",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: Whenever you draw a card this turn, apply 3 Poison to ALL enemies.\nUpgrade: Whenever you draw a card this turn, apply 4 Poison to ALL enemies."
+    },
+    {
+      "id": "echoing_slash",
+      "name": "Echoing Slash",
+      "color": "Silent",
+      "type": "Attack",
+      "rarity": "Rare",
+      "content": "Base: Deal 10 damage to ALL enemies. Repeat this effect for each enemy killed.\nUpgrade: Deal 13 damage to ALL enemies. Repeat this effect for each enemy killed."
+    },
+    {
+      "id": "envenom",
+      "name": "Envenom",
+      "color": "Silent",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Base: Whenever an Attack deals unblocked damage, apply 1 Poison .\nUpgrade: Whenever an Attack deals unblocked damage, apply 2 Poison ."
+    },
+    {
+      "id": "fan_of_knives",
+      "name": "Fan of Knives",
+      "color": "Silent",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Base: Shivs now hit ALL enemies. Add 4 Shivs into your Hand.\nUpgrade: Shivs now hit ALL enemies. Add 5 Shivs into your Hand."
+    },
+    {
+      "id": "grand_finale",
+      "name": "Grand Finale",
+      "color": "Silent",
+      "type": "Attack",
+      "rarity": "Rare",
+      "content": "Base: Can only be played if there are no cards in your Draw Pile. Deal 50 damage to ALL enemies.\nUpgrade: Can only be played if there are no cards in your Draw Pile. Deal 60 damage to ALL enemies."
+    },
+    {
+      "id": "knife_trap",
+      "name": "Knife Trap",
+      "color": "Silent",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: Play every Shiv in your Exhaust Pile on the enemy.\nUpgrade: Upgrade and play every Shiv in your Exhaust Pile on the enemy."
+    },
+    {
+      "id": "malaise",
+      "name": "Malaise",
+      "color": "Silent",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: Enemy loses X Strength . Apply X Weak . Exhaust .\nUpgrade: Enemy loses X+1 Strength . Apply X+1 Weak . Exhaust ."
+    },
+    {
+      "id": "master_planner",
+      "name": "Master Planner",
+      "color": "Silent",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "When you play a Skill, it gains Sly ."
+    },
+    {
+      "id": "murder",
+      "name": "Murder",
+      "color": "Silent",
+      "type": "Attack",
+      "rarity": "Rare",
+      "content": "Deal 1 damage. Deals 1 additional damage for each card drawn this combat."
+    },
+    {
+      "id": "nightmare",
+      "name": "Nightmare",
+      "color": "Silent",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Choose a card. Next turn, add 3 copies of that card into your Hand. Exhaust ."
+    },
+    {
+      "id": "serpent_form",
+      "name": "Serpent Form",
+      "color": "Silent",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Base: Whenever you play a card, deal 4 damage to a random enemy.\nUpgrade: Whenever you play a card, deal 5 damage to a random enemy."
+    },
+    {
+      "id": "shadow_step",
+      "name": "Shadow Step",
+      "color": "Silent",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Discard your Hand. Next turn, Attacks deal double damage."
+    },
+    {
+      "id": "shadowmeld",
+      "name": "Shadowmeld",
+      "color": "Silent",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Double your Block gain this turn."
+    },
+    {
+      "id": "sneaky",
+      "name": "Sneaky",
+      "color": "Silent",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Base: Sly . Whenever another player attacks an enemy, gain 1 Block .\nUpgrade: Sly . Whenever another player attacks an enemy, gain 2 Block ."
+    },
+    {
+      "id": "storm_of_steel",
+      "name": "Storm of Steel",
+      "color": "Silent",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: Discard your Hand. Add 1 Shiv into your Hand for each card discarded.\nUpgrade: Discard your Hand. Add 1 Shiv+ into your Hand for each card discarded."
+    },
+    {
+      "id": "the_hunt",
+      "name": "The Hunt",
+      "color": "Silent",
+      "type": "Attack",
+      "rarity": "Rare",
+      "content": "Base: Deal 10 damage. If Fatal, gain an additional card reward. Exhaust .\nUpgrade: Deal 15 damage. If Fatal, gain an additional card reward. Exhaust ."
+    },
+    {
+      "id": "tools_of_the_trade",
+      "name": "Tools of the Trade",
+      "color": "Silent",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "At the start of your turn, draw 1 card and discard 1 card."
+    },
+    {
+      "id": "tracking",
+      "name": "Tracking",
+      "color": "Silent",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Weak enemies take double damage from Attacks."
+    },
+    {
+      "id": "suppress",
+      "name": "Suppress",
+      "color": "Silent",
+      "type": "Attack",
+      "rarity": "Ancient",
+      "content": "Base: Innate . Deal 11 damage. Apply 3 Weak .\nUpgrade: Innate . Deal 17 damage. Apply 5 Weak ."
+    },
+    {
+      "id": "wraith_form",
+      "name": "Wraith Form",
+      "color": "Silent",
+      "type": "Power",
+      "rarity": "Ancient",
+      "content": "Base: Gain 2 Intangible . At the start of your turn, lose 1 Dexterity .\nUpgrade: Gain 3 Intangible . At the start of your turn, lose 1 Dexterity ."
+    },
+    {
+      "id": "caltrops",
+      "name": "Caltrops",
+      "color": "Silent",
+      "type": "Power",
+      "rarity": "Event",
+      "content": "Base: Whenever you are attacked, deal 3 damage back.\nUpgrade: Whenever you are attacked, deal 5 damage back."
+    },
+    {
+      "id": "distraction",
+      "name": "Distraction",
+      "color": "Silent",
+      "type": "Skill",
+      "rarity": "Event",
+      "content": "Add a random Skill into your Hand. It's free to play this turn. Exhaust ."
+    },
+    {
+      "id": "outmaneuver",
+      "name": "Outmaneuver",
+      "color": "Silent",
+      "type": "Skill",
+      "rarity": "Event",
+      "content": "Next turn, gain ."
+    },
+    {
+      "id": "defend_regent",
+      "name": "Defend (Regent)",
+      "color": "Regent",
+      "type": "Skill",
+      "rarity": "Basic",
+      "content": "Base: Gain 5 Block .\nUpgrade: Gain 8 Block ."
+    },
+    {
+      "id": "falling_star",
+      "name": "Falling Star",
+      "color": "Regent",
+      "type": "Attack",
+      "rarity": "Basic",
+      "content": "Base: Deal 7 damage. Apply 1 Weak . Apply 1 Vulnerable .\nUpgrade: Deal 11 damage. Apply 1 Weak . Apply 1 Vulnerable ."
+    },
+    {
+      "id": "strike_regent",
+      "name": "Strike (Regent)",
+      "color": "Regent",
+      "type": "Attack",
+      "rarity": "Basic",
+      "content": "Base: Deal 6 damage.\nUpgrade: Deal 9 damage."
+    },
+    {
+      "id": "venerate",
+      "name": "Venerate",
+      "color": "Regent",
+      "type": "Skill",
+      "rarity": "Basic",
+      "content": "Gain ."
+    },
+    {
+      "id": "astral_pulse",
+      "name": "Astral Pulse",
+      "color": "Regent",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Deal 14 damage to ALL enemies.\nUpgrade: Deal 18 damage to ALL enemies."
+    },
+    {
+      "id": "begone",
+      "name": "BEGONE!",
+      "color": "Regent",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Deal 4 damage. Choose a card in your Hand to Transform into Minion Dive Bomb .\nUpgrade: Deal 5 damage. Choose a card in your Hand to Transform into Minion Dive Bomb+ ."
+    },
+    {
+      "id": "celestial_might",
+      "name": "Celestial Might",
+      "color": "Regent",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Deal 6 damage 3 times.\nUpgrade: Deal 8 damage 3 times."
+    },
+    {
+      "id": "cloak_of_stars",
+      "name": "Cloak of Stars",
+      "color": "Regent",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Base: Gain 7 Block .\nUpgrade: Gain 10 Block ."
+    },
+    {
+      "id": "collision_course",
+      "name": "Collision Course",
+      "color": "Regent",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Deal 9 damage. Add a Debris into your Hand.\nUpgrade: Deal 12 damage. Add a Debris into your Hand."
+    },
+    {
+      "id": "cosmic_indifference",
+      "name": "Cosmic Indifference",
+      "color": "Regent",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Base: Gain 6 Block . Put a card from your Discard Pile on top of your Draw Pile.\nUpgrade: Gain 9 Block . Put a card from your Discard Pile on top of your Draw Pile."
+    },
+    {
+      "id": "crescent_spear",
+      "name": "Crescent Spear",
+      "color": "Regent",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Deal 6 damage. Deals 2 additional damage for ALL your cards that have a cost.\nUpgrade: Deal 6 damage. Deals 3 additional damage for ALL your cards that have a cost."
+    },
+    {
+      "id": "crush_under",
+      "name": "Crush Under",
+      "color": "Regent",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Deal 7 damage to ALL enemies. All enemies lose 1 Strength this turn.\nUpgrade: Deal 8 damage to ALL enemies. All enemies lose 2 Strength this turn."
+    },
+    {
+      "id": "gather_light",
+      "name": "Gather Light",
+      "color": "Regent",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Base: Gain 7 Block . Gain .\nUpgrade: Gain 10 Block . Gain ."
+    },
+    {
+      "id": "glitterstream",
+      "name": "Glitterstream",
+      "color": "Regent",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Base: Gain 11 Block . Next turn, gain 4 Block .\nUpgrade: Gain 13 Block . Next turn, gain 6 Block ."
+    },
+    {
+      "id": "glow",
+      "name": "Glow",
+      "color": "Regent",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Gain . Draw 2 cards."
+    },
+    {
+      "id": "guiding_star",
+      "name": "Guiding Star",
+      "color": "Regent",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Deal 12 damage. Next turn, draw 2 cards.\nUpgrade: Deal 13 damage. Next turn, draw 3 cards."
+    },
+    {
+      "id": "hidden_cache",
+      "name": "Hidden Cache",
+      "color": "Regent",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Gain . Next turn, gain ."
+    },
+    {
+      "id": "know_thy_place",
+      "name": "Know Thy Place",
+      "color": "Regent",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Base: Apply 1 Weak . Apply 1 Vulnerable . Exhaust .\nUpgrade: Apply 1 Weak . Apply 1 Vulnerable ."
+    },
+    {
+      "id": "patter",
+      "name": "Patter",
+      "color": "Regent",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Base: Gain 8 Block . Gain 2 Vigor .\nUpgrade: Gain 10 Block . Gain 3 Vigor ."
+    },
+    {
+      "id": "photon_cut",
+      "name": "Photon Cut",
+      "color": "Regent",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Deal 10 damage. Draw 1 card. Put 1 card from your Hand on top of your Draw Pile.\nUpgrade: Deal 13 damage. Draw 2 cards. Put 1 card from your Hand on top of your Draw Pile."
+    },
+    {
+      "id": "refine_blade",
+      "name": "Refine Blade",
+      "color": "Regent",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Base: Forge 6. Next turn, gain .\nUpgrade: Forge 10. Next turn, gain ."
+    },
+    {
+      "id": "solar_strike",
+      "name": "Solar Strike",
+      "color": "Regent",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Deal 8 damage. Gain .\nUpgrade: Deal 9 damage. Gain ."
+    },
+    {
+      "id": "spoils_of_battle",
+      "name": "Spoils of Battle",
+      "color": "Regent",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Base: Forge 10.\nUpgrade: Forge 15."
+    },
+    {
+      "id": "wrought_in_war",
+      "name": "Wrought in War",
+      "color": "Regent",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Deal 7 damage. Forge 5.\nUpgrade: Deal 9 damage. Forge 7."
+    },
+    {
+      "id": "alignment",
+      "name": "Alignment",
+      "color": "Regent",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Gain ."
+    },
+    {
+      "id": "black_hole",
+      "name": "Black Hole",
+      "color": "Regent",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Base: Whenever you spend or gain , deal 3 damage to ALL enemies.\nUpgrade: Whenever you spend or gain , deal 4 damage to ALL enemies."
+    },
+    {
+      "id": "bulwark",
+      "name": "Bulwark",
+      "color": "Regent",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Gain 13 Block . Forge 10.\nUpgrade: Gain 16 Block . Forge 13."
+    },
+    {
+      "id": "charge",
+      "name": "CHARGE!!",
+      "color": "Regent",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Choose 2 cards in your Draw Pile to Transform into Minion Strikes .\nUpgrade: Choose 2 cards in your Draw Pile to Transform into Minion Strikes+ ."
+    },
+    {
+      "id": "child_of_the_stars",
+      "name": "Child of the Stars",
+      "color": "Regent",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Base: Whenever you spend , gain 2 Block for each spent.\nUpgrade: Whenever you spend , gain 3 Block for each spent."
+    },
+    {
+      "id": "conqueror",
+      "name": "Conqueror",
+      "color": "Regent",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Forge 3. Sovereign Blade deals double damage to the enemy this turn.\nUpgrade: Forge 5. Sovereign Blade deals double damage to the enemy this turn."
+    },
+    {
+      "id": "convergence",
+      "name": "Convergence",
+      "color": "Regent",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Next turn, gain and . Retain your Hand this turn."
+    },
+    {
+      "id": "devastate",
+      "name": "Devastate",
+      "color": "Regent",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 30 damage.\nUpgrade: Deal 40 damage."
+    },
+    {
+      "id": "furnace",
+      "name": "Furnace",
+      "color": "Regent",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Base: At the start of your turn, Forge 4.\nUpgrade: At the start of your turn, Forge 6."
+    },
+    {
+      "id": "gamma_blast",
+      "name": "Gamma Blast",
+      "color": "Regent",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 13 damage. Apply 2 Weak . Apply 2 Vulnerable .\nUpgrade: Deal 18 damage. Apply 2 Weak . Apply 2 Vulnerable ."
+    },
+    {
+      "id": "glimmer",
+      "name": "Glimmer",
+      "color": "Regent",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Draw 3 cards. Put 1 card from your Hand on top of your Draw Pile.\nUpgrade: Draw 4 cards. Put 1 card from your Hand on top of your Draw Pile."
+    },
+    {
+      "id": "hegemony",
+      "name": "Hegemony",
+      "color": "Regent",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 15 damage. Next turn, gain .\nUpgrade: Deal 18 damage. Next turn, gain ."
+    },
+    {
+      "id": "kingly_kick",
+      "name": "Kingly Kick",
+      "color": "Regent",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 24 damage. Whenever you draw this card, reduce its cost by 1.\nUpgrade: Deal 30 damage. Whenever you draw this card, reduce its cost by 1."
+    },
+    {
+      "id": "kingly_punch",
+      "name": "Kingly Punch",
+      "color": "Regent",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 8 damage. Whenever you draw this card, increase its damage by 3 this combat.\nUpgrade: Deal 8 damage. Whenever you draw this card, increase its damage by 5 this combat."
+    },
+    {
+      "id": "knockout_blow",
+      "name": "Knockout Blow",
+      "color": "Regent",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 30 damage. If this kills an enemy, gain .\nUpgrade: Deal 38 damage. If this kills an enemy, gain ."
+    },
+    {
+      "id": "largesse",
+      "name": "Largesse",
+      "color": "Regent",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Another player adds 1 random Colorless card to their Hand.\nUpgrade: Another player adds 1 random Upgraded Colorless card to their Hand."
+    },
+    {
+      "id": "lunar_blast",
+      "name": "Lunar Blast",
+      "color": "Regent",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 4 damage for each Skill already played this turn.\nUpgrade: Deal 5 damage for each Skill already played this turn."
+    },
+    {
+      "id": "manifest_authority",
+      "name": "Manifest Authority",
+      "color": "Regent",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Gain 7 Block . Add 1 random Colorless card into your Hand.\nUpgrade: Gain 8 Block . Add 1 random Upgraded Colorless card into your Hand."
+    },
+    {
+      "id": "monologue",
+      "name": "Monologue",
+      "color": "Regent",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Whenever you play a card this turn, gain 1 Strength this turn.\nUpgrade: Retain. Whenever you play a card this turn, gain 1 Strength this turn."
+    },
+    {
+      "id": "orbit",
+      "name": "Orbit",
+      "color": "Regent",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Every 4 you spend, gain ."
+    },
+    {
+      "id": "pale_blue_dot",
+      "name": "Pale Blue Dot",
+      "color": "Regent",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Base: If you play 5 or more cards in a turn, draw 1 card at the start of your next turn.\nUpgrade: If you play 5 or more cards in a turn, draw 2 cards at the start of your next turn."
+    },
+    {
+      "id": "parry",
+      "name": "Parry",
+      "color": "Regent",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Base: Whenever you play Sovereign Blade , gain 6 Block .\nUpgrade: Whenever you play Sovereign Blade , gain 9 Block ."
+    },
+    {
+      "id": "particle_wall",
+      "name": "Particle Wall",
+      "color": "Regent",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Gain 9 Block . Return this card to your Hand.\nUpgrade: Gain 12 Block . Return this card to your Hand."
+    },
+    {
+      "id": "pillar_of_creation",
+      "name": "Pillar of Creation",
+      "color": "Regent",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Base: Whenever you create a card, gain 3 Block .\nUpgrade: Whenever you create a card, gain 4 Block ."
+    },
+    {
+      "id": "prophesize",
+      "name": "Prophesize",
+      "color": "Regent",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Draw 6 cards.\nUpgrade: Draw 9 cards."
+    },
+    {
+      "id": "quasar",
+      "name": "Quasar",
+      "color": "Regent",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Choose 1 of 3 random Colorless cards to add into your Hand.\nUpgrade: Choose 1 of 3 random Upgraded Colorless cards to add into your Hand."
+    },
+    {
+      "id": "radiate",
+      "name": "Radiate",
+      "color": "Regent",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 3 damage to ALL enemies for each gained this turn.\nUpgrade: Deal 4 damage to ALL enemies for each gained this turn."
+    },
+    {
+      "id": "reflect",
+      "name": "Reflect",
+      "color": "Regent",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Gain 17 Block . Blocked attack damage is reflected to your attacker this turn.\nUpgrade: Gain 21 Block . Blocked attack damage is reflected to your attacker this turn."
+    },
+    {
+      "id": "resonance",
+      "name": "Resonance",
+      "color": "Regent",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Gain 1 Strength . ALL enemies lose 1 Strength .\nUpgrade: Gain 2 Strength . ALL enemies lose 1 Strength ."
+    },
+    {
+      "id": "royal_gamble",
+      "name": "Royal Gamble",
+      "color": "Regent",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Gain 9 . Exhaust .\nUpgrade: Retain. Gain 9 . Exhaust ."
+    },
+    {
+      "id": "shining_strike",
+      "name": "Shining Strike",
+      "color": "Regent",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 8 damage. Gain . Put this card on top of your Draw Pile.\nUpgrade: Deal 11 damage. Gain . Put this card on top of your Draw Pile."
+    },
+    {
+      "id": "spectrum_shift",
+      "name": "Spectrum Shift",
+      "color": "Regent",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "At the start of your turn, add 1 random Colorless card into your Hand."
+    },
+    {
+      "id": "stardust",
+      "name": "Stardust",
+      "color": "Regent",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 5 damage to a random enemy X times.\nUpgrade: Deal 7 damage to a random enemy X times."
+    },
+    {
+      "id": "summon_forth",
+      "name": "Summon Forth",
+      "color": "Regent",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Forge 8. Put Sovereign Blade into your Hand from anywhere.\nUpgrade: Forge 11. Put Sovereign Blade into your Hand from anywhere."
+    },
+    {
+      "id": "supermassive",
+      "name": "Supermassive",
+      "color": "Regent",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 5 damage. Deals 3 additional damage for each card you created this combat.\nUpgrade: Deal 5 damage. Deals 4 additional damage for each card you created this combat."
+    },
+    {
+      "id": "terraforming",
+      "name": "Terraforming",
+      "color": "Regent",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Gain 6 Vigor .\nUpgrade: Gain 8 Vigor ."
+    },
+    {
+      "id": "arsenal",
+      "name": "Arsenal",
+      "color": "Regent",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Base: Whenever you play a Colorless card, gain 1 Strength .\nUpgrade: Whenever you play a Colorless card, gain 2 Strength ."
+    },
+    {
+      "id": "beat_into_shape",
+      "name": "Beat into Shape",
+      "color": "Regent",
+      "type": "Attack",
+      "rarity": "Rare",
+      "content": "Base: Deal 5 damage. Forge 5. Forges an additional 5 for every other time you've hit the enemy this turn.\nUpgrade: Deal 7 damage. Forge 7. Forges an additional 7 for every other time you've hit the enemy this turn."
+    },
+    {
+      "id": "big_bang",
+      "name": "Big Bang",
+      "color": "Regent",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: Draw 1 card. Gain . Gain . Forge 5. Exhaust .\nUpgrade: Innate . Draw 1 card. Gain . Gain . Forge 5. Exhaust ."
+    },
+    {
+      "id": "bombardment",
+      "name": "Bombardment",
+      "color": "Regent",
+      "type": "Attack",
+      "rarity": "Rare",
+      "content": "Base: Deal 18 damage. At the start of your turn, plays from the Exhaust Pile. Exhaust .\nUpgrade: Deal 24 damage. At the start of your turn, plays from the Exhaust Pile. Exhaust ."
+    },
+    {
+      "id": "bundle_of_joy",
+      "name": "Bundle of Joy",
+      "color": "Regent",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: Add 3 random Colorless cards into your Hand. Exhaust .\nUpgrade: Add 4 random Colorless cards into your Hand. Exhaust ."
+    },
+    {
+      "id": "comet",
+      "name": "Comet",
+      "color": "Regent",
+      "type": "Attack",
+      "rarity": "Rare",
+      "content": "Base: Deal 33 damage. Apply 3 Weak . Apply 3 Vulnerable .\nUpgrade: Deal 44 damage. Apply 3 Weak . Apply 3 Vulnerable ."
+    },
+    {
+      "id": "crash_landing",
+      "name": "Crash Landing",
+      "color": "Regent",
+      "type": "Attack",
+      "rarity": "Rare",
+      "content": "Base: Deal 21 damage to ALL enemies. Fill your Hand with Debris .\nUpgrade: Deal 26 damage to ALL enemies. Fill your Hand with Debris ."
+    },
+    {
+      "id": "decisions_decisions",
+      "name": "Decisions, Decisions",
+      "color": "Regent",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: Draw 3 cards. Choose a Skill in your Hand and play it 3 times. Exhaust .\nUpgrade: Draw 5 cards. Choose a Skill in your Hand and play it 3 times. Exhaust ."
+    },
+    {
+      "id": "dying_star",
+      "name": "Dying Star",
+      "color": "Regent",
+      "type": "Attack",
+      "rarity": "Rare",
+      "content": "Base: Ethereal. Deal 9 damage to ALL enemies. ALL enemies lose 9 Strength this turn.\nUpgrade: Ethereal. Deal 11 damage to ALL enemies. ALL enemies lose 11 Strength this turn."
+    },
+    {
+      "id": "foregone_conclusion",
+      "name": "Foregone Conclusion",
+      "color": "Regent",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: Next turn, put 2 cards from your Draw Pile into your Hand.\nUpgrade: Next turn, put 3 cards from your Draw Pile into your Hand."
+    },
+    {
+      "id": "guards",
+      "name": "GUARDS!!!",
+      "color": "Regent",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: Transform any number of cards in your Hand into Minion Sacrifice . Exhaust .\nUpgrade: Transform any number of cards in your Hand into Minion Sacrifice+ . Exhaust ."
+    },
+    {
+      "id": "genesis",
+      "name": "Genesis",
+      "color": "Regent",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "At the start of your turn, gain ."
+    },
+    {
+      "id": "hammer_time",
+      "name": "Hammer Time",
+      "color": "Regent",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Whenever you Forge , all allies Forge as well."
+    },
+    {
+      "id": "heavenly_drill",
+      "name": "Heavenly Drill",
+      "color": "Regent",
+      "type": "Attack",
+      "rarity": "Rare",
+      "content": "Base: Deal 8 damage X times. Double X if it's 4 or more.\nUpgrade: Deal 10 damage X times. Double X if it's 4 or more."
+    },
+    {
+      "id": "heirloom_hammer",
+      "name": "Heirloom Hammer",
+      "color": "Regent",
+      "type": "Attack",
+      "rarity": "Rare",
+      "content": "Base: Deal 17 damage. Choose a Colorless card in your Hand. Add a copy of that card into your Hand.\nUpgrade: Deal 22 damage. Choose a Colorless card in your Hand. Add a copy of that card into your Hand."
+    },
+    {
+      "id": "i_am_invincible",
+      "name": "I Am Invincible",
+      "color": "Regent",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: Gain 9 Block . At the end of your turn, if this is on top of your Draw Pile, play it.\nUpgrade: Gain 12 Block . At the end of your turn, if this is on top of your Draw Pile, play it."
+    },
+    {
+      "id": "make_it_so",
+      "name": "Make It So",
+      "color": "Regent",
+      "type": "Attack",
+      "rarity": "Rare",
+      "content": "Base: Deal 6 damage. Every 3 Skills you play in a turn, put this into your Hand.\nUpgrade: Deal 9 damage. Every 3 Skills you play in a turn, put this into your Hand."
+    },
+    {
+      "id": "monarch_s_gaze",
+      "name": "Monarch's Gaze",
+      "color": "Regent",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Whenever you attack an enemy, it loses 1 Strength this turn."
+    },
+    {
+      "id": "neutron_aegis",
+      "name": "Neutron Aegis",
+      "color": "Regent",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Base: Gain 8 Plating .\nUpgrade: Gain 11 Plating ."
+    },
+    {
+      "id": "royalties",
+      "name": "Royalties",
+      "color": "Regent",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Base: At the end of combat, gain 30 Gold.\nUpgrade: At the end of combat, gain 35 Gold."
+    },
+    {
+      "id": "seeking_edge",
+      "name": "Seeking Edge",
+      "color": "Regent",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Base: Forge 7. Sovereign Blade now deals damage to ALL enemies.\nUpgrade: Forge 11. Sovereign Blade now deals damage to ALL enemies."
+    },
+    {
+      "id": "seven_stars",
+      "name": "Seven Stars",
+      "color": "Regent",
+      "type": "Attack",
+      "rarity": "Rare",
+      "content": "Deal 7 damage to ALL enemies 7 times."
+    },
+    {
+      "id": "sword_sage",
+      "name": "Sword Sage",
+      "color": "Regent",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Increase the cost of Sovereign Blade by 1. Sovereign Blade now hits an additional time."
+    },
+    {
+      "id": "the_smith",
+      "name": "The Smith",
+      "color": "Regent",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: Forge 30.\nUpgrade: Forge 40."
+    },
+    {
+      "id": "tyranny",
+      "name": "Tyranny",
+      "color": "Regent",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Base: At the start of your turn, draw 1 card and Exhaust 1 card from your Hand.\nUpgrade: Innate . At the start of your turn, draw 1 card and Exhaust 1 card from your Hand."
+    },
+    {
+      "id": "void_form",
+      "name": "Void Form",
+      "color": "Regent",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Base: End your turn. The first 2 cards you play each turn are free to play.\nUpgrade: End your turn. The first 3 cards you play each turn are free to play."
+    },
+    {
+      "id": "meteor_shower",
+      "name": "Meteor Shower",
+      "color": "Regent",
+      "type": "Attack",
+      "rarity": "Ancient",
+      "content": "Base: Deal 14 damage to ALL enemies. Apply 2 Weak and Vulnerable to ALL enemies.\nUpgrade: Deal 21 damage to ALL enemies. Apply 2 Weak and Vulnerable to ALL enemies."
+    },
+    {
+      "id": "the_sealed_throne",
+      "name": "The Sealed Throne",
+      "color": "Regent",
+      "type": "Power",
+      "rarity": "Ancient",
+      "content": "Base: Whenever you play a card, gain .\nUpgrade: Innate . Whenever you play a card, gain ."
+    },
+    {
+      "id": "bodyguard",
+      "name": "Bodyguard",
+      "color": "Necrobinder",
+      "type": "Skill",
+      "rarity": "Basic",
+      "content": "Base: Summon 5.\nUpgrade: Summon 7."
+    },
+    {
+      "id": "defend_necrobinder",
+      "name": "Defend (Necrobinder)",
+      "color": "Necrobinder",
+      "type": "Skill",
+      "rarity": "Basic",
+      "content": "Base: Gain 5 Block .\nUpgrade: Gain 8 Block ."
+    },
+    {
+      "id": "strike_necrobinder",
+      "name": "Strike (Necrobinder)",
+      "color": "Necrobinder",
+      "type": "Attack",
+      "rarity": "Basic",
+      "content": "Base: Deal 6 damage.\nUpgrade: Deal 9 damage."
+    },
+    {
+      "id": "unleash",
+      "name": "Unleash",
+      "color": "Necrobinder",
+      "type": "Attack",
+      "rarity": "Basic",
+      "content": "Base: Osty deals 6 damage. Deals additional damage equal to Osty's current HP.\nUpgrade: Osty deals 9 damage. Deals additional damage equal to Osty's current HP."
+    },
+    {
+      "id": "afterlife",
+      "name": "Afterlife",
+      "color": "Necrobinder",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Base: Summon 6. Exhaust .\nUpgrade: Summon 9. Exhaust ."
+    },
+    {
+      "id": "blight_strike",
+      "name": "Blight Strike",
+      "color": "Necrobinder",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Deal 8 damage. Apply Doom equal to damage dealt.\nUpgrade: Deal 10 damage. Apply Doom equal to damage dealt."
+    },
+    {
+      "id": "defile",
+      "name": "Defile",
+      "color": "Necrobinder",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Ethereal . Deal 13 damage.\nUpgrade: Ethereal . Deal 17 damage."
+    },
+    {
+      "id": "defy",
+      "name": "Defy",
+      "color": "Necrobinder",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Base: Ethereal . Gain 6 Block . Apply 1 Weak .\nUpgrade: Ethereal . Gain 7 Block . Apply 2 Weak ."
+    },
+    {
+      "id": "drain_power",
+      "name": "Drain Power",
+      "color": "Necrobinder",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Deal 10 damage. Upgrade 2 random cards in your Discard Pile.\nUpgrade: Deal 12 damage. Upgrade 3 random cards in your Discard Pile."
+    },
+    {
+      "id": "fear",
+      "name": "Fear",
+      "color": "Necrobinder",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Ethereal . Deal 7 damage. Apply 1 Vulnerable .\nUpgrade: Ethereal . Deal 8 damage. Apply 2 Vulnerable ."
+    },
+    {
+      "id": "flatten",
+      "name": "Flatten",
+      "color": "Necrobinder",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Osty deals 12 damage. This card costs 0 if Osty has attacked this turn.\nUpgrade: Osty deals 16 damage. This card costs 0 if Osty has attacked this turn."
+    },
+    {
+      "id": "grave_warden",
+      "name": "Grave Warden",
+      "color": "Necrobinder",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Base: Gain 8 Block . Add a Soul into your Draw Pile.\nUpgrade: Gain 10 Block . Add a Soul+ into your Draw Pile."
+    },
+    {
+      "id": "graveblast",
+      "name": "Graveblast",
+      "color": "Necrobinder",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Deal 4 damage. Put a card from your Discard Pile into your Hand. Exhaust .\nUpgrade: Deal 6 damage. Put a card from your Discard Pile into your Hand."
+    },
+    {
+      "id": "invoke",
+      "name": "Invoke",
+      "color": "Necrobinder",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Base: Next turn, Summon 2 and gain .\nUpgrade: Next turn, Summon 3 and gain ."
+    },
+    {
+      "id": "negative_pulse",
+      "name": "Negative Pulse",
+      "color": "Necrobinder",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Base: Gain 5 Block . Apply 7 Doom to ALL enemies.\nUpgrade: Gain 6 Block . Apply 11 Doom to ALL enemies."
+    },
+    {
+      "id": "poke",
+      "name": "Poke",
+      "color": "Necrobinder",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Osty deals 6 damage.\nUpgrade: Osty deals 9 damage."
+    },
+    {
+      "id": "pull_aggro",
+      "name": "Pull Aggro",
+      "color": "Necrobinder",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Base: Summon 4. Gain 7 Block .\nUpgrade: Summon 5. Gain 9 Block ."
+    },
+    {
+      "id": "reap",
+      "name": "Reap",
+      "color": "Necrobinder",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Retain . Deal 27 damage.\nUpgrade: Retain . Deal 33 damage."
+    },
+    {
+      "id": "reave",
+      "name": "Reave",
+      "color": "Necrobinder",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Deal 9 damage. Add a Soul into your Draw Pile.\nUpgrade: Deal 11 damage. Add a Soul+ into your Draw Pile."
+    },
+    {
+      "id": "scourge",
+      "name": "Scourge",
+      "color": "Necrobinder",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Base: Apply 13 Doom . Draw 1 card.\nUpgrade: Apply 16 Doom . Draw 2 cards."
+    },
+    {
+      "id": "sculpting_strike",
+      "name": "Sculpting Strike",
+      "color": "Necrobinder",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Deal 8 damage. Add Ethereal to a card in your Hand.\nUpgrade: Deal 11 damage. Add Ethereal to a card in your Hand."
+    },
+    {
+      "id": "snap",
+      "name": "Snap",
+      "color": "Necrobinder",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Osty deals 7 damage. Add Retain to a card in your Hand.\nUpgrade: Osty deals 10 damage. Add Retain to a card in your Hand."
+    },
+    {
+      "id": "sow",
+      "name": "Sow",
+      "color": "Necrobinder",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Retain . Deal 8 damage to ALL enemies.\nUpgrade: Retain . Deal 11 damage to ALL enemies."
+    },
+    {
+      "id": "wisp",
+      "name": "Wisp",
+      "color": "Necrobinder",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Base: Gain . Exhaust .\nUpgrade: Retain . Gain . Exhaust ."
+    },
+    {
+      "id": "bone_shards",
+      "name": "Bone Shards",
+      "color": "Necrobinder",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: If Osty is alive, he deals 9 damage to ALL enemies and you gain 9 Block . Osty dies.\nUpgrade: If Osty is alive, he deals 12 damage to ALL enemies and you gain 12 Block . Osty dies."
+    },
+    {
+      "id": "borrowed_time",
+      "name": "Borrowed Time",
+      "color": "Necrobinder",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Apply 3 Doom to yourself. Gain ."
+    },
+    {
+      "id": "bury",
+      "name": "Bury",
+      "color": "Necrobinder",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 52 damage.\nUpgrade: Deal 63 damage."
+    },
+    {
+      "id": "calcify",
+      "name": "Calcify",
+      "color": "Necrobinder",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Base: Osty's attacks deal 4 additional damage.\nUpgrade: Osty's attacks deal 6 additional damage."
+    },
+    {
+      "id": "capture_spirit",
+      "name": "Capture Spirit",
+      "color": "Necrobinder",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Enemy loses 3 HP. Add 3 Souls into your Draw Pile.\nUpgrade: Enemy loses 4 HP. Add 4 Souls into your Draw Pile."
+    },
+    {
+      "id": "cleanse",
+      "name": "Cleanse",
+      "color": "Necrobinder",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Summon 3. Exhaust 1 card from your Draw Pile.\nUpgrade: Summon 5. Exhaust 1 card from your Draw Pile."
+    },
+    {
+      "id": "countdown",
+      "name": "Countdown",
+      "color": "Necrobinder",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Base: At the start of your turn, apply 6 Doom to a random enemy.\nUpgrade: At the start of your turn, apply 9 Doom to a random enemy."
+    },
+    {
+      "id": "danse_macabre",
+      "name": "Danse Macabre",
+      "color": "Necrobinder",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Base: Whenever you play a card that costs or more, gain 3 Block .\nUpgrade: Whenever you play a card that costs or more, gain 4 Block ."
+    },
+    {
+      "id": "death_march",
+      "name": "Death March",
+      "color": "Necrobinder",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 8 damage. Deals 3 additional damage for each card drawn during your turn.\nUpgrade: Deal 9 damage. Deals 4 additional damage for each card drawn during your turn."
+    },
+    {
+      "id": "death_s_door",
+      "name": "Death's Door",
+      "color": "Necrobinder",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Gain 6 Block . If you applied Doom this turn, gain Block 2 additional times.\nUpgrade: Gain 7 Block . If you applied Doom this turn, gain Block 2 additional times."
+    },
+    {
+      "id": "deathbringer",
+      "name": "Deathbringer",
+      "color": "Necrobinder",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Apply 21 Doom and 1 Weak to ALL enemies.\nUpgrade: Apply 26 Doom and 1 Weak to ALL enemies."
+    },
+    {
+      "id": "debilitate",
+      "name": "Debilitate",
+      "color": "Necrobinder",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 7 damage. Vulnerable and Weak are twice as effective against the enemy for the next 3 turns.\nUpgrade: Deal 9 damage. Vulnerable and Weak are twice as effective against the enemy for the next 4 turns."
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "color": "Necrobinder",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Gain 11 Block . Next turn, gain .\nUpgrade: Gain 13 Block . Next turn, gain ."
+    },
+    {
+      "id": "dirge",
+      "name": "Dirge",
+      "color": "Necrobinder",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Summon 3 X times. Add X Souls into your Draw Pile.\nUpgrade: Summon 4 X times. Add X Souls+ into your Draw Pile."
+    },
+    {
+      "id": "dredge",
+      "name": "Dredge",
+      "color": "Necrobinder",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Put 3 cards from your Discard Pile into your Hand. Exhaust .\nUpgrade: Retain . Put 3 cards from your Discard Pile into your Hand. Exhaust ."
+    },
+    {
+      "id": "enfeebling_touch",
+      "name": "Enfeebling Touch",
+      "color": "Necrobinder",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Ethereal . Enemy loses 8 Strength this turn.\nUpgrade: Ethereal . Enemy loses 11 Strength this turn."
+    },
+    {
+      "id": "fetch",
+      "name": "Fetch",
+      "color": "Necrobinder",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Osty deals 3 damage. If this is the first time this card has been played this turn, draw 1 card.\nUpgrade: Osty deals 6 damage. If this is the first time this card has been played this turn, draw 1 card."
+    },
+    {
+      "id": "friendship",
+      "name": "Friendship",
+      "color": "Necrobinder",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Base: Lose 2 Strength . Gain at the start of each turn.\nUpgrade: Lose 1 Strength . Gain at the start of each turn."
+    },
+    {
+      "id": "haunt",
+      "name": "Haunt",
+      "color": "Necrobinder",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Base: Whenever you play a Soul , a random enemy loses 6 HP.\nUpgrade: Whenever you play a Soul , a random enemy loses 8 HP."
+    },
+    {
+      "id": "high_five",
+      "name": "High Five",
+      "color": "Necrobinder",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Osty deals 11 damage and applies 2 Vulnerable to ALL enemies.\nUpgrade: Osty deals 13 damage and applies 3 Vulnerable to ALL enemies."
+    },
+    {
+      "id": "legion_of_bone",
+      "name": "Legion of Bone",
+      "color": "Necrobinder",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: ALL players Summon 6. Exhaust .\nUpgrade: ALL players Summon 8. Exhaust ."
+    },
+    {
+      "id": "lethality",
+      "name": "Lethality",
+      "color": "Necrobinder",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Base: Ethereal . The first Attack each turn deals 50% additional damage.\nUpgrade: Ethereal . The first Attack each turn deals 75% additional damage."
+    },
+    {
+      "id": "melancholy",
+      "name": "Melancholy",
+      "color": "Necrobinder",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Gain 13 Block . Reduce this card's cost by whenever ANYONE dies.\nUpgrade: Gain 17 Block . Reduce this card's cost by whenever ANYONE dies."
+    },
+    {
+      "id": "no_escape",
+      "name": "No Escape",
+      "color": "Necrobinder",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Apply 10 Doom , plus an additional 5 Doom for every 10 Doom already on this enemy.\nUpgrade: Apply 15 Doom , plus an additional 5 Doom for every 10 Doom already on this enemy."
+    },
+    {
+      "id": "pagestorm",
+      "name": "Pagestorm",
+      "color": "Necrobinder",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Whenever you draw an Ethereal card, draw 1 card."
+    },
+    {
+      "id": "parse",
+      "name": "Parse",
+      "color": "Necrobinder",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Ethereal . Draw 3 cards.\nUpgrade: Ethereal . Draw 4 cards."
+    },
+    {
+      "id": "pull_from_below",
+      "name": "Pull from Below",
+      "color": "Necrobinder",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 5 damage for each Ethereal card played this combat.\nUpgrade: Deal 7 damage for each Ethereal card played this combat."
+    },
+    {
+      "id": "putrefy",
+      "name": "Putrefy",
+      "color": "Necrobinder",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Apply 2 Weak . Apply 2 Vulnerable . Exhaust .\nUpgrade: Apply 3 Weak . Apply 3 Vulnerable . Exhaust ."
+    },
+    {
+      "id": "rattle",
+      "name": "Rattle",
+      "color": "Necrobinder",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Osty deals 7 damage. Hits an additional time for each other time he has attacked this turn.\nUpgrade: Osty deals 9 damage. Hits an additional time for each other time he has attacked this turn."
+    },
+    {
+      "id": "right_hand_hand",
+      "name": "Right Hand Hand",
+      "color": "Necrobinder",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Osty deals 4 damage. Whenever you play a card that costs or more, return this to your Hand from the Discard Pile.\nUpgrade: Osty deals 6 damage. Whenever you play a card that costs or more, return this to your Hand from the Discard Pile."
+    },
+    {
+      "id": "severance",
+      "name": "Severance",
+      "color": "Necrobinder",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 13 damage. Add a Soul into your Draw Pile, Hand, and Discard Pile.\nUpgrade: Deal 18 damage. Add a Soul into your Draw Pile, Hand, and Discard Pile."
+    },
+    {
+      "id": "shroud",
+      "name": "Shroud",
+      "color": "Necrobinder",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Base: Whenever you apply Doom , gain 2 Block .\nUpgrade: Whenever you apply Doom , gain 3 Block ."
+    },
+    {
+      "id": "sic_em",
+      "name": "Sic 'Em",
+      "color": "Necrobinder",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Osty deals 5 damage. Whenever Osty hits this enemy this turn, Summon 2.\nUpgrade: Osty deals 6 damage. Whenever Osty hits this enemy this turn, Summon 3."
+    },
+    {
+      "id": "sleight_of_flesh",
+      "name": "Sleight of Flesh",
+      "color": "Necrobinder",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Base: Whenever you apply a debuff to an enemy, they take 9 damage.\nUpgrade: Whenever you apply a debuff to an enemy, they take 13 damage."
+    },
+    {
+      "id": "spur",
+      "name": "Spur",
+      "color": "Necrobinder",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Retain . Summon 3. Osty heals 5 HP.\nUpgrade: Retain . Summon 5. Osty heals 7 HP."
+    },
+    {
+      "id": "veilpiercer",
+      "name": "Veilpiercer",
+      "color": "Necrobinder",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 10 damage. The next Ethereal card you play costs 0 .\nUpgrade: Deal 13 damage. The next Ethereal card you play costs 0 ."
+    },
+    {
+      "id": "banshee_s_cry",
+      "name": "Banshee's Cry",
+      "color": "Necrobinder",
+      "type": "Attack",
+      "rarity": "Rare",
+      "content": "Base: Deal 33 damage to ALL enemies. Costs less for each Ethereal card played this combat.\nUpgrade: Deal 39 damage to ALL enemies. Costs less for each Ethereal card played this combat."
+    },
+    {
+      "id": "call_of_the_void",
+      "name": "Call of the Void",
+      "color": "Necrobinder",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Base: At the start of your turn, add 1 random card into your Hand. It gains Ethereal .\nUpgrade: Innate . At the start of your turn, add 1 random card into your Hand. It gains Ethereal ."
+    },
+    {
+      "id": "demesne",
+      "name": "Demesne",
+      "color": "Necrobinder",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Ethereal . At the start of your turn, gain and draw 1 additional card."
+    },
+    {
+      "id": "devour_life",
+      "name": "Devour Life",
+      "color": "Necrobinder",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Base: Whenever you play a Soul , Summon 1.\nUpgrade: Whenever you play a Soul , Summon 2."
+    },
+    {
+      "id": "eidolon",
+      "name": "Eidolon",
+      "color": "Necrobinder",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Exhaust your Hand. If 9 cards were Exhausted this way, gain 1 Intangible ."
+    },
+    {
+      "id": "end_of_days",
+      "name": "End of Days",
+      "color": "Necrobinder",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: Apply 29 Doom to ALL enemies. Kill enemies with at least as much Doom as HP.\nUpgrade: Apply 37 Doom to ALL enemies. Kill enemies with at least as much Doom as HP."
+    },
+    {
+      "id": "eradicate",
+      "name": "Eradicate",
+      "color": "Necrobinder",
+      "type": "Attack",
+      "rarity": "Rare",
+      "content": "Base: Retain . Deal 11 damage X times.\nUpgrade: Retain . Deal 14 damage X times."
+    },
+    {
+      "id": "glimpse_beyond",
+      "name": "Glimpse Beyond",
+      "color": "Necrobinder",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: ALL players add 3 Souls into their Draw Pile. Exhaust .\nUpgrade: ALL players add 4 Souls into their Draw Pile. Exhaust ."
+    },
+    {
+      "id": "hang",
+      "name": "Hang",
+      "color": "Necrobinder",
+      "type": "Attack",
+      "rarity": "Rare",
+      "content": "Base: Deal 10 damage. Double the damage ALL Hang cards deal to this enemy.\nUpgrade: Deal 13 damage. Double the damage ALL Hang cards deal to this enemy."
+    },
+    {
+      "id": "misery",
+      "name": "Misery",
+      "color": "Necrobinder",
+      "type": "Attack",
+      "rarity": "Rare",
+      "content": "Base: Deal 7 damage. Apply any debuffs on the enemy to ALL other enemies.\nUpgrade: Retain . Deal 9 damage. Apply any debuffs on the enemy to ALL other enemies."
+    },
+    {
+      "id": "necro_mastery",
+      "name": "Necro Mastery",
+      "color": "Necrobinder",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Base: Summon 5. Whenever Osty loses HP, ALL enemies lose that much HP as well.\nUpgrade: Summon 8. Whenever Osty loses HP, ALL enemies lose that much HP as well."
+    },
+    {
+      "id": "neurosurge",
+      "name": "Neurosurge",
+      "color": "Necrobinder",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Base: Gain . Draw 2 cards. At the start of your turn, apply 3 Doom to yourself.\nUpgrade: Gain 4 . Draw 2 cards. At the start of your turn, apply 3 Doom to yourself."
+    },
+    {
+      "id": "oblivion",
+      "name": "Oblivion",
+      "color": "Necrobinder",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: Whenever you play a card this turn, apply 3 Doom to the enemy.\nUpgrade: Whenever you play a card this turn, apply 4 Doom to the enemy."
+    },
+    {
+      "id": "reanimate",
+      "name": "Reanimate",
+      "color": "Necrobinder",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: Summon 20. Exhaust .\nUpgrade: Summon 25. Exhaust ."
+    },
+    {
+      "id": "reaper_form",
+      "name": "Reaper Form",
+      "color": "Necrobinder",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Base: Whenever Attacks deal damage, they also apply that much Doom .\nUpgrade: Retain . Whenever Attacks deal damage, they also apply that much Doom ."
+    },
+    {
+      "id": "sacrifice",
+      "name": "Sacrifice",
+      "color": "Necrobinder",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Retain . If Osty is alive, he dies and you gain Block equal to double his Max HP."
+    },
+    {
+      "id": "seance",
+      "name": "Seance",
+      "color": "Necrobinder",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: Ethereal . Transform a card in your Draw Pile into Soul.\nUpgrade: Ethereal . Transform a card in your Draw Pile into Soul+."
+    },
+    {
+      "id": "sentry_mode",
+      "name": "Sentry Mode",
+      "color": "Necrobinder",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "At the start of your turn, add 1 Sweeping Gaze into your Hand."
+    },
+    {
+      "id": "shared_fate",
+      "name": "Shared Fate",
+      "color": "Necrobinder",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: Lose 2 Strength . Enemy loses 2 Strength . Exhaust .\nUpgrade: Lose 2 Strength . Enemy loses 3 Strength . Exhaust ."
+    },
+    {
+      "id": "soul_storm",
+      "name": "Soul Storm",
+      "color": "Necrobinder",
+      "type": "Attack",
+      "rarity": "Rare",
+      "content": "Base: Deal 9 damage. Deals 2 additional damage for each Soul in your Exhaust Pile.\nUpgrade: Deal 9 damage. Deals 3 additional damage for each Soul in your Exhaust Pile."
+    },
+    {
+      "id": "spirit_of_ash",
+      "name": "Spirit of Ash",
+      "color": "Necrobinder",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Base: Whenever you play an Ethereal card, gain 4 Block .\nUpgrade: Whenever you play an Ethereal card, gain 5 Block ."
+    },
+    {
+      "id": "squeeze",
+      "name": "Squeeze",
+      "color": "Necrobinder",
+      "type": "Attack",
+      "rarity": "Rare",
+      "content": "Base: Osty deals 25 damage. Deals 5 additional damage for ALL your other Osty Attacks.\nUpgrade: Osty deals 30 damage. Deals 6 additional damage for ALL your other Osty Attacks."
+    },
+    {
+      "id": "the_scythe",
+      "name": "The Scythe",
+      "color": "Necrobinder",
+      "type": "Attack",
+      "rarity": "Rare",
+      "content": "Base: Deal 13 damage. Permanently increase this card's damage by 3. Exhaust .\nUpgrade: Deal 13 damage. Permanently increase this card's damage by 4. Exhaust ."
+    },
+    {
+      "id": "time_s_up",
+      "name": "Time's Up",
+      "color": "Necrobinder",
+      "type": "Attack",
+      "rarity": "Rare",
+      "content": "Base: Deal damage equal to the enemy's Doom . Exhaust .\nUpgrade: Retain . Deal damage equal to the enemy's Doom . Exhaust ."
+    },
+    {
+      "id": "transfigure",
+      "name": "Transfigure",
+      "color": "Necrobinder",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: Add Replay to a card in your Hand. It costs an extra . Exhaust .\nUpgrade: Add Replay to a card in your Hand. It costs an extra ."
+    },
+    {
+      "id": "undeath",
+      "name": "Undeath",
+      "color": "Necrobinder",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: Gain 7 Block . Add a copy of this card into your Discard Pile.\nUpgrade: Gain 9 Block . Add a copy of this card into your Discard Pile."
+    },
+    {
+      "id": "forbidden_grimoire",
+      "name": "Forbidden Grimoire",
+      "color": "Necrobinder",
+      "type": "Power",
+      "rarity": "Ancient",
+      "content": "At the end of combat, you may remove a card from your Deck. Eternal."
+    },
+    {
+      "id": "protector",
+      "name": "Protector",
+      "color": "Necrobinder",
+      "type": "Attack",
+      "rarity": "Ancient",
+      "content": "Base: Osty deals 10 damage. Deals additional damage equal to Osty's Max HP.\nUpgrade: Osty deals 15 damage. Deals additional damage equal to Osty's Max HP."
+    },
+    {
+      "id": "defend_defect",
+      "name": "Defend (Defect)",
+      "color": "Defect",
+      "type": "Skill",
+      "rarity": "Basic",
+      "content": "Base: Gain 5 Block .\nUpgrade: Gain 8 Block ."
+    },
+    {
+      "id": "dualcast",
+      "name": "Dualcast",
+      "color": "Defect",
+      "type": "Skill",
+      "rarity": "Basic",
+      "content": "Evoke your rightmost Orb twice."
+    },
+    {
+      "id": "strike_defect",
+      "name": "Strike (Defect)",
+      "color": "Defect",
+      "type": "Attack",
+      "rarity": "Basic",
+      "content": "Base: Deal 6 damage.\nUpgrade: Deal 9 damage."
+    },
+    {
+      "id": "zap",
+      "name": "Zap",
+      "color": "Defect",
+      "type": "Skill",
+      "rarity": "Basic",
+      "content": "Channel 1 Lightning ."
+    },
+    {
+      "id": "ball_lightning",
+      "name": "Ball Lightning",
+      "color": "Defect",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Deal 7 damage. Channel 1 Lightning .\nUpgrade: Deal 10 damage. Channel 1 Lightning ."
+    },
+    {
+      "id": "barrage",
+      "name": "Barrage",
+      "color": "Defect",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Deal 5 damage for each Channeled Orb.\nUpgrade: Deal 7 damage for each Channeled Orb."
+    },
+    {
+      "id": "beam_cell",
+      "name": "Beam Cell",
+      "color": "Defect",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Deal 3 damage. Apply 1 Vulnerable.\nUpgrade: Deal 4 damage. Apply 2 Vulnerable."
+    },
+    {
+      "id": "boost_away",
+      "name": "Boost Away",
+      "color": "Defect",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Base: Gain 6 Block . Add a Dazed into your Discard Pile.\nUpgrade: Gain 9 Block . Add a Dazed into your Discard Pile."
+    },
+    {
+      "id": "charge_battery",
+      "name": "Charge Battery",
+      "color": "Defect",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Base: Gain 7 Block . Next turn, gain .\nUpgrade: Gain 10 Block . Next turn, gain ."
+    },
+    {
+      "id": "claw",
+      "name": "Claw",
+      "color": "Defect",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Deal 3 damage. Increase the damage of ALL Claw cards by 2 this combat.\nUpgrade: Deal 4 damage. Increase the damage of ALL Claw cards by 3 this combat."
+    },
+    {
+      "id": "cold_snap",
+      "name": "Cold Snap",
+      "color": "Defect",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Deal 6 damage. Channel 1 Frost .\nUpgrade: Deal 9 damage. Channel 1 Frost ."
+    },
+    {
+      "id": "compile_driver",
+      "name": "Compile Driver",
+      "color": "Defect",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Deal 7 damage. Draw 1 card for each unique Orb you have.\nUpgrade: Deal 10 damage. Draw 1 card for each unique Orb you have."
+    },
+    {
+      "id": "coolheaded",
+      "name": "Coolheaded",
+      "color": "Defect",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Base: Channel 1 Frost . Draw 1 card.\nUpgrade: Channel 1 Frost . Draw 2 cards."
+    },
+    {
+      "id": "focused_strike",
+      "name": "Focused Strike",
+      "color": "Defect",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Deal 9 damage. Gain 1 Focus this turn.\nUpgrade: Deal 11 damage. Gain 2 Focus this turn."
+    },
+    {
+      "id": "go_for_the_eyes",
+      "name": "Go for the Eyes",
+      "color": "Defect",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Deal 3 damage. If the enemy intends to attack, apply 1 Weak.\nUpgrade: Deal 4 damage. If the enemy intends to attack, apply 2 Weak."
+    },
+    {
+      "id": "gunk_up",
+      "name": "Gunk Up",
+      "color": "Defect",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Deal 4 damage 3 times. Add a Slimed into your Discard Pile.\nUpgrade: Deal 5 damage 3 times. Add a Slimed into your Discard Pile."
+    },
+    {
+      "id": "hologram",
+      "name": "Hologram",
+      "color": "Defect",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Base: Gain 3 Block . Put a card from your Discard Pile into your Hand. Exhaust .\nUpgrade: Gain 5 Block . Put a card from your Discard Pile into your Hand."
+    },
+    {
+      "id": "hotfix",
+      "name": "Hotfix",
+      "color": "Defect",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Base: Gain 2 Focus this turn.\nUpgrade: Gain 3 Focus this turn."
+    },
+    {
+      "id": "leap",
+      "name": "Leap",
+      "color": "Defect",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Base: Gain 9 Block .\nUpgrade: Gain 12 Block ."
+    },
+    {
+      "id": "lightning_rod",
+      "name": "Lightning Rod",
+      "color": "Defect",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Base: Gain 4 Block . At the start of the next 2 turns, Channel 1 Lightning .\nUpgrade: Gain 7 Block . At the start of the next 2 turns, Channel 1 Lightning ."
+    },
+    {
+      "id": "momentum_strike",
+      "name": "Momentum Strike",
+      "color": "Defect",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Deal 10 damage. Reduce this card's cost to 0 .\nUpgrade: Deal 13 damage. Reduce this card's cost to 0 ."
+    },
+    {
+      "id": "sweeping_beam",
+      "name": "Sweeping Beam",
+      "color": "Defect",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Deal 6 damage to ALL enemies. Draw 1 card.\nUpgrade: Deal 9 damage to ALL enemies. Draw 1 card."
+    },
+    {
+      "id": "turbo",
+      "name": "TURBO",
+      "color": "Defect",
+      "type": "Skill",
+      "rarity": "Common",
+      "content": "Gain . Add a Void into your Discard Pile."
+    },
+    {
+      "id": "uproar",
+      "name": "Uproar",
+      "color": "Defect",
+      "type": "Attack",
+      "rarity": "Common",
+      "content": "Base: Deal 5 damage twice. Play a random Attack from your Draw Pile.\nUpgrade: Deal 7 damage twice. Play a random Attack from your Draw Pile."
+    },
+    {
+      "id": "boot_sequence",
+      "name": "Boot Sequence",
+      "color": "Defect",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Innate . Gain 10 Block . Exhaust .\nUpgrade: Innate . Gain 13 Block . Exhaust ."
+    },
+    {
+      "id": "bulk_up",
+      "name": "Bulk Up",
+      "color": "Defect",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Base: Lose 1 Orb Slot. Gain 2 Strength . Gain 2 Dexterity .\nUpgrade: Lose 1 Orb Slot. Gain 3 Strength . Gain 3 Dexterity ."
+    },
+    {
+      "id": "capacitor",
+      "name": "Capacitor",
+      "color": "Defect",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Base: Gain 2 Orb Slots.\nUpgrade: Gain 3 Orb Slots."
+    },
+    {
+      "id": "chaos",
+      "name": "Chaos",
+      "color": "Defect",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Channel 1 random Orb.\nUpgrade: Channel 2 random Orbs."
+    },
+    {
+      "id": "chill",
+      "name": "Chill",
+      "color": "Defect",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Channel 1 Frost for each enemy. Exhaust .\nUpgrade: Channel 1 Frost for each enemy."
+    },
+    {
+      "id": "compact",
+      "name": "Compact",
+      "color": "Defect",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Gain 6 Block . Transform all Status cards in your Hand into Fuel .\nUpgrade: Gain 7 Block . Transform all Status cards in your Hand into Fuel+ ."
+    },
+    {
+      "id": "darkness",
+      "name": "Darkness",
+      "color": "Defect",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Channel 1 Dark . Trigger the passive ability of all Dark Orbs.\nUpgrade: Channel 1 Dark . Trigger the passive ability of all Dark Orbs twice."
+    },
+    {
+      "id": "double_energy",
+      "name": "Double Energy",
+      "color": "Defect",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Double your Energy. Exhaust ."
+    },
+    {
+      "id": "energy_surge",
+      "name": "Energy Surge",
+      "color": "Defect",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "ALL players gain . Exhaust ."
+    },
+    {
+      "id": "ftl",
+      "name": "FTL",
+      "color": "Defect",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 5 damage. If you have played fewer than 3 cards this turn, draw 1 card.\nUpgrade: Deal 6 damage. If you have played fewer than 4 cards this turn, draw 1 card."
+    },
+    {
+      "id": "feral",
+      "name": "Feral",
+      "color": "Defect",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "The first time you play a 0 Attack each turn, return it to your Hand."
+    },
+    {
+      "id": "fight_through",
+      "name": "Fight Through",
+      "color": "Defect",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Gain 13 Block . Add 2 Wounds into your Discard Pile.\nUpgrade: Gain 17 Block . Add 2 Wounds into your Discard Pile."
+    },
+    {
+      "id": "fusion",
+      "name": "Fusion",
+      "color": "Defect",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Channel 1 Plasma ."
+    },
+    {
+      "id": "glacier",
+      "name": "Glacier",
+      "color": "Defect",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Gain 6 Block . Channel 2 Frost .\nUpgrade: Gain 9 Block . Channel 2 Frost ."
+    },
+    {
+      "id": "glasswork",
+      "name": "Glasswork",
+      "color": "Defect",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Gain 5 Block . Channel 1 Glass .\nUpgrade: Gain 8 Block . Channel 1 Glass ."
+    },
+    {
+      "id": "hailstorm",
+      "name": "Hailstorm",
+      "color": "Defect",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Base: At the end of your turn, if you have Frost , deal 6 damage to ALL enemies.\nUpgrade: At the end of your turn, if you have Frost , deal 8 damage to ALL enemies."
+    },
+    {
+      "id": "iteration",
+      "name": "Iteration",
+      "color": "Defect",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Base: The first time you draw a Status card each turn, draw 2 cards.\nUpgrade: The first time you draw a Status card each turn, draw 3 cards."
+    },
+    {
+      "id": "loop",
+      "name": "Loop",
+      "color": "Defect",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Base: At the start of your turn, trigger the passive ability of your rightmost Orb.\nUpgrade: At the start of your turn, trigger the passive ability of your rightmost Orb 2 times."
+    },
+    {
+      "id": "null",
+      "name": "Null",
+      "color": "Defect",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 10 damage. Apply 2 Weak. Channel 1 Dark .\nUpgrade: Deal 13 damage. Apply 3 Weak. Channel 1 Dark ."
+    },
+    {
+      "id": "overclock",
+      "name": "Overclock",
+      "color": "Defect",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Draw 2 cards. Add a Burn into your Discard Pile.\nUpgrade: Draw 3 cards. Add a Burn into your Discard Pile."
+    },
+    {
+      "id": "refract",
+      "name": "Refract",
+      "color": "Defect",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 9 damage twice. Channel 2 Glass .\nUpgrade: Deal 12 damage twice. Channel 2 Glass ."
+    },
+    {
+      "id": "rip_and_tear",
+      "name": "Rip and Tear",
+      "color": "Defect",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 7 damage to a random enemy twice.\nUpgrade: Deal 9 damage to a random enemy twice."
+    },
+    {
+      "id": "rocket_punch",
+      "name": "Rocket Punch",
+      "color": "Defect",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 13 damage. Draw 1 card. When a Status card is created, reduce this card's cost to 0 this turn.\nUpgrade: Deal 14 damage. Draw 2 cards. When a Status card is created, reduce this card's cost to 0 this turn."
+    },
+    {
+      "id": "scavenge",
+      "name": "Scavenge",
+      "color": "Defect",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Exhaust a card. Next turn, gain ."
+    },
+    {
+      "id": "scrape",
+      "name": "Scrape",
+      "color": "Defect",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 7 damage. Draw 4 cards. Discard all cards drawn this way that do not cost 0 .\nUpgrade: Deal 10 damage. Draw 5 cards. Discard all cards drawn this way that do not cost 0 ."
+    },
+    {
+      "id": "shadow_shield",
+      "name": "Shadow Shield",
+      "color": "Defect",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Gain 11 Block . Channel 1 Dark .\nUpgrade: Gain 15 Block . Channel 1 Dark ."
+    },
+    {
+      "id": "skim",
+      "name": "Skim",
+      "color": "Defect",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Draw 3 cards.\nUpgrade: Draw 4 cards."
+    },
+    {
+      "id": "smokestack",
+      "name": "Smokestack",
+      "color": "Defect",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Base: Whenever you create a Status, deal 5 damage to ALL enemies.\nUpgrade: Whenever you create a Status, deal 7 damage to ALL enemies."
+    },
+    {
+      "id": "storm",
+      "name": "Storm",
+      "color": "Defect",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Base: Whenever you play a Power, Channel 1 Lightning .\nUpgrade: Whenever you play a Power, Channel 2 Lightning ."
+    },
+    {
+      "id": "subroutine",
+      "name": "Subroutine",
+      "color": "Defect",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Whenever you play a Power, gain ."
+    },
+    {
+      "id": "sunder",
+      "name": "Sunder",
+      "color": "Defect",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 24 damage. If this kills an enemy, gain .\nUpgrade: Deal 32 damage. If this kills an enemy, gain ."
+    },
+    {
+      "id": "synchronize",
+      "name": "Synchronize",
+      "color": "Defect",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Gain 2 Focus this turn for each unique Orb you have. Exhaust .\nUpgrade: Gain 2 Focus this turn for each unique Orb you have."
+    },
+    {
+      "id": "synthesis",
+      "name": "Synthesis",
+      "color": "Defect",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 12 damage. The next Power you play costs 0 .\nUpgrade: Deal 18 damage. The next Power you play costs 0 ."
+    },
+    {
+      "id": "tempest",
+      "name": "Tempest",
+      "color": "Defect",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Channel X Lightning .\nUpgrade: Channel X+1 Lightning ."
+    },
+    {
+      "id": "tesla_coil",
+      "name": "Tesla Coil",
+      "color": "Defect",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 3 damage. Trigger all Lightning against the enemy.\nUpgrade: Deal 6 damage. Trigger all Lightning against the enemy."
+    },
+    {
+      "id": "thunder",
+      "name": "Thunder",
+      "color": "Defect",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Base: Whenever you Evoke Lightning , deal 6 damage to each enemy hit.\nUpgrade: Whenever you Evoke Lightning , deal 8 damage to each enemy hit."
+    },
+    {
+      "id": "white_noise",
+      "name": "White Noise",
+      "color": "Defect",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Add a random Power into your Hand. It's free to play this turn. Exhaust ."
+    },
+    {
+      "id": "adaptive_strike",
+      "name": "Adaptive Strike",
+      "color": "Defect",
+      "type": "Attack",
+      "rarity": "Rare",
+      "content": "Base: Deal 18 damage. Add a 0 copy of this card into your Discard Pile.\nUpgrade: Deal 23 damage. Add a 0 copy of this card into your Discard Pile."
+    },
+    {
+      "id": "all_for_one",
+      "name": "All for One",
+      "color": "Defect",
+      "type": "Attack",
+      "rarity": "Rare",
+      "content": "Base: Deal 10 damage. Put ALL 0 cards from your Discard Pile into your Hand.\nUpgrade: Deal 14 damage. Put ALL 0 cards from your Discard Pile into your Hand."
+    },
+    {
+      "id": "buffer",
+      "name": "Buffer",
+      "color": "Defect",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Base: Prevent the next time you would lose HP.\nUpgrade: Prevent the next 2 times you would lose HP."
+    },
+    {
+      "id": "consuming_shadow",
+      "name": "Consuming Shadow",
+      "color": "Defect",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Base: Channel 2 Dark . At the end of your turn, Evoke your leftmost Orb.\nUpgrade: Channel 3 Dark . At the end of your turn, Evoke your leftmost Orb."
+    },
+    {
+      "id": "coolant",
+      "name": "Coolant",
+      "color": "Defect",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Base: At the start of your turn, gain 2 Block for each unique Orb you have.\nUpgrade: At the start of your turn, gain 3 Block for each unique Orb you have."
+    },
+    {
+      "id": "creative_ai",
+      "name": "Creative AI",
+      "color": "Defect",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "At the start of your turn, add a random Power into your Hand."
+    },
+    {
+      "id": "defragment",
+      "name": "Defragment",
+      "color": "Defect",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Base: Gain 1 Focus .\nUpgrade: Gain 2 Focus ."
+    },
+    {
+      "id": "echo_form",
+      "name": "Echo Form",
+      "color": "Defect",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Base: Ethereal . The first card you play each turn is played an extra time.\nUpgrade: The first card you play each turn is played an extra time."
+    },
+    {
+      "id": "flak_cannon",
+      "name": "Flak Cannon",
+      "color": "Defect",
+      "type": "Attack",
+      "rarity": "Rare",
+      "content": "Base: Exhaust ALL your Status cards. Deal 8 damage to a random enemy for each card Exhausted .\nUpgrade: Exhaust ALL your Status cards. Deal 11 damage to a random enemy for each card Exhausted ."
+    },
+    {
+      "id": "genetic_algorithm",
+      "name": "Genetic Algorithm",
+      "color": "Defect",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: Gain 1 Block . Permanently increase this card's Block by 3. Exhaust .\nUpgrade: Gain 1 Block . Permanently increase this card's Block by 4. Exhaust ."
+    },
+    {
+      "id": "helix_drill",
+      "name": "Helix Drill",
+      "color": "Defect",
+      "type": "Attack",
+      "rarity": "Rare",
+      "content": "Base: Deal 3 damage for each previously spent this turn.\nUpgrade: Deal 5 damage for each previously spent this turn."
+    },
+    {
+      "id": "hyperbeam",
+      "name": "Hyperbeam",
+      "color": "Defect",
+      "type": "Attack",
+      "rarity": "Rare",
+      "content": "Base: Deal 26 damage to ALL enemies. Lose 3 Focus .\nUpgrade: Deal 34 damage to ALL enemies. Lose 3 Focus ."
+    },
+    {
+      "id": "ice_lance",
+      "name": "Ice Lance",
+      "color": "Defect",
+      "type": "Attack",
+      "rarity": "Rare",
+      "content": "Base: Deal 19 damage. Channel 3 Frost .\nUpgrade: Deal 24 damage. Channel 3 Frost ."
+    },
+    {
+      "id": "ignition",
+      "name": "Ignition",
+      "color": "Defect",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: Another player Channels Plasma . Exhaust .\nUpgrade: Another player Channels Plasma ."
+    },
+    {
+      "id": "machine_learning",
+      "name": "Machine Learning",
+      "color": "Defect",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Base: At the start of your turn, draw 1 additional card.\nUpgrade: Innate . At the start of your turn, draw 1 additional card."
+    },
+    {
+      "id": "meteor_strike",
+      "name": "Meteor Strike",
+      "color": "Defect",
+      "type": "Attack",
+      "rarity": "Rare",
+      "content": "Base: Deal 24 damage. Channel 3 Plasma .\nUpgrade: Deal 30 damage. Channel 3 Plasma ."
+    },
+    {
+      "id": "modded",
+      "name": "Modded",
+      "color": "Defect",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: Gain 1 Orb Slot. Draw 1 card. Increase this card's cost by 1.\nUpgrade: Gain 1 Orb Slot. Draw 2 cards. Increase this card's cost by 1."
+    },
+    {
+      "id": "multi_cast",
+      "name": "Multi-Cast",
+      "color": "Defect",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: Evoke your rightmost Orb X times.\nUpgrade: Evoke your rightmost Orb X+1 times."
+    },
+    {
+      "id": "rainbow",
+      "name": "Rainbow",
+      "color": "Defect",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: Channel 1 Lightning . Channel 1 Frost . Channel 1 Dark . Exhaust .\nUpgrade: Channel 1 Lightning . Channel 1 Frost . Channel 1 Dark ."
+    },
+    {
+      "id": "reboot",
+      "name": "Reboot",
+      "color": "Defect",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: Shuffle ALL your cards into your Draw Pile. Draw 4 cards. Exhaust .\nUpgrade: Shuffle ALL your cards into your Draw Pile. Draw 6 cards. Exhaust ."
+    },
+    {
+      "id": "shatter",
+      "name": "Shatter",
+      "color": "Defect",
+      "type": "Attack",
+      "rarity": "Rare",
+      "content": "Base: Deal 11 damage to ALL enemies. Evoke all of your Orbs.\nUpgrade: Deal 15 damage to ALL enemies. Evoke all of your Orbs."
+    },
+    {
+      "id": "signal_boost",
+      "name": "Signal Boost",
+      "color": "Defect",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "The next Power you play is played an additional time. Exhaust ."
+    },
+    {
+      "id": "spinner",
+      "name": "Spinner",
+      "color": "Defect",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Base: At the start of your turn, Channel 1 Glass .\nUpgrade: Channel 1 Glass . At the start of your turn, Channel 1 Glass ."
+    },
+    {
+      "id": "supercritical",
+      "name": "Supercritical",
+      "color": "Defect",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: Gain 4 . Exhaust .\nUpgrade: Gain 6 . Exhaust ."
+    },
+    {
+      "id": "trash_to_treasure",
+      "name": "Trash to Treasure",
+      "color": "Defect",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Base: Whenever you create a Status card, Channel 1 random Orb.\nUpgrade: Innate . Whenever you create a Status card, Channel 1 random Orb."
+    },
+    {
+      "id": "voltaic",
+      "name": "Voltaic",
+      "color": "Defect",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: Channel Lightning equal to the Lightning already Channeled this combat. Exhaust .\nUpgrade: Channel Lightning equal to the Lightning already Channeled this combat."
+    },
+    {
+      "id": "biased_cognition",
+      "name": "Biased Cognition",
+      "color": "Defect",
+      "type": "Power",
+      "rarity": "Ancient",
+      "content": "Base: Gain 4 Focus . At the start of your turn, lose 1 Focus .\nUpgrade: Gain 5 Focus . At the start of your turn, lose 1 Focus ."
+    },
+    {
+      "id": "quadcast",
+      "name": "Quadcast",
+      "color": "Defect",
+      "type": "Skill",
+      "rarity": "Ancient",
+      "content": "Evoke your rightmost Orb 4 times."
+    },
+    {
+      "id": "hello_world",
+      "name": "Hello World",
+      "color": "Defect",
+      "type": "Power",
+      "rarity": "Event",
+      "content": "Base: At the start of your turn, add a random Common card into your Hand.\nUpgrade: Innate . At the start of your turn, add a random Common card into your Hand."
+    },
+    {
+      "id": "rebound",
+      "name": "Rebound",
+      "color": "Defect",
+      "type": "Attack",
+      "rarity": "Event",
+      "content": "Base: Deal 9 damage. Put the next card you play this turn on top of your Draw Pile.\nUpgrade: Deal 12 damage. Put the next card you play this turn on top of your Draw Pile."
+    },
+    {
+      "id": "stack",
+      "name": "Stack",
+      "color": "Defect",
+      "type": "Skill",
+      "rarity": "Event",
+      "content": "Base: Gain Block equal to the number of cards in your Discard Pile.\nUpgrade: Gain Block equal to the number of cards in your Discard Pile +3."
+    },
+    {
+      "id": "automation",
+      "name": "Automation",
+      "color": "Colorless",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Every 10 cards you draw, gain ."
+    },
+    {
+      "id": "believe_in_you",
+      "name": "Believe in You",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Another player gains ."
+    },
+    {
+      "id": "catastrophe",
+      "name": "Catastrophe",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Play 2 random cards from your Draw Pile.\nUpgrade: Play 3 random cards from your Draw Pile."
+    },
+    {
+      "id": "coordinate",
+      "name": "Coordinate",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Give another player 5 Strength this turn.\nUpgrade: Give another player 8 Strength this turn."
+    },
+    {
+      "id": "dark_shackles",
+      "name": "Dark Shackles",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Enemy loses 9 Strength this turn. Exhaust .\nUpgrade: Enemy loses 15 Strength this turn. Exhaust ."
+    },
+    {
+      "id": "discovery",
+      "name": "Discovery",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Choose 1 of 3 random cards to add into your Hand. It costs 0 this turn. Exhaust .\nUpgrade: Choose 1 of 3 random cards to add into your Hand. It costs 0 this turn."
+    },
+    {
+      "id": "dramatic_entrance",
+      "name": "Dramatic Entrance",
+      "color": "Colorless",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Innate . Deal 11 damage to ALL enemies. Exhaust .\nUpgrade: Innate . Deal 15 damage to ALL enemies. Exhaust ."
+    },
+    {
+      "id": "equilibrium",
+      "name": "Equilibrium",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Gain 13 Block . Retain your Hand this turn.\nUpgrade: Gain 16 Block . Retain your Hand this turn."
+    },
+    {
+      "id": "fasten",
+      "name": "Fasten",
+      "color": "Colorless",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Base: Gain an additional 5 Block from Defend cards.\nUpgrade: Gain an additional 7 Block from Defend cards."
+    },
+    {
+      "id": "finesse",
+      "name": "Finesse",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Gain 4 Block . Draw 1 card.\nUpgrade: Gain 7 Block . Draw 1 card."
+    },
+    {
+      "id": "fisticuffs",
+      "name": "Fisticuffs",
+      "color": "Colorless",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 7 damage. Gain Block equal to damage dealt.\nUpgrade: Deal 9 damage. Gain Block equal to damage dealt."
+    },
+    {
+      "id": "flash_of_steel",
+      "name": "Flash of Steel",
+      "color": "Colorless",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 5 damage. Draw 1 card.\nUpgrade: Deal 8 damage. Draw 1 card."
+    },
+    {
+      "id": "gang_up",
+      "name": "Gang Up",
+      "color": "Colorless",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 5 damage. Deals 5 additional damage for each time another player has attacked the enemy this turn.\nUpgrade: Deal 5 damage. Deals 7 additional damage for each time another player has attacked the enemy this turn."
+    },
+    {
+      "id": "huddle_up",
+      "name": "Huddle Up",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: ALL allies draw 2 cards.\nUpgrade: ALL allies draw 3 cards."
+    },
+    {
+      "id": "impatience",
+      "name": "Impatience",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: If you have no Attacks in your Hand, draw 2 cards.\nUpgrade: If you have no Attacks in your Hand, draw 3 cards."
+    },
+    {
+      "id": "intercept",
+      "name": "Intercept",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Gain 9 Block . Redirect all incoming attacks that would be dealt to another player this turn to you.\nUpgrade: Gain 13 Block . Redirect all incoming attacks that would be dealt to another player this turn to you."
+    },
+    {
+      "id": "jack_of_all_trades",
+      "name": "Jack of All Trades",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Add 1 random Colorless card into your Hand. Exhaust .\nUpgrade: Add 2 random Colorless cards into your Hand. Exhaust ."
+    },
+    {
+      "id": "lift",
+      "name": "Lift",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Give another player 11 Block .\nUpgrade: Give another player 16 Block ."
+    },
+    {
+      "id": "mind_blast",
+      "name": "Mind Blast",
+      "color": "Colorless",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Innate . Deal damage equal to the number of cards in your Draw Pile."
+    },
+    {
+      "id": "omnislice",
+      "name": "Omnislice",
+      "color": "Colorless",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 8 damage. Damage ALL other enemies equal to the damage dealt.\nUpgrade: Deal 11 damage. Damage ALL other enemies equal to the damage dealt."
+    },
+    {
+      "id": "panache",
+      "name": "Panache",
+      "color": "Colorless",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Base: Every time you play 5 cards in a single turn, deal 10 damage to ALL enemies.\nUpgrade: Every time you play 5 cards in a single turn, deal 14 damage to ALL enemies."
+    },
+    {
+      "id": "panic_button",
+      "name": "Panic Button",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Gain 30 Block . You cannot gain Block from cards for 2 turns. Exhaust .\nUpgrade: Gain 40 Block . You cannot gain Block from cards for 2 turns. Exhaust ."
+    },
+    {
+      "id": "prep_time",
+      "name": "Prep Time",
+      "color": "Colorless",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Base: At the start of your turn, gain 4 Vigor .\nUpgrade: At the start of your turn, gain 6 Vigor ."
+    },
+    {
+      "id": "production",
+      "name": "Production",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Gain . Exhaust .\nUpgrade: Gain ."
+    },
+    {
+      "id": "prolong",
+      "name": "Prolong",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Next turn, gain Block equal to your current Block . Exhaust .\nUpgrade: Next turn, gain Block equal to your current Block ."
+    },
+    {
+      "id": "prowess",
+      "name": "Prowess",
+      "color": "Colorless",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Base: Gain 1 Strength . Gain 1 Dexterity .\nUpgrade: Gain 2 Strength . Gain 2 Dexterity ."
+    },
+    {
+      "id": "purity",
+      "name": "Purity",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Retain . Exhaust up to 3 cards in your Hand. Exhaust .\nUpgrade: Retain . Exhaust up to 5 cards in your Hand. Exhaust ."
+    },
+    {
+      "id": "restlessness",
+      "name": "Restlessness",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Retain . If your Hand is empty, draw 2 cards and gain .\nUpgrade: Retain . If your Hand is empty, draw 3 cards and gain ."
+    },
+    {
+      "id": "seeker_strike",
+      "name": "Seeker Strike",
+      "color": "Colorless",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 6 damage. Choose 1 of 3 cards in your Draw Pile to add into your Hand.\nUpgrade: Deal 9 damage. Choose 1 of 3 cards in your Draw Pile to add into your Hand."
+    },
+    {
+      "id": "shockwave",
+      "name": "Shockwave",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Apply 3 Weak and Vulnerable to ALL enemies. Exhaust .\nUpgrade: Apply 5 Weak and Vulnerable to ALL enemies. Exhaust ."
+    },
+    {
+      "id": "splash",
+      "name": "Splash",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Choose 1 of 3 random Attacks from another character to add into your Hand. It's free to play this turn.\nUpgrade: Choose 1 of 3 random Upgraded Attacks from another character to add into your Hand. It's free to play this turn."
+    },
+    {
+      "id": "stratagem",
+      "name": "Stratagem",
+      "color": "Colorless",
+      "type": "Power",
+      "rarity": "Uncommon",
+      "content": "Whenever you shuffle your Draw Pile, choose a card from it to put into your Hand."
+    },
+    {
+      "id": "tag_team",
+      "name": "Tag Team",
+      "color": "Colorless",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 11 damage. The next Attack another player plays on the enemy is played an extra time.\nUpgrade: Deal 15 damage. The next Attack another player plays on the enemy is played an extra time."
+    },
+    {
+      "id": "the_bomb",
+      "name": "The Bomb",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: At the end of 3 turns, deal 40 damage to ALL enemies.\nUpgrade: At the end of 3 turns, deal 50 damage to ALL enemies."
+    },
+    {
+      "id": "thinking_ahead",
+      "name": "Thinking Ahead",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Draw 2 cards. Put 1 card from your Hand on top of your Draw Pile. Exhaust .\nUpgrade: Draw 2 cards. Put 1 card from your Hand on top of your Draw Pile."
+    },
+    {
+      "id": "thrumming_hatchet",
+      "name": "Thrumming Hatchet",
+      "color": "Colorless",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 11 damage. At the start of your next turn, return this to your Hand.\nUpgrade: Deal 14 damage. At the start of your next turn, return this to your Hand."
+    },
+    {
+      "id": "ultimate_defend",
+      "name": "Ultimate Defend",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Uncommon",
+      "content": "Base: Gain 11 Block .\nUpgrade: Gain 15 Block ."
+    },
+    {
+      "id": "ultimate_strike",
+      "name": "Ultimate Strike",
+      "color": "Colorless",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 14 damage.\nUpgrade: Deal 20 damage."
+    },
+    {
+      "id": "volley",
+      "name": "Volley",
+      "color": "Colorless",
+      "type": "Attack",
+      "rarity": "Uncommon",
+      "content": "Base: Deal 10 damage to a random enemy X times.\nUpgrade: Deal 14 damage to a random enemy X times."
+    },
+    {
+      "id": "alchemize",
+      "name": "Alchemize",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Procure a random potion. Exhaust ."
+    },
+    {
+      "id": "anointed",
+      "name": "Anointed",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: Put every Rare card from your Draw Pile into your Hand. Exhaust .\nUpgrade: Retain . Put every Rare card from your Draw Pile into your Hand. Exhaust ."
+    },
+    {
+      "id": "beacon_of_hope",
+      "name": "Beacon of Hope",
+      "color": "Colorless",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Base: Whenever you gain Block on your turn, other players gain half that much Block .\nUpgrade: Innate . Whenever you gain Block on your turn, other players gain half that much Block ."
+    },
+    {
+      "id": "beat_down",
+      "name": "Beat Down",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: Play 3 random Attacks from your Discard Pile.\nUpgrade: Play 4 random Attacks from your Discard Pile."
+    },
+    {
+      "id": "bolas",
+      "name": "Bolas",
+      "color": "Colorless",
+      "type": "Attack",
+      "rarity": "Rare",
+      "content": "Base: Deal 3 damage. At the start of your next turn, return this to your Hand.\nUpgrade: Deal 4 damage. At the start of your next turn, return this to your Hand."
+    },
+    {
+      "id": "calamity",
+      "name": "Calamity",
+      "color": "Colorless",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Whenever you play an Attack, add a random Attack into your Hand."
+    },
+    {
+      "id": "entropy",
+      "name": "Entropy",
+      "color": "Colorless",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Base: At the start of your turn, Transform 1 card in your Hand.\nUpgrade: Innate . At the start of your turn, Transform 1 card in your Hand."
+    },
+    {
+      "id": "eternal_armor",
+      "name": "Eternal Armor",
+      "color": "Colorless",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Base: Gain 7 Plating .\nUpgrade: Gain 9 Plating ."
+    },
+    {
+      "id": "gold_axe",
+      "name": "Gold Axe",
+      "color": "Colorless",
+      "type": "Attack",
+      "rarity": "Rare",
+      "content": "Base: Deal damage equal to the number of cards played this combat.\nUpgrade: Retain . Deal damage equal to the number of cards played this combat."
+    },
+    {
+      "id": "hand_of_greed",
+      "name": "Hand of Greed",
+      "color": "Colorless",
+      "type": "Attack",
+      "rarity": "Rare",
+      "content": "Base: Deal 20 damage. If Fatal, gain 20 Gold.\nUpgrade: Deal 25 damage. If Fatal, gain 25 Gold."
+    },
+    {
+      "id": "hidden_gem",
+      "name": "Hidden Gem",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: A random card in your Draw Pile gains Replay 2.\nUpgrade: A random card in your Draw Pile gains Replay 3."
+    },
+    {
+      "id": "jackpot",
+      "name": "Jackpot",
+      "color": "Colorless",
+      "type": "Attack",
+      "rarity": "Rare",
+      "content": "Base: Deal 25 damage. Add 3 random 0 cards into your Hand.\nUpgrade: Deal 30 damage. Add 3 random Upgraded 0 cards into your Hand."
+    },
+    {
+      "id": "knockdown",
+      "name": "Knockdown",
+      "color": "Colorless",
+      "type": "Attack",
+      "rarity": "Rare",
+      "content": "Base: Deal 10 damage. The enemy takes double damage from other players this turn.\nUpgrade: Deal 14 damage. The enemy takes triple damage from other players this turn."
+    },
+    {
+      "id": "master_of_strategy",
+      "name": "Master of Strategy",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: Draw 3 cards. Exhaust .\nUpgrade: Draw 4 cards. Exhaust ."
+    },
+    {
+      "id": "mayhem",
+      "name": "Mayhem",
+      "color": "Colorless",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "At the start of your turn, play the top card of your Draw Pile."
+    },
+    {
+      "id": "mimic",
+      "name": "Mimic",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: Gain Block equal to the Block on another player. Exhaust .\nUpgrade: Gain Block equal to the Block on another player."
+    },
+    {
+      "id": "nostalgia",
+      "name": "Nostalgia",
+      "color": "Colorless",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "The first Attack or Skill you play each turn is placed on top of your Draw Pile."
+    },
+    {
+      "id": "rally",
+      "name": "Rally",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: ALL players gain 12 Block .\nUpgrade: ALL players gain 17 Block ."
+    },
+    {
+      "id": "rend",
+      "name": "Rend",
+      "color": "Colorless",
+      "type": "Attack",
+      "rarity": "Rare",
+      "content": "Base: Deal 15 damage. Deals 5 additional damage for each unique debuff on the enemy.\nUpgrade: Deal 18 damage. Deals 8 additional damage for each unique debuff on the enemy."
+    },
+    {
+      "id": "rolling_boulder",
+      "name": "Rolling Boulder",
+      "color": "Colorless",
+      "type": "Power",
+      "rarity": "Rare",
+      "content": "Base: At the start of your turn, deal 5 damage to ALL enemies and increase this damage by 5.\nUpgrade: At the start of your turn, deal 10 damage to ALL enemies and increase this damage by 5."
+    },
+    {
+      "id": "salvo",
+      "name": "Salvo",
+      "color": "Colorless",
+      "type": "Attack",
+      "rarity": "Rare",
+      "content": "Base: Deal 12 damage. Retain your Hand this turn.\nUpgrade: Deal 16 damage. Retain your Hand this turn."
+    },
+    {
+      "id": "scrawl",
+      "name": "Scrawl",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: Draw cards until your Hand is full. Exhaust .\nUpgrade: Retain . Draw cards until your Hand is full. Exhaust ."
+    },
+    {
+      "id": "secret_technique",
+      "name": "Secret Technique",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: Put a Skill from your Draw Pile into your Hand. Exhaust .\nUpgrade: Put a Skill from your Draw Pile into your Hand."
+    },
+    {
+      "id": "secret_weapon",
+      "name": "Secret Weapon",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: Put an Attack from your Draw Pile into your Hand. Exhaust .\nUpgrade: Put an Attack from your Draw Pile into your Hand."
+    },
+    {
+      "id": "the_gambit",
+      "name": "The Gambit",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Rare",
+      "content": "Base: Gain 50 Block . If you take unblocked attack damage this combat, die.\nUpgrade: Gain 75 Block . If you take unblocked attack damage this combat, die."
+    },
+    {
+      "id": "apotheosis",
+      "name": "Apotheosis",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Ancient",
+      "content": "Innate . Upgrade ALL your cards. Exhaust ."
+    },
+    {
+      "id": "apparition",
+      "name": "Apparition",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Ancient",
+      "content": "Base: Ethereal . Gain 1 Intangible . Exhaust .\nUpgrade: Gain 1 Intangible . Exhaust ."
+    },
+    {
+      "id": "brightest_flame",
+      "name": "Brightest Flame",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Ancient",
+      "content": "Base: Gain . Draw 2 cards. Lose 1 Max HP.\nUpgrade: Gain . Draw 3 cards. Lose 1 Max HP."
+    },
+    {
+      "id": "maul",
+      "name": "Maul",
+      "color": "Colorless",
+      "type": "Attack",
+      "rarity": "Ancient",
+      "content": "Base: Deal 5 damage twice. Increase the damage of ALL Maul cards by 1 this combat.\nUpgrade: Deal 6 damage twice. Increase the damage of ALL Maul cards by 2 this combat."
+    },
+    {
+      "id": "neow_s_fury",
+      "name": "Neow's Fury",
+      "color": "Colorless",
+      "type": "Attack",
+      "rarity": "Ancient",
+      "content": "Base: Deal 10 damage. Put 2 random cards from your Discard Pile into your Hand. Exhaust .\nUpgrade: Deal 14 damage. Put 2 random cards from your Discard Pile into your Hand. Exhaust ."
+    },
+    {
+      "id": "relax",
+      "name": "Relax",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Ancient",
+      "content": "Base: Gain 15 Block . Next turn, draw 2 cards and gain . Exhaust .\nUpgrade: Gain 17 Block . Next turn, draw 3 cards and gain . Exhaust ."
+    },
+    {
+      "id": "whistle",
+      "name": "Whistle",
+      "color": "Colorless",
+      "type": "Attack",
+      "rarity": "Ancient",
+      "content": "Base: Deal 33 damage. Stun the enemy. Exhaust .\nUpgrade: Deal 44 damage. Stun the enemy. Exhaust ."
+    },
+    {
+      "id": "wish",
+      "name": "Wish",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Ancient",
+      "content": "Base: Put a card from your Draw Pile into your Hand. Exhaust .\nUpgrade: Retain . Put a card from your Draw Pile into your Hand. Exhaust ."
+    },
+    {
+      "id": "beckon",
+      "name": "Beckon",
+      "color": "Colorless",
+      "type": "Status",
+      "rarity": "Status",
+      "content": "At the end of your turn, if this is in your Hand, lose 6 HP."
+    },
+    {
+      "id": "burn",
+      "name": "Burn",
+      "color": "Colorless",
+      "type": "Status",
+      "rarity": "Status",
+      "content": "Unplayable . At the end of your turn, if this is in your Hand, take 2 damage."
+    },
+    {
+      "id": "dazed",
+      "name": "Dazed",
+      "color": "Colorless",
+      "type": "Status",
+      "rarity": "Status",
+      "content": "Unplayable . Ethereal ."
+    },
+    {
+      "id": "debris",
+      "name": "Debris",
+      "color": "Colorless",
+      "type": "Status",
+      "rarity": "Status",
+      "content": "Exhaust ."
+    },
+    {
+      "id": "disintegration",
+      "name": "Disintegration",
+      "color": "Colorless",
+      "type": "Status",
+      "rarity": "Status",
+      "content": "At the end of your turn, take 6 damage."
+    },
+    {
+      "id": "frantic_escape",
+      "name": "Frantic Escape",
+      "color": "Colorless",
+      "type": "Status",
+      "rarity": "Status",
+      "content": "Get farther away. Increase Sandpit by 1. Increase the cost of this card by 1."
+    },
+    {
+      "id": "infection",
+      "name": "Infection",
+      "color": "Colorless",
+      "type": "Status",
+      "rarity": "Status",
+      "content": "Unplayable . At the end of your turn, if this is in your Hand, take 3 damage."
+    },
+    {
+      "id": "mind_rot",
+      "name": "Mind Rot",
+      "color": "Colorless",
+      "type": "Status",
+      "rarity": "Status",
+      "content": "Draw 1 fewer card each turn."
+    },
+    {
+      "id": "slimed",
+      "name": "Slimed",
+      "color": "Colorless",
+      "type": "Status",
+      "rarity": "Status",
+      "content": "Draw 1 card. Exhaust ."
+    },
+    {
+      "id": "sloth",
+      "name": "Sloth",
+      "color": "Colorless",
+      "type": "Status",
+      "rarity": "Status",
+      "content": "You cannot play more than 3 cards each turn."
+    },
+    {
+      "id": "soot",
+      "name": "Soot",
+      "color": "Colorless",
+      "type": "Status",
+      "rarity": "Status",
+      "content": "Unplayable ."
+    },
+    {
+      "id": "toxic",
+      "name": "Toxic",
+      "color": "Colorless",
+      "type": "Status",
+      "rarity": "Status",
+      "content": "At the end of your turn, if this is in your Hand, take 5 damage. Exhaust ."
+    },
+    {
+      "id": "void",
+      "name": "Void",
+      "color": "Colorless",
+      "type": "Status",
+      "rarity": "Status",
+      "content": "Unplayable . Ethereal . Whenever you draw this card, lose ."
+    },
+    {
+      "id": "waste_away",
+      "name": "Waste Away",
+      "color": "Colorless",
+      "type": "Status",
+      "rarity": "Status",
+      "content": "Gain 1 less per turn."
+    },
+    {
+      "id": "wound",
+      "name": "Wound",
+      "color": "Colorless",
+      "type": "Status",
+      "rarity": "Status",
+      "content": "Unplayable ."
+    },
+    {
+      "id": "ascender_s_bane",
+      "name": "Ascender's Bane",
+      "color": "Colorless",
+      "type": "Curse",
+      "rarity": "Curse",
+      "content": "Unplayable . Ethereal . Eternal ."
+    },
+    {
+      "id": "bad_luck",
+      "name": "Bad Luck",
+      "color": "Colorless",
+      "type": "Curse",
+      "rarity": "Curse",
+      "content": "Unplayable . At the end of your turn, if this is in your Hand, lose 13 HP. Eternal ."
+    },
+    {
+      "id": "clumsy",
+      "name": "Clumsy",
+      "color": "Colorless",
+      "type": "Curse",
+      "rarity": "Curse",
+      "content": "Unplayable . Ethereal ."
+    },
+    {
+      "id": "curse_of_the_bell",
+      "name": "Curse of the Bell",
+      "color": "Colorless",
+      "type": "Curse",
+      "rarity": "Curse",
+      "content": "Unplayable . Eternal ."
+    },
+    {
+      "id": "debt",
+      "name": "Debt",
+      "color": "Colorless",
+      "type": "Curse",
+      "rarity": "Curse",
+      "content": "Unplayable . At the end of your turn, if this is in your Hand, lose 10 Gold."
+    },
+    {
+      "id": "decay",
+      "name": "Decay",
+      "color": "Colorless",
+      "type": "Curse",
+      "rarity": "Curse",
+      "content": "Unplayable . At the end of your turn, if this is in your Hand, take 2 damage."
+    },
+    {
+      "id": "doubt",
+      "name": "Doubt",
+      "color": "Colorless",
+      "type": "Curse",
+      "rarity": "Curse",
+      "content": "Unplayable . At the end of your turn, if this is in your Hand, gain 1 Weak ."
+    },
+    {
+      "id": "enthralled",
+      "name": "Enthralled",
+      "color": "Colorless",
+      "type": "Curse",
+      "rarity": "Curse",
+      "content": "If this is in your Hand, it must be played before other cards. Eternal ."
+    },
+    {
+      "id": "folly",
+      "name": "Folly",
+      "color": "Colorless",
+      "type": "Curse",
+      "rarity": "Curse",
+      "content": "Unplayable . Innate . Eternal ."
+    },
+    {
+      "id": "greed",
+      "name": "Greed",
+      "color": "Colorless",
+      "type": "Curse",
+      "rarity": "Curse",
+      "content": "Unplayable . Eternal ."
+    },
+    {
+      "id": "guilty",
+      "name": "Guilty",
+      "color": "Colorless",
+      "type": "Curse",
+      "rarity": "Curse",
+      "content": "Unplayable . Removed from your Deck after 5 combats."
+    },
+    {
+      "id": "injury",
+      "name": "Injury",
+      "color": "Colorless",
+      "type": "Curse",
+      "rarity": "Curse",
+      "content": "Unplayable ."
+    },
+    {
+      "id": "normality",
+      "name": "Normality",
+      "color": "Colorless",
+      "type": "Curse",
+      "rarity": "Curse",
+      "content": "Unplayable . You cannot play more than 3 cards this turn."
+    },
+    {
+      "id": "poor_sleep",
+      "name": "Poor Sleep",
+      "color": "Colorless",
+      "type": "Curse",
+      "rarity": "Curse",
+      "content": "Unplayable . Retain ."
+    },
+    {
+      "id": "regret",
+      "name": "Regret",
+      "color": "Colorless",
+      "type": "Curse",
+      "rarity": "Curse",
+      "content": "Unplayable . At the end of your turn, if this is in your Hand, lose 1 HP for each card in your Hand."
+    },
+    {
+      "id": "shame",
+      "name": "Shame",
+      "color": "Colorless",
+      "type": "Curse",
+      "rarity": "Curse",
+      "content": "Unplayable . At the end of your turn, if this is in your Hand, gain 1 Frail ."
+    },
+    {
+      "id": "spore_mind",
+      "name": "Spore Mind",
+      "color": "Colorless",
+      "type": "Curse",
+      "rarity": "Curse",
+      "content": "Exhaust ."
+    },
+    {
+      "id": "writhe",
+      "name": "Writhe",
+      "color": "Colorless",
+      "type": "Curse",
+      "rarity": "Curse",
+      "content": "Unplayable . Innate ."
+    },
+    {
+      "id": "byrdonis_egg",
+      "name": "Byrdonis Egg",
+      "color": "Colorless",
+      "type": "Quest",
+      "rarity": "Quest",
+      "content": "Unplayable . Can be hatched at a Rest Site."
+    },
+    {
+      "id": "lantern_key",
+      "name": "Lantern Key",
+      "color": "Colorless",
+      "type": "Quest",
+      "rarity": "Quest",
+      "content": "Unplayable . Unlocks a special event in the next Act."
+    },
+    {
+      "id": "spoils_map",
+      "name": "Spoils Map",
+      "color": "Colorless",
+      "type": "Quest",
+      "rarity": "Quest",
+      "content": "Unplayable . Marks a site of 600 extra Gold in the next Act."
+    },
+    {
+      "id": "fuel",
+      "name": "Fuel",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Token",
+      "content": "Base: Gain . Draw 1 card. Exhaust .\nUpgrade: Gain . Draw 2 cards. Exhaust ."
+    },
+    {
+      "id": "giant_rock",
+      "name": "Giant Rock",
+      "color": "Colorless",
+      "type": "Attack",
+      "rarity": "Token",
+      "content": "Base: Deal 16 damage.\nUpgrade: Deal 20 damage."
+    },
+    {
+      "id": "luminesce",
+      "name": "Luminesce",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Token",
+      "content": "Retain . Gain . Exhaust ."
+    },
+    {
+      "id": "minion_dive_bomb",
+      "name": "Minion Dive Bomb",
+      "color": "Colorless",
+      "type": "Attack",
+      "rarity": "Token",
+      "content": "Base: Deal 13 damage. Exhaust .\nUpgrade: Deal 16 damage. Exhaust ."
+    },
+    {
+      "id": "minion_sacrifice",
+      "name": "Minion Sacrifice",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Token",
+      "content": "Base: Gain 9 Block . Exhaust .\nUpgrade: Gain 12 Block . Exhaust ."
+    },
+    {
+      "id": "minion_strike",
+      "name": "Minion Strike",
+      "color": "Colorless",
+      "type": "Attack",
+      "rarity": "Token",
+      "content": "Base: Deal 7 damage. Draw 1 card. Exhaust .\nUpgrade: Deal 10 damage. Draw 1 card. Exhaust ."
+    },
+    {
+      "id": "shiv",
+      "name": "Shiv",
+      "color": "Colorless",
+      "type": "Attack",
+      "rarity": "Token",
+      "content": "Base: Deal 4 damage. Exhaust .\nUpgrade: Deal 6 damage. Exhaust ."
+    },
+    {
+      "id": "soul",
+      "name": "Soul",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Token",
+      "content": "Base: Draw 2 cards. Exhaust .\nUpgrade: Draw 3 cards. Exhaust ."
+    },
+    {
+      "id": "sovereign_blade",
+      "name": "Sovereign Blade",
+      "color": "Colorless",
+      "type": "Attack",
+      "rarity": "Token",
+      "content": "Retain . Deal 10 damage."
+    },
+    {
+      "id": "sweeping_gaze",
+      "name": "Sweeping Gaze",
+      "color": "Colorless",
+      "type": "Attack",
+      "rarity": "Token",
+      "content": "Base: Ethereal . Osty deals 10 damage to a random enemy. Exhaust .\nUpgrade: Ethereal . Osty deals 15 damage to a random enemy. Exhaust ."
+    },
+    {
+      "id": "byrd_swoop",
+      "name": "Byrd Swoop",
+      "color": "Colorless",
+      "type": "Attack",
+      "rarity": "Event",
+      "content": "Base: Deal 14 damage.\nUpgrade: Deal 18 damage."
+    },
+    {
+      "id": "enlightenment",
+      "name": "Enlightenment",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Event",
+      "content": "Base: Reduce the cost of ALL cards in your Hand to 1 this turn. Exhaust .\nUpgrade: Reduce the cost of ALL cards in your Hand to 1 this combat. Exhaust ."
+    },
+    {
+      "id": "exterminate",
+      "name": "Exterminate",
+      "color": "Colorless",
+      "type": "Attack",
+      "rarity": "Event",
+      "content": "Base: Deal 3 damage 4 times to ALL enemies.\nUpgrade: Deal 4 damage 4 times to ALL enemies."
+    },
+    {
+      "id": "feeding_frenzy",
+      "name": "Feeding Frenzy",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Event",
+      "content": "Base: Gain 5 Strength this turn.\nUpgrade: Gain 7 Strength this turn."
+    },
+    {
+      "id": "mad_science",
+      "name": "Mad Science",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Event",
+      "content": "This card can be created and customized at the event Tinker Time ."
+    },
+    {
+      "id": "metamorphosis",
+      "name": "Metamorphosis",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Event",
+      "content": "Base: Add 3 random Attacks into your Draw Pile. They're free to play this combat. Exhaust .\nUpgrade: Add 5 random Attacks into your Draw Pile. They're free to play this combat. Exhaust ."
+    },
+    {
+      "id": "peck",
+      "name": "Peck",
+      "color": "Colorless",
+      "type": "Attack",
+      "rarity": "Event",
+      "content": "Base: Deal 2 damage 3 times.\nUpgrade: Deal 2 damage 4 times."
+    },
+    {
+      "id": "squash",
+      "name": "Squash",
+      "color": "Colorless",
+      "type": "Attack",
+      "rarity": "Event",
+      "content": "Base: Deal 10 damage. Apply 2 Vulnerable .\nUpgrade: Deal 12 damage. Apply 3 Vulnerable ."
+    },
+    {
+      "id": "toric_toughness",
+      "name": "Toric Toughness",
+      "color": "Colorless",
+      "type": "Skill",
+      "rarity": "Event",
+      "content": "Base: Gain 5 Block . Gain 5 Block at the start of the next 2 turns.\nUpgrade: Gain 7 Block . Gain 7 Block at the start of the next 2 turns."
+    }
+  ]
+}

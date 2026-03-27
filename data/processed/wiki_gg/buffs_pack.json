@@ -1,0 +1,1019 @@
+{
+  "buffs": [
+    {
+      "id": "strength",
+      "name": "Strength",
+      "content": "Increases (Decreases) attack damage by X.\nNotes: Negative Strength is possible."
+    },
+    {
+      "id": "dexterity",
+      "name": "Dexterity",
+      "content": "Increases Block gained from cards by X."
+    },
+    {
+      "id": "artifact",
+      "name": "Artifact",
+      "content": "Negates X debuffs."
+    },
+    {
+      "id": "block_next_turn",
+      "name": "Block Next Turn",
+      "content": "At the start of your next turn, gain X Block ."
+    },
+    {
+      "id": "draw_cards_next_turn",
+      "name": "Draw Cards Next Turn",
+      "content": "At the start of your next turn, draw X additional cards."
+    },
+    {
+      "id": "energy_next_turn",
+      "name": "Energy Next Turn",
+      "content": "Gain X additional next turn."
+    },
+    {
+      "id": "focus",
+      "name": "Focus",
+      "content": "Increases the effectiveness of Orbs by X.\nNotes: Allows negative values."
+    },
+    {
+      "id": "intangible",
+      "name": "Intangible",
+      "content": "Reduce all damage taken and HP loss to 1. Lasts for X turns.\nNotes: Intangible is removed at the end of the enemy turn. The damage cap is raised to 5 if the attacker has The Boot."
+    },
+    {
+      "id": "plating",
+      "name": "Plating",
+      "content": "At the end of your turn, gain X Block . Plating is reduced by 1 at the start of your turn.\nNotes: On enemies, Plating decreases by 1 per player per turn."
+    },
+    {
+      "id": "retain_hand",
+      "name": "Retain Hand",
+      "content": "Retain your Hand for the next X turns."
+    },
+    {
+      "id": "thorns",
+      "name": "Thorns",
+      "content": "When hit by an attack, deal X damage back."
+    },
+    {
+      "id": "vigor",
+      "name": "Vigor",
+      "content": "Your next Attack deals X additional damage."
+    },
+    {
+      "id": "buffer",
+      "name": "Buffer",
+      "content": "Prevent the next X times you would lose HP."
+    },
+    {
+      "id": "clarity",
+      "name": "Clarity",
+      "content": "At the start of your next X turns, draw 1 additional card."
+    },
+    {
+      "id": "diamond_diadem",
+      "name": "Diamond Diadem",
+      "content": "Enemies deal 50% less damage this turn."
+    },
+    {
+      "id": "duplication",
+      "name": "Duplication",
+      "content": "Your next X cards are played an extra time."
+    },
+    {
+      "id": "flex_potion",
+      "name": "Flex Potion",
+      "content": "Gain X Strength until the end of this turn.\nNotes: Temporary Strength Mechanically identical to Reptile Trinket , Setup Strike , Coordinate , and Feeding Frenzy"
+    },
+    {
+      "id": "gigantification",
+      "name": "Gigantification",
+      "content": "The next 2 Attacks you play deal triple damage."
+    },
+    {
+      "id": "radiance",
+      "name": "Radiance",
+      "content": "Gain additional for the next X turns."
+    },
+    {
+      "id": "regen",
+      "name": "Regen",
+      "content": "At the end of your turn, heal X HP, then reduce Regen by 1."
+    },
+    {
+      "id": "reptile_trinket",
+      "name": "Reptile Trinket",
+      "content": "Gain X Strength until the end of this turn.\nNotes: Temporary Strength gained when a Potion is used. Mechanically identical to Flex Potion , Setup Strike , Coordinate , and Feeding Frenzy"
+    },
+    {
+      "id": "ritual",
+      "name": "Ritual",
+      "content": "At the end of its turn, gains X Strength .\nNotes: Skips the first end-of-turn trigger when applied by an enemy."
+    },
+    {
+      "id": "speed_potion",
+      "name": "Speed Potion",
+      "content": "Gain X Dexterity until the end of this turn.\nNotes: Temporary Dexterity Mechanically identical to Anticipate and Helical Dart"
+    },
+    {
+      "id": "aggression",
+      "name": "Aggression",
+      "content": "At the start of your turn, put X random Attacks from your Discard Pile into your Hand and Upgrade them for the rest of combat."
+    },
+    {
+      "id": "barricade",
+      "name": "Barricade",
+      "content": "Block is not removed at the start of your turn."
+    },
+    {
+      "id": "colossus",
+      "name": "Colossus",
+      "content": "You receive 50% less damage from Vulnerable enemies for X turns."
+    },
+    {
+      "id": "corruption",
+      "name": "Corruption",
+      "content": "Skills cost 0. Whenever you play a Skill, Exhaust it."
+    },
+    {
+      "id": "crimson_mantle",
+      "name": "Crimson Mantle",
+      "content": "At the start of your turn, lose X HP and gain X Block .\nNotes: Self-damage increases each time Crimson Mantle is applied."
+    },
+    {
+      "id": "cruelty",
+      "name": "Cruelty",
+      "content": "Vulnerable enemies take an additional X% damage."
+    },
+    {
+      "id": "dark_embrace",
+      "name": "Dark Embrace",
+      "content": "Whenever a card is Exhausted , draw X cards."
+    },
+    {
+      "id": "demon_form",
+      "name": "Demon Form",
+      "content": "At the start of your turn, gain X Strength ."
+    },
+    {
+      "id": "drum_of_battle",
+      "name": "Drum of Battle",
+      "content": "At the start of your turn, Exhaust the top X cards of your Draw Pile."
+    },
+    {
+      "id": "feel_no_pain",
+      "name": "Feel No Pain",
+      "content": "Whenever a card is Exhausted , gain X Block ."
+    },
+    {
+      "id": "flame_barrier",
+      "name": "Flame Barrier",
+      "content": "Whenever you are attacked this turn, deal X damage back."
+    },
+    {
+      "id": "free_attack",
+      "name": "Free Attack",
+      "content": "Your next X Attacks cost 0 ."
+    },
+    {
+      "id": "guarded",
+      "name": "Guarded",
+      "content": "Take half damage from enemies. Removed if the Tank dies.\nNotes: Applied to allies by the Tank power. The Tank player takes double damage instead."
+    },
+    {
+      "id": "hellraiser",
+      "name": "Hellraiser",
+      "content": "Whenever you draw a card containing \"Strike\", it is played against a random enemy."
+    },
+    {
+      "id": "inferno",
+      "name": "Inferno",
+      "content": "At the start of your turn, lose X HP. Whenever you lose HP on your turn, deal X damage to ALL enemies.\nNotes: Self-damage increases by 1 each time Inferno is applied."
+    },
+    {
+      "id": "juggernaut",
+      "name": "Juggernaut",
+      "content": "Whenever you gain Block , deal X damage to a random enemy."
+    },
+    {
+      "id": "juggling",
+      "name": "Juggling",
+      "content": "Add X copies of the third Attack you play each turn into your Hand.\nNotes: The copy counter resets each turn."
+    },
+    {
+      "id": "one_two_punch",
+      "name": "One-Two Punch",
+      "content": "Your next X Attacks are played an extra time this turn.\nNotes: Removed at end of turn."
+    },
+    {
+      "id": "pyre",
+      "name": "Pyre",
+      "content": "Gain at the start of each turn."
+    },
+    {
+      "id": "rage",
+      "name": "Rage",
+      "content": "Whenever you play an Attack this turn, gain X Block .\nNotes: Removed at end of turn."
+    },
+    {
+      "id": "rupture",
+      "name": "Rupture",
+      "content": "Whenever you lose HP on your turn, gain X Strength .\nNotes: HP loss from cards you play is batched and applied after the card resolves."
+    },
+    {
+      "id": "self_forming_clay",
+      "name": "Self-Forming Clay",
+      "content": "Gain X Block next turn.\nNotes: Triggers when your Block is cleared (reduced to 0). Removed after triggering."
+    },
+    {
+      "id": "setup_strike",
+      "name": "Setup Strike",
+      "content": "Gain X Strength until the end of this turn.\nNotes: Temporary Strength Mechanically identical to Flex Potion , Reptile Trinket , Coordinate , and Feeding Frenzy"
+    },
+    {
+      "id": "stampede",
+      "name": "Stampede",
+      "content": "At the end of your turn, X random Attacks in your Hand are played against a random enemy."
+    },
+    {
+      "id": "tank",
+      "name": "Tank",
+      "content": "Take double damage from enemies. Allies take half damage from enemies."
+    },
+    {
+      "id": "unmovable",
+      "name": "Unmovable",
+      "content": "The first X times you gain Block from a card each turn, double the amount gained."
+    },
+    {
+      "id": "vicious",
+      "name": "Vicious",
+      "content": "Whenever you apply Vulnerable , draw X cards."
+    },
+    {
+      "id": "accelerant",
+      "name": "Accelerant",
+      "content": "Poison is triggered X additional times."
+    },
+    {
+      "id": "accuracy",
+      "name": "Accuracy",
+      "content": "Shivs deal X additional damage."
+    },
+    {
+      "id": "afterimage",
+      "name": "Afterimage",
+      "content": "Whenever you play a card, gain X Block ."
+    },
+    {
+      "id": "anticipate",
+      "name": "Anticipate",
+      "content": "Gain X Dexterity until the end of this turn.\nNotes: Temporary Dexterity Mechanically identical to Speed Potion and Helical Dart"
+    },
+    {
+      "id": "blade_of_ink",
+      "name": "Blade of Ink",
+      "content": "Whenever you play an Attack this turn, gain X Strength this turn."
+    },
+    {
+      "id": "blur",
+      "name": "Blur",
+      "content": "Block is not removed at the start of your next X turns."
+    },
+    {
+      "id": "burst",
+      "name": "Burst",
+      "content": "Your next X Skills are played an extra time this turn.\nNotes: Removed at end of turn."
+    },
+    {
+      "id": "corrosive_wave",
+      "name": "Corrosive Wave",
+      "content": "Whenever you draw a card this turn, apply X Poison to ALL enemies."
+    },
+    {
+      "id": "double_damage",
+      "name": "Double Damage",
+      "content": "For the next X turns, Attacks deal double damage."
+    },
+    {
+      "id": "envenom",
+      "name": "Envenom",
+      "content": "Whenever you deal unblocked attack damage, apply X Poison ."
+    },
+    {
+      "id": "fan_of_knives",
+      "name": "Fan of Knives",
+      "content": "Shivs hit ALL enemies."
+    },
+    {
+      "id": "free_skill",
+      "name": "Free Skill",
+      "content": "The next X Skills you play cost 0 ."
+    },
+    {
+      "id": "helical_dart",
+      "name": "Helical Dart",
+      "content": "Gain X Dexterity until the end of this turn.\nNotes: Temporary Dexterity Gained when a Shiv is played. Mechanically identical to Speed Potion and Anticipate ."
+    },
+    {
+      "id": "infinite_blades",
+      "name": "Infinite Blades",
+      "content": "At the start of your turn, add X Shivs into your Hand."
+    },
+    {
+      "id": "master_planner",
+      "name": "Master Planner",
+      "content": "When you play a Skill, it gains Sly."
+    },
+    {
+      "id": "nightmare",
+      "name": "Nightmare",
+      "content": "Add X copies of a chosen card into your Hand next turn."
+    },
+    {
+      "id": "phantom_blades",
+      "name": "Phantom Blades",
+      "content": "Shivs gain Retain . The first Shiv you play each turn deals X additional damage."
+    },
+    {
+      "id": "serpent_form",
+      "name": "Serpent Form",
+      "content": "Whenever you play a card, deal X damage to a random enemy."
+    },
+    {
+      "id": "shadow_step",
+      "name": "Shadow Step",
+      "content": "For the next X turns after this one, Attacks deal double damage.\nNotes: At the start of your turn, grants X Double Damage and is removed. It is possible to stack Shadow Step with Burst or Master Planner"
+    },
+    {
+      "id": "shadowmeld",
+      "name": "Shadowmeld",
+      "content": "Double your Block gain this turn X times.\nNotes: Removed at end of turn. Stacks multiplicatively (2^X multiplier)."
+    },
+    {
+      "id": "sneaky",
+      "name": "Sneaky",
+      "content": "Whenever another player attacks an enemy, gain X Block ."
+    },
+    {
+      "id": "speedster",
+      "name": "Speedster",
+      "content": "Whenever you draw a card during your turn, deal X damage to ALL enemies.\nNotes: Only triggers on cards drawn outside the normal hand draw (e.g. from card effects)."
+    },
+    {
+      "id": "the_hunt",
+      "name": "The Hunt",
+      "content": "Gain X additional card rewards at the end of combat."
+    },
+    {
+      "id": "tools_of_the_trade",
+      "name": "Tools of the Trade",
+      "content": "At the start of your turn, draw X cards and discard X cards."
+    },
+    {
+      "id": "tracking",
+      "name": "Tracking",
+      "content": "Weak enemies take X times more damage from Attacks."
+    },
+    {
+      "id": "well_laid_plans",
+      "name": "Well-Laid Plans",
+      "content": "At the end of your turn, Retain up to X cards."
+    },
+    {
+      "id": "arsenal",
+      "name": "Arsenal",
+      "content": "Whenever you play a Colorless card, gain X Strength ."
+    },
+    {
+      "id": "black_hole",
+      "name": "Black Hole",
+      "content": "Whenever you spend or gain 1 , deal X damage to ALL enemies."
+    },
+    {
+      "id": "child_of_the_stars",
+      "name": "Child of the Stars",
+      "content": "Gain X Block for each 1 spent."
+    },
+    {
+      "id": "foregone_conclusion",
+      "name": "Foregone Conclusion",
+      "content": "Next turn, put X cards from your Draw Pile into your Hand."
+    },
+    {
+      "id": "furnace",
+      "name": "Furnace",
+      "content": "At the start of your turn, Forge X."
+    },
+    {
+      "id": "genesis",
+      "name": "Genesis",
+      "content": "At the start of your turn, gain 1 ."
+    },
+    {
+      "id": "hammer_time",
+      "name": "Hammer Time",
+      "content": "Whenever you Forge , all allies Forge as well."
+    },
+    {
+      "id": "monarch_s_gaze",
+      "name": "Monarch's Gaze",
+      "content": "Whenever you attack an enemy, it loses X Strength this turn."
+    },
+    {
+      "id": "monologue",
+      "name": "Monologue",
+      "content": "Whenever you play a card this turn, gain 1 Strength this turn.\nNotes: Removed at end of turn. Strength gained is also removed."
+    },
+    {
+      "id": "orbit",
+      "name": "Orbit",
+      "content": "Every 4 you spend, gain X ."
+    },
+    {
+      "id": "pale_blue_dot",
+      "name": "Pale Blue Dot",
+      "content": "If you play 5 or more cards in a turn, draw X additional cards at the start of your next turn."
+    },
+    {
+      "id": "parry",
+      "name": "Parry",
+      "content": "Whenever you play Sovereign Blade , gain X Block ."
+    },
+    {
+      "id": "pillar_of_creation",
+      "name": "Pillar of Creation",
+      "content": "Whenever you create a card, gain X Block ."
+    },
+    {
+      "id": "reflect",
+      "name": "Reflect",
+      "content": "Blocked damage is reflected to your attacker for X turns."
+    },
+    {
+      "id": "royalties",
+      "name": "Royalties",
+      "content": "At the end of combat, gain X Gold."
+    },
+    {
+      "id": "seeking_edge",
+      "name": "Seeking Edge",
+      "content": "Sovereign Blade now hits ALL enemies."
+    },
+    {
+      "id": "spectrum_shift",
+      "name": "Spectrum Shift",
+      "content": "At the start of your turn, add X random Colorless cards into your Hand."
+    },
+    {
+      "id": "star_next_turn",
+      "name": "Star Next Turn",
+      "content": "Gain X next turn.\nNotes: Removed after triggering."
+    },
+    {
+      "id": "sword_sage",
+      "name": "Sword Sage",
+      "content": "Increase the cost of Sovereign Blade by X. Sovereign Blade now hits X additional times."
+    },
+    {
+      "id": "the_sealed_throne",
+      "name": "The Sealed Throne",
+      "content": "Whenever you play a card, gain 1 ."
+    },
+    {
+      "id": "tyranny",
+      "name": "Tyranny",
+      "content": "At the start of your turn, draw X cards and Exhaust X cards from your Hand."
+    },
+    {
+      "id": "void_form",
+      "name": "Void Form",
+      "content": "The first X cards you play each turn are free to play."
+    },
+    {
+      "id": "calcify",
+      "name": "Calcify",
+      "content": "Osty's attacks deal X additional damage."
+    },
+    {
+      "id": "call_of_the_void",
+      "name": "Call of the Void",
+      "content": "At the start of your turn, add X random cards into your Hand and apply Ethereal to them."
+    },
+    {
+      "id": "countdown",
+      "name": "Countdown",
+      "content": "At the start of your turn, apply X Doom to a random enemy."
+    },
+    {
+      "id": "danse_macabre",
+      "name": "Danse Macabre",
+      "content": "Whenever you play a card that costs 2 or more, gain X Block ."
+    },
+    {
+      "id": "demesne",
+      "name": "Demesne",
+      "content": "At the start of your turn, gain and draw X additional cards."
+    },
+    {
+      "id": "devour_life",
+      "name": "Devour Life",
+      "content": "Whenever you play a Soul , Summon X."
+    },
+    {
+      "id": "die_for_you",
+      "name": "Die for You",
+      "content": "Osty absorbs all unblocked attack damage."
+    },
+    {
+      "id": "forbidden_grimoire",
+      "name": "Forbidden Grimoire",
+      "content": "At the end of combat, remove X cards from your Deck."
+    },
+    {
+      "id": "friendship",
+      "name": "Friendship",
+      "content": "Gain at the start of each turn."
+    },
+    {
+      "id": "haunt",
+      "name": "Haunt",
+      "content": "Whenever you play a Soul , a random enemy loses X HP."
+    },
+    {
+      "id": "lethality",
+      "name": "Lethality",
+      "content": "The first Attack each turn deals X% additional damage."
+    },
+    {
+      "id": "necro_mastery",
+      "name": "Necro Mastery",
+      "content": "Whenever Osty loses HP, ALL enemies lose X times that much HP as well."
+    },
+    {
+      "id": "pagestorm",
+      "name": "Pagestorm",
+      "content": "Whenever you draw an Ethereal card, draw X cards."
+    },
+    {
+      "id": "reaper_form",
+      "name": "Reaper Form",
+      "content": "Whenever Attacks deal damage, they also apply X times that much Doom ."
+    },
+    {
+      "id": "sentry_mode",
+      "name": "Sentry Mode",
+      "content": "At the start of your turn, add X Sweeping Gaze into your Hand."
+    },
+    {
+      "id": "shroud",
+      "name": "Shroud",
+      "content": "Whenever you apply Doom , gain X Block ."
+    },
+    {
+      "id": "sleight_of_flesh",
+      "name": "Sleight of Flesh",
+      "content": "Whenever you apply a debuff to an enemy, they take X damage.\nNotes: Does not trigger from temporary debuffs."
+    },
+    {
+      "id": "spirit_of_ash",
+      "name": "Spirit of Ash",
+      "content": "Whenever you play an Ethereal card, gain X Block ."
+    },
+    {
+      "id": "summon_next_turn",
+      "name": "Summon Next Turn",
+      "content": "At the start of your next turn, Summon X.\nNotes: Removed after triggering."
+    },
+    {
+      "id": "veilpiercer",
+      "name": "Veilpiercer",
+      "content": "The next X Ethereal cards you play cost 0."
+    },
+    {
+      "id": "consuming_shadow",
+      "name": "Consuming Shadow",
+      "content": "At the end of your turn, Evoke your X leftmost Orbs."
+    },
+    {
+      "id": "coolant",
+      "name": "Coolant",
+      "content": "At the start of your turn, gain X Block for each unique Orb you have."
+    },
+    {
+      "id": "creative_ai",
+      "name": "Creative AI",
+      "content": "At the start of your turn, add X random Powers into your Hand."
+    },
+    {
+      "id": "echo_form",
+      "name": "Echo Form",
+      "content": "The first X cards you play each turn are played an extra time."
+    },
+    {
+      "id": "feral",
+      "name": "Feral",
+      "content": "The first X times you play a 0 Attack each turn, return it to your Hand."
+    },
+    {
+      "id": "focused_strike",
+      "name": "Focused Strike",
+      "content": "Gain X Focus until the end of this turn.\nNotes: Temporary Focus Mechanically identical to Hotfix and Synchronize"
+    },
+    {
+      "id": "free_power",
+      "name": "Free Power",
+      "content": "The next X Powers you play cost 0 ."
+    },
+    {
+      "id": "hailstorm",
+      "name": "Hailstorm",
+      "content": "At the end of your turn, if you have Frost , deal X damage to ALL enemies."
+    },
+    {
+      "id": "hello_world",
+      "name": "Hello World",
+      "content": "At the start of your turn, add X random Common cards into your Hand."
+    },
+    {
+      "id": "hotfix",
+      "name": "Hotfix",
+      "content": "Gain X Focus until the end of this turn.\nNotes: Temporary Focus Mechanically identical to Focused Strike and Synchronize"
+    },
+    {
+      "id": "iteration",
+      "name": "Iteration",
+      "content": "The first time you draw a Status card each turn, draw X cards."
+    },
+    {
+      "id": "lightning_rod",
+      "name": "Lightning Rod",
+      "content": "At the start of the next X turns, Channel 1 Lightning ."
+    },
+    {
+      "id": "loop",
+      "name": "Loop",
+      "content": "At the start of your turn, trigger the passive ability of your next Orb X times."
+    },
+    {
+      "id": "machine_learning",
+      "name": "Machine Learning",
+      "content": "At the start of your turn, draw X additional cards."
+    },
+    {
+      "id": "rebound",
+      "name": "Rebound",
+      "content": "The next X cards you play this turn are placed on the top of your Draw Pile.\nNotes: Removed at end of turn."
+    },
+    {
+      "id": "signal_boost",
+      "name": "Signal Boost",
+      "content": "Your next X Powers are played an extra time.\nNotes: Loses 1 stack each time a Power is played an extra time."
+    },
+    {
+      "id": "smokestack",
+      "name": "Smokestack",
+      "content": "Whenever you create a Status, deal X damage to ALL enemies."
+    },
+    {
+      "id": "spinner",
+      "name": "Spinner",
+      "content": "At the start of your turn, Channel X Glass ."
+    },
+    {
+      "id": "storm",
+      "name": "Storm",
+      "content": "Whenever you play a Power, Channel X Lightning ."
+    },
+    {
+      "id": "subroutine",
+      "name": "Subroutine",
+      "content": "Whenever you play a Power, gain X ."
+    },
+    {
+      "id": "synchronize",
+      "name": "Synchronize",
+      "content": "Gain X Focus until the end of this turn.\nNotes: Temporary Focus Mechanically identical to Focused Strike and Hotfix"
+    },
+    {
+      "id": "thunder",
+      "name": "Thunder",
+      "content": "Whenever you Evoke Lightning , deal X damage to each enemy hit."
+    },
+    {
+      "id": "trash_to_treasure",
+      "name": "Trash to Treasure",
+      "content": "Whenever you create a Status, Channel X random Orbs."
+    },
+    {
+      "id": "automation",
+      "name": "Automation",
+      "content": "Every 10 cards you draw, gain ."
+    },
+    {
+      "id": "beacon_of_hope",
+      "name": "Beacon of Hope",
+      "content": "Whenever you gain Block on your turn, other players gain half that much Block X times."
+    },
+    {
+      "id": "calamity",
+      "name": "Calamity",
+      "content": "Whenever you play an Attack, add X random Attacks into your Hand."
+    },
+    {
+      "id": "coordinate",
+      "name": "Coordinate",
+      "content": "Gain X Strength until the end of this turn.\nNotes: Temporary Strength Mechanically identical to Flex Potion , Reptile Trinket , Setup Strike , and Feeding Frenzy"
+    },
+    {
+      "id": "covered",
+      "name": "Covered",
+      "content": "An ally is covering you. All attacks that would be directed to you are redirected to them instead."
+    },
+    {
+      "id": "curious",
+      "name": "Curious",
+      "content": "Powers cost X less."
+    },
+    {
+      "id": "entropy",
+      "name": "Entropy",
+      "content": "At the start of your turn, Transform X cards in your Hand."
+    },
+    {
+      "id": "fasten",
+      "name": "Fasten",
+      "content": "Gain an additional X Block from Defend cards."
+    },
+    {
+      "id": "feeding_frenzy",
+      "name": "Feeding Frenzy",
+      "content": "Gain X Strength until the end of this turn.\nNotes: Temporary Strength Mechanically identical to Flex Potion , Reptile Trinket , Setup Strike , and Feeding Frenzy"
+    },
+    {
+      "id": "improvement",
+      "name": "Improvement",
+      "content": "At the end of combat, Upgrade X random cards."
+    },
+    {
+      "id": "intercept",
+      "name": "Intercept",
+      "content": "You are covering an ally. All attacks that would be directed towards them are redirected towards you.\nNotes: Multiplayer only. Damage taken is multiplied by the number of players covered + 1. Removed at the end of the enemy turn."
+    },
+    {
+      "id": "mayhem",
+      "name": "Mayhem",
+      "content": "At the start of your turn, play the next X top cards of your Draw Pile."
+    },
+    {
+      "id": "nostalgia",
+      "name": "Nostalgia",
+      "content": "The first X Attacks or Skills you play each turn are placed on top of your Draw Pile."
+    },
+    {
+      "id": "panache",
+      "name": "Panache",
+      "content": "If you play 5 more cards this turn, deal X damage to ALL enemies.\nNotes: Counter resets to 5 each turn. Displayed amount shows cards remaining, not power stacks."
+    },
+    {
+      "id": "prep_time",
+      "name": "Prep Time",
+      "content": "At the start of your turn, gain X Vigor ."
+    },
+    {
+      "id": "rolling_boulder",
+      "name": "Rolling Boulder",
+      "content": "At the start of your turn, deal X damage to ALL enemies and increase this damage by 5."
+    },
+    {
+      "id": "stratagem",
+      "name": "Stratagem",
+      "content": "Whenever you shuffle your Draw Pile, choose X cards from it to put into your Hand.\nNotes: Singleplayer only."
+    },
+    {
+      "id": "the_bomb",
+      "name": "The Bomb",
+      "content": "At the end of X turns, deal 40 damage to ALL enemies."
+    },
+    {
+      "id": "toric_toughness",
+      "name": "Toric Toughness",
+      "content": "Gain N Block at the start of the next X turns."
+    },
+    {
+      "id": "adaptable",
+      "name": "Adaptable",
+      "content": "When it would be defeated, it instead revives even stronger."
+    },
+    {
+      "id": "asleep",
+      "name": "Asleep",
+      "content": "Awakens upon losing HP or after X turns."
+    },
+    {
+      "id": "back_attack",
+      "name": "Back Attack",
+      "content": "Deals 50% more damage when it is attacking you from behind."
+    },
+    {
+      "id": "burrowed",
+      "name": "Burrowed",
+      "content": "Block is not removed at the start of its turn. Stunned if all Block is removed.\nNotes: Loses all Block when Burrowed is removed."
+    },
+    {
+      "id": "crab_rage",
+      "name": "Crab Rage",
+      "content": "When an ally dies, it gains 5 Strength and 99 Block ."
+    },
+    {
+      "id": "curl_up",
+      "name": "Curl Up",
+      "content": "Gains X Block upon first being hit."
+    },
+    {
+      "id": "enrage",
+      "name": "Enrage",
+      "content": "Whenever you play a Skill, gains X Strength ."
+    },
+    {
+      "id": "escape_artist",
+      "name": "Escape Artist",
+      "content": "Tries to escape the combat after X turns."
+    },
+    {
+      "id": "flutter",
+      "name": "Flutter",
+      "content": "Receives 50% less damage from Attacks. Deal attack damage X times to Stun it."
+    },
+    {
+      "id": "galvanic",
+      "name": "Galvanic",
+      "content": "Powers are afflicted with Galvanized.\nNotes: Applied innately by Globe Head at combat start. Afflicts all Power-type cards with the Galvanized affliction, which deals damage to the card's owner when played."
+    },
+    {
+      "id": "gravity",
+      "name": "Gravity",
+      "content": "Whenever you play a card this turn, deal X damage to ALL enemies.\nNotes: No known sources found in cards, relics, potions, or monsters. May be granted by an event or other mechanism."
+    },
+    {
+      "id": "hard_to_kill",
+      "name": "Hard to Kill",
+      "content": "Reduce all damage taken and HP lost by it to 9.\nNotes: Applied innately by Exoskeleton. Caps all damage instances to 9."
+    },
+    {
+      "id": "hardened_shell",
+      "name": "Hardened Shell",
+      "content": "It cannot lose more than X HP each turn.\nNotes: Applied innately by Skulking Colony. Damage cap resets at the start of each player turn."
+    },
+    {
+      "id": "hatch",
+      "name": "Hatch",
+      "content": "Hatches after X turns."
+    },
+    {
+      "id": "heist",
+      "name": "Heist",
+      "content": "When killed, returns all the stolen Gold.\nNotes: Applied to Fat Gremlin when Gremlin Merc dies (via Surprise power). Killing the Fat Gremlin returns stolen gold."
+    },
+    {
+      "id": "high_voltage",
+      "name": "High Voltage",
+      "content": "At the start of its turn, it gains X Strength .\nNotes: Applied innately by Zapbot."
+    },
+    {
+      "id": "illusion",
+      "name": "Illusion",
+      "content": "When this dies, it revives next turn at full HP."
+    },
+    {
+      "id": "infested",
+      "name": "Infested",
+      "content": "Upon dying, summons... something.\nNotes: Spawns 4 Wrigglers on death."
+    },
+    {
+      "id": "leadership",
+      "name": "Leadership",
+      "content": "All other allies deal X additional damage."
+    },
+    {
+      "id": "minion",
+      "name": "Minion",
+      "content": "Minions abandon combat without their leader."
+    },
+    {
+      "id": "nemesis",
+      "name": "Nemesis",
+      "content": "At the end of every other turn, gains Intangible 1."
+    },
+    {
+      "id": "painful_stabs",
+      "name": "Painful Stabs",
+      "content": "Shuffle X Wounds into your Discard Pile each time you receive unblocked attack damage."
+    },
+    {
+      "id": "paper_cuts",
+      "name": "Paper Cuts",
+      "content": "Whenever it deals unblocked attack damage to you, you lose X Max HP."
+    },
+    {
+      "id": "personal_hive",
+      "name": "Personal Hive",
+      "content": "Whenever this enemy is hit by an Attack, add X Dazed into your Draw Pile."
+    },
+    {
+      "id": "possess_speed",
+      "name": "Possess Speed",
+      "content": "When killed, return all stolen Dexterity to the player."
+    },
+    {
+      "id": "possess_strength",
+      "name": "Possess Strength",
+      "content": "When killed, return all stolen Strength to the player."
+    },
+    {
+      "id": "rampart",
+      "name": "Rampart",
+      "content": "At the start of the player's turn, Turret Operator gains X Block ."
+    },
+    {
+      "id": "ravenous",
+      "name": "Ravenous",
+      "content": "When an enemy dies, Corpse Slug immediately eats it, becoming Stunned and gaining X Strength ."
+    },
+    {
+      "id": "reattach",
+      "name": "Reattach",
+      "content": "If other segments are still alive, revives in 2 turns with X HP."
+    },
+    {
+      "id": "sandpit",
+      "name": "Sandpit",
+      "content": "In X turns, you will be eaten and die.\nNotes: Applied to the player. Counts down each enemy turn. If it reaches 0, the player is killed."
+    },
+    {
+      "id": "skittish",
+      "name": "Skittish",
+      "content": "The first time it is hit each turn, it gains X Block .\nNotes: Only triggers once per turn. Resets at end of turn."
+    },
+    {
+      "id": "slippery",
+      "name": "Slippery",
+      "content": "The next X times it loses HP, it only loses 1 HP instead.\nNotes: Loses 1 stack each time it takes damage."
+    },
+    {
+      "id": "slumber",
+      "name": "Slumber",
+      "content": "Awakens upon taking turns or losing HP X times.\nNotes: Loses stacks from both taking damage and enemy turns ending. When removed, the Slumbering Beetle wakes up."
+    },
+    {
+      "id": "soar",
+      "name": "Soar",
+      "content": "Receives 50% less attack damage until it lands.\nNotes: Only reduces damage from powered attacks. Does not stack."
+    },
+    {
+      "id": "steam_eruption",
+      "name": "Steam Eruption",
+      "content": "When killed, deals X damage at the end of your next turn.\nNotes: Innate to Waterfall Giant . Accumulated through its moves. On death, the Giant becomes Stunned , then explodes for the full accumulated amount."
+    },
+    {
+      "id": "stock",
+      "name": "Stock",
+      "content": "When killed, a new Axebot is summoned in its place.\nNotes: The new Axebot spawns with Stock reduced by 1. At 0, no further Axebots spawn."
+    },
+    {
+      "id": "suck",
+      "name": "Suck",
+      "content": "Whenever it deals unblocked attack damage, it gains X Strength .\nNotes: Innate to Fossil Stalker ."
+    },
+    {
+      "id": "surprise",
+      "name": "Surprise",
+      "content": "Something is off about this creature...\nNotes: When Gremlin Merc dies, a Sneaky Gremlin and Fat Gremlin are spawned."
+    },
+    {
+      "id": "swipe",
+      "name": "Swipe",
+      "content": "Upon killing this enemy, the stolen card is returned.\nNotes: Applied by Thieving Hopper when it steals a card. Each stolen card is a separate instance of Swipe."
+    },
+    {
+      "id": "territorial",
+      "name": "Territorial",
+      "content": "At the end of its turn, gains X Strength ."
+    },
+    {
+      "id": "thievery",
+      "name": "Thievery",
+      "content": "Steals X Gold when Attacking."
+    },
+    {
+      "id": "time_limit",
+      "name": "Time Limit",
+      "content": "You have X more turns to defeat the Battleworn Dummy."
+    },
+    {
+      "id": "vital_spark",
+      "name": "Vital Spark",
+      "content": "The first time it takes Attack damage each turn, the attacker gains ."
+    }
+  ]
+}

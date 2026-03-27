@@ -1,0 +1,254 @@
+{
+  "debuffs": [
+    {
+      "id": "vulnerable",
+      "name": "Vulnerable",
+      "content": "Receive 50% more damage from Attacks for X turns."
+    },
+    {
+      "id": "weak",
+      "name": "Weak",
+      "content": "Attacks deal 25% less damage for X turns."
+    },
+    {
+      "id": "frail",
+      "name": "Frail",
+      "content": "Gain 25% less Block from cards for X turns."
+    },
+    {
+      "id": "poison",
+      "name": "Poison",
+      "content": "At the start of its turn, loses X HP, then reduce Poison by 1."
+    },
+    {
+      "id": "doom",
+      "name": "Doom",
+      "content": "At the end of the enemy turn, if it has X or less HP, it dies."
+    },
+    {
+      "id": "confused",
+      "name": "Confused",
+      "content": "The costs of your cards are randomized on draw, from 0 to 3."
+    },
+    {
+      "id": "demise",
+      "name": "Demise",
+      "content": "At the end of its turn, it loses X HP."
+    },
+    {
+      "id": "shrink",
+      "name": "Shrink",
+      "content": "Attacks deal 30% less damage. Removed when the applier dies."
+    },
+    {
+      "id": "shackling_potion",
+      "name": "Shackling Potion",
+      "content": "Lose X Strength until the end of this turn.\nNotes: Temporary Strength loss Mechanically Identical to Mangle , Piercing Wail , Crush Under , Dying Star , Enfeebling Touch , Monarch's Gaze Strength Down , and Dark Shackles"
+    },
+    {
+      "id": "mangle",
+      "name": "Mangle",
+      "content": "Lose X Strength until the end of this turn.\nNotes: Temporary Strength loss Mechanically Identical to Shackling Potion , Piercing Wail , Crush Under , Dying Star , Monarch's Gaze Strength Down , and Enfeebling Touch , and Dark Shackles"
+    },
+    {
+      "id": "grapple",
+      "name": "Grapple",
+      "content": "Whenever you gain Block this turn, deal X damage to the afflicted enemy."
+    },
+    {
+      "id": "flanking",
+      "name": "Flanking",
+      "content": "Other allies deal X times more damage to this enemy this turn.\nNotes: Multiplayer only."
+    },
+    {
+      "id": "piercing_wail",
+      "name": "Piercing Wail",
+      "content": "Lose X Strength until the end of this turn.\nNotes: Temporary Strength loss Mechanically Identical to Shackling Potion , Mangle , Crush Under , Dying Star , Enfeebling Touch , Monarch's Gaze Strength Down , and Dark Shackles"
+    },
+    {
+      "id": "no_draw",
+      "name": "No Draw",
+      "content": "You may not draw any more cards this turn."
+    },
+    {
+      "id": "strangle",
+      "name": "Strangle",
+      "content": "Whenever you play a card this turn, this enemy loses X HP."
+    },
+    {
+      "id": "wraith_form",
+      "name": "Wraith Form",
+      "content": "At the start of your turn, lose X Dexterity ."
+    },
+    {
+      "id": "conqueror",
+      "name": "Conqueror",
+      "content": "Sovereign Blade deals double damage to it for the next X turns."
+    },
+    {
+      "id": "crush_under",
+      "name": "Crush Under",
+      "content": "Lose X Strength until the end of this turn.\nNotes: Temporary Strength loss Mechanically Identical to Shackling Potion , Mangle , Piercing Wail , Dying Star , Monarch's Gaze Strength Down , Enfeebling Touch , and Dark Shackles"
+    },
+    {
+      "id": "dying_star",
+      "name": "Dying Star",
+      "content": "Lose X Strength until the end of this turn.\nNotes: Temporary Strength loss Mechanically Identical to Shackling Potion , Mangle , Piercing Wail , Crush Under , Monarch's Gaze Strength Down , Enfeebling Touch , and Dark Shackles"
+    },
+    {
+      "id": "monarch_s_gaze_strength_down",
+      "name": "Monarch's Gaze Strength Down",
+      "content": "Lose X Strength until the end of this turn.\nNotes: Temporary Strength loss Mechanically Identical to Shackling Potion , Mangle , Piercing Wail , Crush Under , Dying Star , Enfeebling Touch , and Dark Shackles"
+    },
+    {
+      "id": "debilitate",
+      "name": "Debilitate",
+      "content": "Vulnerable and Weak are twice as effective for the next X turns."
+    },
+    {
+      "id": "enfeebling_touch",
+      "name": "Enfeebling Touch",
+      "content": "Lose X Strength until the end of this turn.\nNotes: Temporary Strength loss Mechanically Identical to Shackling Potion , Mangle , Piercing Wail , Crush Under , Dying Star , Monarch's Gaze Strength Down , and Dark Shackles"
+    },
+    {
+      "id": "hang",
+      "name": "Hang",
+      "content": "All Hangs deal X times more damage to this enemy.\nNotes: Stacks multiplicatively (minimum +2 per application). Capped at 999."
+    },
+    {
+      "id": "neurosurge",
+      "name": "Neurosurge",
+      "content": "At the start of your turn, apply X Doom to yourself."
+    },
+    {
+      "id": "oblivion",
+      "name": "Oblivion",
+      "content": "Whenever you play a card, this enemy gains X Doom ."
+    },
+    {
+      "id": "sic_em",
+      "name": "Sic 'Em",
+      "content": "Whenever Osty hits this enemy this turn, Summon X."
+    },
+    {
+      "id": "biased_cognition",
+      "name": "Biased Cognition",
+      "content": "At the start of your turn, lose X Focus ."
+    },
+    {
+      "id": "dark_shackles",
+      "name": "Dark Shackles",
+      "content": "Lose X Strength until the end of this turn.\nNotes: Temporary Strength loss Mechanically Identical to Shackling Potion , Mangle , Piercing Wail , Crush Under , Dying Star , Monarch's Gaze Strength Down , and Enfeebling Touch ."
+    },
+    {
+      "id": "knockdown",
+      "name": "Knockdown",
+      "content": "Other allies deal X times more damage to this enemy this turn.\nNotes: Multiplayer only."
+    },
+    {
+      "id": "no_block",
+      "name": "No Block",
+      "content": "You cannot gain Block from cards for X turns."
+    },
+    {
+      "id": "tag_team",
+      "name": "Tag Team",
+      "content": "The next Attack another player plays on the enemy is played an extra time."
+    },
+    {
+      "id": "the_gambit",
+      "name": "The Gambit",
+      "content": "If you take unblocked attack damage this combat, die."
+    },
+    {
+      "id": "chains_of_binding",
+      "name": "Chains of Binding",
+      "content": "The first X cards drawn each turn are Afflicted with Bound."
+    },
+    {
+      "id": "constrict",
+      "name": "Constrict",
+      "content": "While the Slithering Strangler is alive, at the end of your turn, take X damage."
+    },
+    {
+      "id": "dampen",
+      "name": "Dampen",
+      "content": "While Magi Knight is alive, ALL your cards are Downgraded."
+    },
+    {
+      "id": "disintegration",
+      "name": "Disintegration",
+      "content": "At the end of your turn, take X damage."
+    },
+    {
+      "id": "hex",
+      "name": "Hex",
+      "content": "While Spectral Knight is alive, ALL your cards are Ethereal ."
+    },
+    {
+      "id": "imbalanced",
+      "name": "Imbalanced",
+      "content": "If the enemy's attacks are fully blocked, it becomes Stunned ."
+    },
+    {
+      "id": "magic_bomb",
+      "name": "Magic Bomb",
+      "content": "Take X damage at the end of your turn. Is cleared if the Magi Knight dies."
+    },
+    {
+      "id": "mind_rot",
+      "name": "Mind Rot",
+      "content": "Draw X fewer cards each turn."
+    },
+    {
+      "id": "plow",
+      "name": "Plow",
+      "content": "The first time this enemy's HP reaches X or below, it becomes Stunned and loses all its Strength ."
+    },
+    {
+      "id": "ringing",
+      "name": "Ringing",
+      "content": "You can only play 1 card this turn."
+    },
+    {
+      "id": "shriek",
+      "name": "Shriek",
+      "content": "The first time this enemy's HP reaches X or below, it becomes Stunned ."
+    },
+    {
+      "id": "sloth",
+      "name": "Sloth",
+      "content": "You cannot play more than X cards each turn."
+    },
+    {
+      "id": "slow",
+      "name": "Slow",
+      "content": "Whenever you play a card, this enemy receives 10% more damage from Attacks this turn."
+    },
+    {
+      "id": "smoggy",
+      "name": "Smoggy",
+      "content": "You can only play 1 Skill per turn."
+    },
+    {
+      "id": "surrounded",
+      "name": "Surrounded",
+      "content": "Receive 50% more damage if attacked from behind. Use targeting cards or potions to change your orientation."
+    },
+    {
+      "id": "tangled",
+      "name": "Tangled",
+      "content": "Attacks cost an additional for 2 turns."
+    },
+    {
+      "id": "tender",
+      "name": "Tender",
+      "content": "Whenever you play a card, lose X Strength and X Dexterity this turn."
+    },
+    {
+      "id": "waste_away",
+      "name": "Waste Away",
+      "content": "Gain X less per turn."
+    }
+  ]
+}

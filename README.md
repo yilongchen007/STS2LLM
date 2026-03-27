@@ -64,6 +64,100 @@ Interactive chat:
 uv run sts2llm chat
 ```
 
+Raw guide crawl for local data collection:
+
+```bash
+uv run sts2llm crawl-games-gg-guides
+```
+
+The default crawl target is `games.gg` English guides for `slay-the-spire-2`. Output is written to:
+
+- `data/raw/games_gg/slay-the-spire-2/manifest.json`
+- `data/raw/games_gg/slay-the-spire-2/guides.jsonl`
+- `data/raw/games_gg/slay-the-spire-2/articles/*.json`
+- `data/raw/games_gg/slay-the-spire-2/html/*.html`
+- `data/raw/games_gg/slay-the-spire-2/sitemaps/*.xml`
+
+Useful flags:
+
+```bash
+uv run sts2llm crawl-games-gg-guides --limit 5
+uv run sts2llm crawl-games-gg-guides --skip-existing
+uv run sts2llm crawl-games-gg-guides --output-dir data/raw/games_gg
+```
+
+Raw wiki.gg crawl for hub pages plus linked pages:
+
+```bash
+uv run sts2llm crawl-wiki-gg "https://slaythespire.wiki.gg/wiki/Slay_the_Spire_2%3AMain"
+```
+
+The default wiki crawl follows links to depth `1` and saves up to `20` pages under:
+
+- `data/raw/wiki_gg/<wiki-host>/<start-page>/manifest.json`
+- `data/raw/wiki_gg/<wiki-host>/<start-page>/pages.jsonl`
+- `data/raw/wiki_gg/<wiki-host>/<start-page>/articles/*.json`
+- `data/raw/wiki_gg/<wiki-host>/<start-page>/html/*.html`
+
+Useful flags:
+
+```bash
+uv run sts2llm crawl-wiki-gg "https://slaythespire.wiki.gg/wiki/Slay_the_Spire_2%3AMain" --max-depth 1 --max-pages 12
+uv run sts2llm crawl-wiki-gg "https://slaythespire.wiki.gg/wiki/Slay_the_Spire_2%3AMain" --skip-existing
+uv run sts2llm crawl-wiki-gg "https://slaythespire.wiki.gg/wiki/Slay_the_Spire_2%3AMain" --headless
+```
+
+Targeted wiki.gg crawl for act encounter pages already linked from a saved hub crawl:
+
+```bash
+uv run sts2llm crawl-wiki-gg-act-enemies
+```
+
+By default this reads the previously saved main crawl under
+`data/raw/wiki_gg/slaythespire.wiki.gg/Slay_the_Spire_2_Main`,
+extracts links from the `Monsters`, `Elites`, and `Bosses` sections of
+`Overgrowth`, `Underdocks`, `Hive`, and `Glory`, then saves the fetched pages under:
+
+- `data/raw/wiki_gg/slaythespire.wiki.gg/Slay_the_Spire_2_Act_Enemies/manifest.json`
+- `data/raw/wiki_gg/slaythespire.wiki.gg/Slay_the_Spire_2_Act_Enemies/pages.jsonl`
+- `data/raw/wiki_gg/slaythespire.wiki.gg/Slay_the_Spire_2_Act_Enemies/articles/*.json`
+- `data/raw/wiki_gg/slaythespire.wiki.gg/Slay_the_Spire_2_Act_Enemies/html/*.html`
+
+Useful flags:
+
+```bash
+uv run sts2llm crawl-wiki-gg-act-enemies --sections Monsters Elites
+uv run sts2llm crawl-wiki-gg-act-enemies --acts Overgrowth Hive
+uv run sts2llm crawl-wiki-gg-act-enemies --skip-existing
+```
+
+Build a simplified enemy pack JSON from the saved wiki.gg enemy crawl:
+
+```bash
+uv run sts2llm build-enemy-pack
+```
+
+By default this reads
+`data/raw/wiki_gg/slaythespire.wiki.gg/Slay_the_Spire_2_Act_Enemies/pages.jsonl`
+and writes:
+
+- `data/processed/wiki_gg/enemy_pack.json`
+
+Build simplified card, keyword, buff, and debuff packs from the saved wiki.gg main crawl:
+
+```bash
+uv run sts2llm build-reference-packs
+```
+
+By default this reads
+`data/raw/wiki_gg/slaythespire.wiki.gg/Slay_the_Spire_2_Main`
+and writes:
+
+- `data/processed/wiki_gg/card_pack.json`
+- `data/processed/wiki_gg/keyword_pack.json`
+- `data/processed/wiki_gg/buffs_pack.json`
+- `data/processed/wiki_gg/debuffs_pack.json`
+
 Examples:
 
 ```bash

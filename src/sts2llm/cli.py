@@ -3,13 +3,15 @@ from __future__ import annotations
 import argparse
 import json
 import traceback
+from typing import TYPE_CHECKING, Any
 
-from openai import OpenAI
+from .enemy_pack import build_enemy_pack
+from .games_gg_guides import crawl_games_gg_guides
+from .reference_packs import build_reference_packs
+from .wiki_gg_crawler import crawl_wiki_gg, crawl_wiki_gg_act_enemies
 
-from .agent import SessionAgent, ToolEvent
-from .config import load_settings
-from .logging_utils import SessionLogger
-from .sts2_api import Sts2ApiClient
+if TYPE_CHECKING:
+    from .agent import SessionAgent
 
 
 def _build_parser() -> argparse.ArgumentParser:
@@ -59,6 +61,159 @@ def _build_parser() -> argparse.ArgumentParser:
         help="Directory for session logs.",
     )
 
+    crawl_games_gg_parser = subparsers.add_parser(
+        "crawl-games-gg-guides",
+        help="Fetch raw guide data from games.gg and save it under data/raw.",
+    )
+    crawl_games_gg_parser.add_argument(
+        "--game-slug",
+        default="slay-the-spire-2",
+        help="games.gg game slug to crawl.",
+    )
+    crawl_games_gg_parser.add_argument(
+        "--output-dir",
+        default="data/raw/games_gg",
+        help="Base output directory for raw crawl artifacts.",
+    )
+    crawl_games_gg_parser.add_argument(
+        "--limit",
+        type=int,
+        help="Optional cap on the number of guide URLs to fetch.",
+    )
+    crawl_games_gg_parser.add_argument(
+        "--skip-existing",
+        action="store_true",
+        help="Reuse existing article/html files when present.",
+    )
+
+    crawl_wiki_gg_parser = subparsers.add_parser(
+        "crawl-wiki-gg",
+        help="Fetch wiki.gg pages with a real Chrome session and save raw page data under data/raw.",
+    )
+    crawl_wiki_gg_parser.add_argument(
+        "start_url",
+        help="Starting wiki.gg page URL.",
+    )
+    crawl_wiki_gg_parser.add_argument(
+        "--output-dir",
+        default="data/raw/wiki_gg",
+        help="Base output directory for raw crawl artifacts.",
+    )
+    crawl_wiki_gg_parser.add_argument(
+        "--max-depth",
+        type=int,
+        default=1,
+        help="Maximum link depth to follow from the starting page.",
+    )
+    crawl_wiki_gg_parser.add_argument(
+        "--max-pages",
+        type=int,
+        default=20,
+        help="Maximum number of pages to save in this crawl.",
+    )
+    crawl_wiki_gg_parser.add_argument(
+        "--skip-existing",
+        action="store_true",
+        help="Reuse existing article/html files when present.",
+    )
+    crawl_wiki_gg_parser.add_argument(
+        "--browser-binary",
+        default="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+        help="Chrome browser binary used for the crawl.",
+    )
+    crawl_wiki_gg_parser.add_argument(
+        "--profile-dir",
+        default="/tmp/sts2llm-wikigg-profile",
+        help="Chrome user-data directory used during the crawl.",
+    )
+    crawl_wiki_gg_parser.add_argument(
+        "--headless",
+        action="store_true",
+        help="Run Chrome headless. wiki.gg may require a visible browser session instead.",
+    )
+
+    crawl_wiki_gg_act_enemies_parser = subparsers.add_parser(
+        "crawl-wiki-gg-act-enemies",
+        help="Fetch enemy pages linked from selected act pages and save them under data/raw.",
+    )
+    crawl_wiki_gg_act_enemies_parser.add_argument(
+        "--source-dir",
+        default="data/raw/wiki_gg/slaythespire.wiki.gg/Slay_the_Spire_2_Main",
+        help="Previously crawled wiki.gg directory that contains the act page JSON files.",
+    )
+    crawl_wiki_gg_act_enemies_parser.add_argument(
+        "--acts",
+        nargs="+",
+        default=["Overgrowth", "Underdocks", "Hive", "Glory"],
+        help="Act page names to scan for encounter links.",
+    )
+    crawl_wiki_gg_act_enemies_parser.add_argument(
+        "--sections",
+        nargs="+",
+        default=["Monsters", "Elites", "Bosses"],
+        help="Top-level h2 sections to include from each act page.",
+    )
+    crawl_wiki_gg_act_enemies_parser.add_argument(
+        "--crawl-name",
+        default="Slay_the_Spire_2_Act_Enemies",
+        help="Output subdirectory name for this explicit-target crawl.",
+    )
+    crawl_wiki_gg_act_enemies_parser.add_argument(
+        "--output-dir",
+        default="data/raw/wiki_gg",
+        help="Base output directory for raw crawl artifacts.",
+    )
+    crawl_wiki_gg_act_enemies_parser.add_argument(
+        "--skip-existing",
+        action="store_true",
+        help="Reuse existing article/html files when present.",
+    )
+    crawl_wiki_gg_act_enemies_parser.add_argument(
+        "--browser-binary",
+        default="/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+        help="Chrome browser binary used for the crawl.",
+    )
+    crawl_wiki_gg_act_enemies_parser.add_argument(
+        "--profile-dir",
+        default="/tmp/sts2llm-wikigg-profile",
+        help="Chrome user-data directory used during the crawl.",
+    )
+    crawl_wiki_gg_act_enemies_parser.add_argument(
+        "--headless",
+        action="store_true",
+        help="Run Chrome headless. wiki.gg may require a visible browser session instead.",
+    )
+
+    build_enemy_pack_parser = subparsers.add_parser(
+        "build-enemy-pack",
+        help="Build a simplified enemy_pack.json from previously crawled wiki.gg enemy pages.",
+    )
+    build_enemy_pack_parser.add_argument(
+        "--source-dir",
+        default="data/raw/wiki_gg/slaythespire.wiki.gg/Slay_the_Spire_2_Act_Enemies",
+        help="Crawl directory that contains enemy pages.jsonl.",
+    )
+    build_enemy_pack_parser.add_argument(
+        "--output-path",
+        default="data/processed/wiki_gg/enemy_pack.json",
+        help="Destination path for the simplified enemy pack JSON.",
+    )
+
+    build_reference_packs_parser = subparsers.add_parser(
+        "build-reference-packs",
+        help="Build card, keyword, buff, and debuff packs from the saved wiki.gg main crawl.",
+    )
+    build_reference_packs_parser.add_argument(
+        "--source-dir",
+        default="data/raw/wiki_gg/slaythespire.wiki.gg/Slay_the_Spire_2_Main",
+        help="Crawl directory that contains the main wiki.gg reference pages.",
+    )
+    build_reference_packs_parser.add_argument(
+        "--output-dir",
+        default="data/processed/wiki_gg",
+        help="Destination directory for the generated reference pack JSON files.",
+    )
+
     return parser
 
 
@@ -79,7 +234,7 @@ def _print_header(label: str) -> None:
     print(f"\n[{label}]")
 
 
-def _event_printer(display_mode: str, show_tool_output: str, session_logger: SessionLogger | None = None):
+def _event_printer(display_mode: str, show_tool_output: str, session_logger: Any | None = None):
     seen_boundary = False
 
     def printer(event_type: str, payload: object) -> None:
@@ -114,6 +269,8 @@ def _event_printer(display_mode: str, show_tool_output: str, session_logger: Ses
             return
 
         if event_type == "tool_output":
+            from .agent import ToolEvent
+
             event = payload
             if not isinstance(event, ToolEvent):
                 return
@@ -126,6 +283,12 @@ def _event_printer(display_mode: str, show_tool_output: str, session_logger: Ses
 
 
 def _build_session(model: str, max_rounds: int) -> SessionAgent:
+    from openai import OpenAI
+
+    from .agent import SessionAgent
+    from .config import load_settings
+    from .sts2_api import Sts2ApiClient
+
     settings = load_settings()
     client = OpenAI(api_key=settings.openai_api_key)
     game = Sts2ApiClient(settings.sts2_base_url)
@@ -138,6 +301,8 @@ def _build_session(model: str, max_rounds: int) -> SessionAgent:
 
 
 def _run_once(prompt: str, model: str, max_rounds: int, display_mode: str, show_tool_output: str, log_dir: str) -> None:
+    from .logging_utils import SessionLogger
+
     session = _build_session(model, max_rounds)
     session_logger = SessionLogger(log_dir)
     print(f"Logging session to {session_logger.path}")
@@ -153,6 +318,8 @@ def _run_once(prompt: str, model: str, max_rounds: int, display_mode: str, show_
 
 
 def _chat(model: str, max_rounds: int, display_mode: str, show_tool_output: str, log_dir: str) -> None:
+    from .logging_utils import SessionLogger
+
     session = _build_session(model, max_rounds)
     session_logger = SessionLogger(log_dir)
     print(f"Logging session to {session_logger.path}")
@@ -197,6 +364,78 @@ def main() -> None:
 
     if args.command in {"chat", "repl"}:
         _chat(args.model, args.max_rounds, args.mode, args.show_tool_output, args.log_dir)
+        return
+
+    if args.command == "crawl-games-gg-guides":
+        report = crawl_games_gg_guides(
+            game_slug=args.game_slug,
+            output_dir=args.output_dir,
+            limit=args.limit,
+            skip_existing=args.skip_existing,
+        )
+        print(f"Discovered {report.discovered_count} guide URLs.")
+        print(f"Saved {report.saved_count} guide records under {report.base_dir}.")
+        print(f"Downloaded {report.downloaded_count} guides, skipped {report.skipped_existing_count}.")
+        print(f"Manifest: {report.manifest_path}")
+        print(f"JSONL: {report.jsonl_path}")
+        return
+
+    if args.command == "crawl-wiki-gg":
+        report = crawl_wiki_gg(
+            start_url=args.start_url,
+            output_dir=args.output_dir,
+            max_depth=args.max_depth,
+            max_pages=args.max_pages,
+            skip_existing=args.skip_existing,
+            browser_binary=args.browser_binary,
+            profile_dir=args.profile_dir,
+            headless=args.headless,
+        )
+        print(f"Discovered {report.discovered_count} wiki URLs.")
+        print(f"Saved {report.saved_count} wiki pages under {report.base_dir}.")
+        print(f"Downloaded {report.downloaded_count} pages, skipped {report.skipped_existing_count}.")
+        print(f"Manifest: {report.manifest_path}")
+        print(f"JSONL: {report.jsonl_path}")
+        return
+
+    if args.command == "crawl-wiki-gg-act-enemies":
+        report = crawl_wiki_gg_act_enemies(
+            source_dir=args.source_dir,
+            output_dir=args.output_dir,
+            act_names=args.acts,
+            sections=args.sections,
+            crawl_name=args.crawl_name,
+            skip_existing=args.skip_existing,
+            browser_binary=args.browser_binary,
+            profile_dir=args.profile_dir,
+            headless=args.headless,
+        )
+        print(f"Discovered {report.discovered_count} wiki URLs.")
+        print(f"Saved {report.saved_count} wiki pages under {report.base_dir}.")
+        print(f"Downloaded {report.downloaded_count} pages, skipped {report.skipped_existing_count}.")
+        print(f"Manifest: {report.manifest_path}")
+        print(f"JSONL: {report.jsonl_path}")
+        return
+
+    if args.command == "build-enemy-pack":
+        report = build_enemy_pack(
+            source_dir=args.source_dir,
+            output_path=args.output_path,
+        )
+        print(f"Built {report.enemy_count} enemy records from {report.page_count} canonical pages.")
+        print(f"Output: {report.output_path}")
+        return
+
+    if args.command == "build-reference-packs":
+        report = build_reference_packs(
+            source_dir=args.source_dir,
+            output_dir=args.output_dir,
+        )
+        print(f"Built {report.card_count} cards.")
+        print(f"Built {report.keyword_count} keywords.")
+        print(f"Built {report.buff_count} buffs.")
+        print(f"Built {report.debuff_count} debuffs.")
+        print(f"Output directory: {report.output_dir}")
         return
 
     raise AssertionError(f"Unhandled command: {args.command}")

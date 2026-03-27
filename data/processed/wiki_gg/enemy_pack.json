@@ -1,0 +1,1112 @@
+{
+  "enemies": [
+    {
+      "id": "assassin_raider",
+      "name": "Assassin Raider",
+      "contexts": [
+        {
+          "act": "Overgrowth",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Assassin Raider\n\nAssassin Raider\nHP\n18-23\n19-24\n8\nDebut\nOvergrowth\n\nPattern\n\nName\nIntent\nEffect\nKillshot\nDeals 11 damage.\nDeals\n12\n9\ndamage.\n\nUses\nKillshot\nevery turn."
+    },
+    {
+      "id": "axe_raider",
+      "name": "Axe Raider",
+      "contexts": [
+        {
+          "act": "Overgrowth",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Axe Raider\n\nAxe Raider\nHP\n20-22\n21-23\n8\nDebut\nOvergrowth\n\nPattern\n\nName\nIntent\nEffect\nSwing\nDeals 5 damage. Gains 5\nBlock\n.\nDeals\n6\n9\ndamage. Gains\n6\n9\nBlock\n.\nBig Swing\nDeals 12 damage.\nDeals\n13\n9\ndamage.\n\nRepeats a fixed cycle:\n\nSwing\nSwing\nBig Swing"
+    },
+    {
+      "id": "axebot",
+      "name": "Axebot",
+      "contexts": [
+        {
+          "act": "Glory",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Axebot\nHP\n40-44\n42-46\n8\nDebut\nGlory\nPowers\nStock\n2\nStock\nWhen killed, a new Axebot is summoned in its place.\nAxebot\nis a normal Enemy found in\nGlory\n. It appears in pairs of 2.\nPattern\nName\nIntent\nEffect\nBoot Up\nGains 10\nBlock\nand 1\nStrength\n.\nThe One-Two\nDeals 5 damage 2 times.\nDeals\n6\n9\ndamage 2 times.\nSharpen\nGains 4\nStrength\n.\nHammer Uppercut\nDeals 8 damage. Applies 1\nWeak\nand 1\nFrail\n.\nDeals\n10\n9\ndamage. Applies 1\nWeak\nand 1\nFrail\n.\nEach turn, the Axebot randomly uses\nThe One-Two\n(weight 2),\nSharpen\n(cannot repeat), or\nHammer Uppercut\n(weight 2).\nWhen spawned mid-fight via\nStock\n, it opens with\nBoot Up\nbefore entering the random pattern.\nIn Party With\nGlory\n2 Axebots\nNotes"
+    },
+    {
+      "id": "bowlbug_egg",
+      "name": "Bowlbug (Egg)",
+      "contexts": [
+        {
+          "act": "Hive",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Bowlbug (Egg)\n\nBowlbug (Egg)\nHP\n21-22\n23-24\n8\nDebut\nHive\n\nPattern\n\nName\nIntent\nEffect\nBite\nDeals 7 damage. Gains 7\nBlock\n.\nDeals\n8\n9\ndamage. Gains\n8\n9\nBlock\n.\n\nUses\nBite\nevery turn."
+    },
+    {
+      "id": "bowlbug_nectar",
+      "name": "Bowlbug (Nectar)",
+      "contexts": [
+        {
+          "act": "Hive",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Bowlbug (Nectar)\n\nBowlbug (Nectar)\nHP\n35-38\n36-39\n8\nDebut\nHive\n\nPattern\n\nName\nIntent\nEffect\nThrash\nDeals 3 damage.\nBuff\nGains 15\nStrength\n.\nGains\n16\n9\nStrength\n.\n\nOpens with\nThrash\n, then uses\nBuff\nonce, then uses\nThrash\nevery turn after."
+    },
+    {
+      "id": "bowlbug_rock",
+      "name": "Bowlbug (Rock)",
+      "contexts": [
+        {
+          "act": "Hive",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Bowlbug (Rock)\n\nBowlbug (Rock)\nHP\n45-48\n46-49\n8\nDebut\nHive\nPowers\nImbalanced\n\nImbalanced\nIf the enemy's attacks are fully blocked, it becomes\nStunned\n.\n\nPattern\n\nName\nIntent\nEffect\nHeadbutt\nDeals 15 damage.\nDeals\n16\n9\ndamage.\nDizzy\nStunned. Does nothing.\n\nUses\nHeadbutt\nevery turn. However, if\nHeadbutt\nis fully blocked by a player, the Bowlbug (Rock) becomes stunned and uses\nDizzy\non its next turn, then resumes\nHeadbutt\n."
+    },
+    {
+      "id": "bowlbug_silk",
+      "name": "Bowlbug (Silk)",
+      "contexts": [
+        {
+          "act": "Hive",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Bowlbug (Silk)\n\nBowlbug (Silk)\nHP\n40-43\n41-44\n8\nDebut\nHive\n\nPattern\n\nName\nIntent\nEffect\nThrash\nDeals 4 damage x2.\nDeals\n5\n9\ndamage x2.\nSpin Web\nApplies 1\nWeak\n.\n\nAlternates between\nSpin Web\nand\nThrash\n."
+    },
+    {
+      "id": "brute_raider",
+      "name": "Brute Raider",
+      "contexts": [
+        {
+          "act": "Overgrowth",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Brute Raider\n\nBrute Raider\nHP\n30-33\n31-34\n8\nDebut\nOvergrowth\n\nPattern\n\nName\nIntent\nEffect\nBeat\nDeals 7 damage.\nDeals\n8\n9\ndamage.\nClap\nGains 3\nStrength\n.\n\nAlternates between\nBeat\nand\nClap\n, starting with\nBeat\n."
+    },
+    {
+      "id": "bygone_effigy",
+      "name": "Bygone Effigy",
+      "contexts": [
+        {
+          "act": "Overgrowth",
+          "encounter_type": "Elites"
+        }
+      ],
+      "content": "Bygone Effigy\nHP\n127\n132\n8\nDebut\nOvergrowth\nPowers\nSlow\nBygone Effigy\nis an Elite found in the\nOvergrowth\n.\nPattern\nName\nIntent\nEffect\nSleep\nDoes nothing. Asleep.\nWake\nGains 10\nStrength\n.\nSlashes\nDeals 15 damage.\nDeals\n17\n9\ndamage.\nThe Bygone Effigy starts asleep and follows this sequence:\nSleep\n— does nothing on its first turn.\nWake\n— wakes up and gains 10\nStrength\n.\nSlashes\nevery turn after.\nStrategy\nBygone Effigy\nis a very dangerous Elite with a very simple weakness: hit it as hard as you can. You have two turns to attack it before it does anything; while it does gain 10 Strength on its second turn, this is just for flavor, as its 15(17) damage attack is only used after gaining Strength, making it functionally the same as a 25(27) attack. Your goal should be to deal as much damage as possible in those first three turns, in order to hopefully finish it off before it can attack.\nCards which do not deal damage are almost useless here, and your starter deck is generally not strong enough to win this battle on its own. Defend will only block 20% of the incoming damage from each attack from turn 3 onwards, and does nothing but increase\nSlow\non the first two turns. Other defensive cards like\nDodge and Roll\nor\nShrug It Off\nare hardly any better, and adding them to your deck means you will draw attacks less often. If you plan to take on Elites in the Overgrowth, then your first priority should be to take as many strong attack cards as you can in order to be prepared in case you run into the Bygone Effigy. If you have not seen any strong attacks in early card rewards, it may be best to path away from elites until the second half of the Act rather than risk dying early.\nIf you cannot finish off the Bygone Effigy within three turns, then just keep hitting it as hard as you can and tank the damage. Don't play defensive cards unless you are absolutely certain you can finish it off on the next turn. Blocking 5 damage but then taking 25 damage because the Effigy survived an extra turn isn't worth it.\nThe\nSlow\neffect is usually not particularly impactful, but it does mean that extra card plays, such as from\nShiv\ns, will slightly increase the damage the Bygone Effigy takes. It is rare that you will have enough of a combo deck put together this early in the game to play large numbers of cards each turn."
+    },
+    {
+      "id": "byrdonis",
+      "name": "Byrdonis",
+      "contexts": [
+        {
+          "act": "Overgrowth",
+          "encounter_type": "Elites"
+        }
+      ],
+      "content": "Byrdonis\nHP\n91-94\n99\n8\nDebut\nOvergrowth\nPowers\n1\nTerritorial\nTerritorial\nAt the end of its turn, gains X\nStrength\n.\nByrdonis\nis an Elite found in the\nOvergrowth\n.\nPattern\nName\nIntent\nEffect\nSwoop\nDeals 16 damage.\nDeals\n18\n9\ndamage.\nPeck\nDeals 3 damage ×3.\nDeals\n4\n9\ndamage ×3.\nByrdonis alternates between its two moves in a fixed pattern:\nSwoop\n.\nPeck\n.\nBack to\nSwoop\n, and so on.\nNotes\nPeck\nhits 3 times, so each point of\nStrength\nadds 3 extra damage total on Peck turns."
+    },
+    {
+      "id": "calcified_cultist",
+      "name": "Calcified Cultist",
+      "contexts": [
+        {
+          "act": "Underdocks",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Calcified Cultist\n\nCalcified Cultist\nHP\n38-41\n39-42\n8\nDebut\nUnderdocks\n\nPattern\n\nName\nIntent\nEffect\nIncantation\nGains 2\nRitual\n.\nDark Strike\nDeals 9 damage.\nDeals\n11\n9\ndamage.\n\nAlways uses\nIncantation\nfirst, then\nDark Strike\nevery turn after."
+    },
+    {
+      "id": "ceremonial_beast",
+      "name": "Ceremonial Beast",
+      "contexts": [
+        {
+          "act": "Overgrowth",
+          "encounter_type": "Bosses"
+        }
+      ],
+      "content": "Ceremonial Beast\nHP\n252\n262\n8\nDebut\nOvergrowth\nPlow\nThe first time this enemy's HP reaches X or below, it becomes\nStunned\nand loses all its\nStrength\n.\nRinging\nYou can only play 1 card this turn.\nCeremonial Beast\nis a\nBoss\nfound in the\nOvergrowth\n.\nPattern\nName\nIntent\nEffect\nStamp\nGains\nPlow\n150. When its HP drops to that amount, it becomes\nStunned\nand loses all\nStrength\n.\nGains\nPlow\n160\n9\n. When its HP drops to that amount, it becomes\nStunned\nand loses all\nStrength\n.\nPlow\nDeals 18 damage. Gains 2\nStrength\n.\nDeals\n20\n9\ndamage. Gains 2\nStrength\n.\nStun\nStunned. Does nothing.\nBeast Cry\nApplies 1\nRinging\n.\nStomp\nDeals 15 damage.\nDeals\n17\n9\ndamage.\nCrush\nDeals 17 damage. Gains 3\nStrength\n.\nDeals\n19\n9\ndamage. Gains\n4\n9\nStrength\n.\nThe Ceremonial Beast has two phases.\nPhase 1:\nUses\nStamp\non the first turn, gaining\nPlow\n. Then uses\nPlow\nevery turn. When its HP drops to the\nPlow\nthreshold (150, or\n160\n9\n), it becomes\nStunned\nand loses all\nStrength\n.\nPhase 2:\nAfter being stunned, repeats this three-move cycle:\nBeast Cry\nStomp\nCrush\nNotes\nPlow\nacts as a HP threshold: when the Ceremonial Beast's HP drops to the\nPlow\namount or below, it is stunned and loses all accumulated\nStrength\n. This effectively gives the player a free turn.\nRinging\nfrom\nBeast Cry\nlimits the player to playing only 1 card on that turn.\nDuring Phase 1, each\nPlow\ngrants 2\nStrength\n, but all of it is lost when the stun triggers. In Phase 2,\nCrush\ngrants 3 (\n4\n9\n)\nStrength\nthat is retained permanently."
+    },
+    {
+      "id": "chomper",
+      "name": "Chomper",
+      "contexts": [
+        {
+          "act": "Hive",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Chomper\nHP\n60-64\n63-67\n8\nDebut\nHive\nPowers\n2\nArtifact\nChomper\nis a normal Enemy found in\nHive\n.\nPattern\nName\nIntent\nEffect\nClamp\nDeals 8 damage ×2.\nDeals\n9\n9\ndamage ×2.\nScreech\nShuffles 3\nDazed\ninto your discard pile.\nChompers always appear in pairs. One opens with\nClamp\nand the other opens with\nScreech\n. After that, each one alternates between\nClamp\nand\nScreech\nevery turn.\nIn Party With\nHive\n2 Chompers"
+    },
+    {
+      "id": "corpse_slug",
+      "name": "Corpse Slug",
+      "contexts": [
+        {
+          "act": "Underdocks",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Corpse Slug\nHP\n25-27\n27-29\n8\nDebut\nUnderdocks\nPowers\n4 (\n5\n9\n)\nRavenous\nRavenous\nWhen an enemy dies, Corpse Slug immediately eats it, becoming\nStunned\nand gaining X\nStrength\n.\nCorpse Slug\nis a normal Enemy found in the\nUnderdocks\n. It appears in groups of 2 or 3, and starts with\nRavenous\n.\nPattern\nName\nIntent\nEffect\nWhip Slap\nDeals 3 damage ×2.\nGlomp\nDeals 8 damage.\nDeals\n9\n9\ndamage.\nGoop\nApplies 2\nFrail\n.\nCycles through its moves in a fixed order:\nWhip Slap\nGlomp\nGoop\nBack to\nWhip Slap\nEach Corpse Slug in the encounter starts on a different move in the cycle, so they are staggered.\nNotes"
+    },
+    {
+      "id": "crossbow_raider",
+      "name": "Crossbow Raider",
+      "contexts": [
+        {
+          "act": "Overgrowth",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Crossbow Raider\n\nCrossbow Raider\nHP\n18-21\n19-22\n8\nDebut\nOvergrowth\n\nPattern\n\nName\nIntent\nEffect\nReload\nGains 3\nBlock\n.\nFire!\nDeals 14 damage.\nDeals\n16\n9\ndamage.\n\nAlternates between\nReload\nand\nFire!\n, starting with\nReload\n."
+    },
+    {
+      "id": "crusher",
+      "name": "Crusher",
+      "contexts": [
+        {
+          "act": "Hive",
+          "encounter_type": "Bosses"
+        }
+      ],
+      "content": "Crusher\n\nCrusher\nHP\n199\n209\n8\nDebut\nHive\nPowers\nBack Attack\nCrab Rage\n\nPattern\n\nName\nIntent\nEffect\nThrash\nDeals 12 damage.\nDeals\n14\n9\ndamage.\nEnlarging Strike\nDeals 4 damage.\nBug Sting\nDeals 6 damage ×2. Applies 2\nWeak\nand 2\nFrail\n.\nDeals\n7\n9\ndamage ×2. Applies 2\nWeak\nand 2\nFrail\n.\nAdapt\nGains 2\nStrength\n.\nGuarded Strike\nDeals 12 damage. Gains 18\nBlock\n.\nDeals\n14\n9\ndamage. Gains 18\nBlock\n.\n\nCrusher cycles through its five moves in a fixed order, repeating forever:\n\nThrash\nEnlarging Strike\nBug Sting\nAdapt\nGuarded Strike"
+    },
+    {
+      "id": "cubex_construct",
+      "name": "Cubex Construct",
+      "contexts": [
+        {
+          "act": "Glory",
+          "encounter_type": "Monsters"
+        },
+        {
+          "act": "Overgrowth",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Cubex Construct\nHP\n65\n70\n8\nDebut\nOvergrowth\nPowers\n13\nBlock\n1\nArtifact\nArtifact\nNegates X debuffs.\nCubex Construct\nis a normal Enemy found in the\nOvergrowth\nand\nGlory\n.\nPattern\nName\nIntent\nEffect\nCharge Up\nGains 2\nStrength\n.\nRepeater Blast\nDeals 7 damage. Gains 2\nStrength\n.\nDeals\n8\n9\ndamage. Gains 2\nStrength\n.\nExpel Blast\nDeals 5 damage ×2.\nDeals\n6\n9\ndamage ×2.\nSubmerge\nGains 15\nBlock\n.\nAfter it\nCharges Up\nit repeats this pattern for the remainder of fight:\nRepeater Blast\nRepeater Blast\nExpel Blast\nNotes\nCubex Construct begins the fight with 13\nBlock\nand 1\nArtifact\n, which negates the first debuff applied to it.\nCharge Up\nand each\nRepeater Blast\neach grant 2\nStrength\n, so its damage ramps up significantly over time. After the opening\nCharge Up\nand two\nRepeater Blast\nuses, it will have gained 6\nStrength\n.\nExpel Blast\nhits twice, making it benefit doubly from accumulated\nStrength\n."
+    },
+    {
+      "id": "damp_cultist",
+      "name": "Damp Cultist",
+      "contexts": [
+        {
+          "act": "Underdocks",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Damp Cultist\n\nDamp Cultist\nHP\n51-53\n52-54\n8\nDebut\nUnderdocks\n\nPattern\n\nName\nIntent\nEffect\nIncantation\nGains 5\nRitual\n.\nGains\n6\n9\nRitual\n.\nDark Strike\nDeals 1 damage.\nDeals\n3\n9\ndamage.\n\nAlways uses\nIncantation\nfirst, then\nDark Strike\nevery turn after."
+    },
+    {
+      "id": "decimillipede",
+      "name": "Decimillipede",
+      "contexts": [
+        {
+          "act": "Hive",
+          "encounter_type": "Elites"
+        }
+      ],
+      "content": "Decimillipede\nHP\n42-48\n48-56\n8\nDebut\nHive\nPowers\n25\nReattach\nDecimillipede\nis an Elite Enemy found in the\nHive\n. It appears as three identical segments that fight together.\nPattern\nName\nIntent\nEffect\nWrithe\nDeals 5 damage x2.\nDeals\n6\n9\ndamage x2.\nBulk\nDeals 6 damage. Gains 2\nStrength\n.\nDeals\n7\n9\ndamage. Gains 2\nStrength\n.\nOutgas\nDeals 8 damage. Applies 1\nWeak\n.\nDeals\n9\n9\ndamage. Applies 1\nWeak\n.\nReattach\nRevives with 25 HP (if other segments are alive).\nEach segment cycles through\nBulk\n,\nWrithe\n, and\nOutgas\nin that order. Each segment starts on a different move, so every turn the three segments are always using three different moves.\nWhen a segment is killed, it uses\nReattach\nto revive with 25 HP if at least one other segment is still alive. After reviving, it resumes with a random move.\nIn Party With\nHive\n2 other Decimillipede segments."
+    },
+    {
+      "id": "devoted_sculptor",
+      "name": "Devoted Sculptor",
+      "contexts": [
+        {
+          "act": "Glory",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Devoted Sculptor\nHP\n162\n172\n8\nDebut\nGlory\nRitual\nAt the end of its turn, gains X\nStrength\n.\nDevoted Sculptor\nis a normal Enemy found in\nGlory\n.\nPattern\nName\nIntent\nEffect\nForbidden Incantation\nGains 9\nRitual\n.\nSavage\nDeals 12 damage.\nDeals\n15\n9\ndamage.\nAlways opens with\nForbidden Incantation\n, then uses\nSavage\nevery turn afterward.\nNotes"
+    },
+    {
+      "id": "door",
+      "name": "Door",
+      "contexts": [
+        {
+          "act": "Glory",
+          "encounter_type": "Bosses"
+        }
+      ],
+      "content": "Door\n\nDoor\nHP\n155\n165\n8\nDebut\nGlory\n\nPattern\n\nName\nIntent\nEffect\nDramatic Open\nDeals 25 damage.\nDeals\n28\n9\ndamage.\nDoor Slam\nDeals 15 damage x2.\nEnforce\nDeals 20 damage. Gains 3\nStrength\n.\nDeals 20 damage. Gains\n4\n9\nStrength\n.\n\nThe Door cycles through its moves in a fixed order:\n\nDramatic Open\nDoor Slam\nEnforce\nBack to\nDramatic Open\n\nWhen the Door is destroyed, it becomes untargetable and the\nDoormaker\nappears."
+    },
+    {
+      "id": "doormaker",
+      "name": "Doormaker",
+      "contexts": [
+        {
+          "act": "Glory",
+          "encounter_type": "Bosses"
+        }
+      ],
+      "content": "The\nDoormaker\nis a\nBoss\nencounter found in\nGlory\n. The fight alternates between two phases: the\nDoor\nand the\nDoormaker\nare never both present at the same time. The Door starts the fight alone; when it is destroyed, it becomes untargetable and the Doormaker appears.\n\nDoormaker\n\nDoormaker\nHP\n489\n512\n8\nDebut\nGlory\n\nPattern\n\nName\nIntent\nEffect\nWhat Is It\nDoes nothing.\nBeam\nDeals 31 damage.\nDeals\n34\n9\ndamage.\nGet Back In\nDeals 40 damage. Gains 5\nStrength\n. Revives and buffs the\nDoor\n, then disappears.\nDeals\n45\n9\ndamage. Gains 5\nStrength\n. Revives and buffs the\nDoor\n, then disappears.\n\nEach time the Doormaker appears, it performs the same three-move sequence:\n\nWhat Is It\nBeam\nGet Back In"
+    },
+    {
+      "id": "entomancer",
+      "name": "Entomancer",
+      "contexts": [
+        {
+          "act": "Hive",
+          "encounter_type": "Elites"
+        }
+      ],
+      "content": "Entomancer\nHP\n145\n155\n8\nDebut\nHive\nPowers\n1\nPersonal Hive\nPersonal Hive\nWhenever this enemy is hit by an Attack, add X Dazed into your Draw Pile.\nEntomancer\nis an Elite Enemy found in\nHive\n.\nPattern\nName\nIntent\nEffect\nBeeeees!\nDeals 3 damage ×7.\nDeals 3 damage\n×8\n9\n.\nSpear!\nDeals 18 damage.\nDeals\n20\n9\ndamage.\nPheromone Spit\nGains 1\nPersonal Hive\nand 1\nStrength\n. If\nPersonal Hive\nis already at 3, gains 2\nStrength\ninstead.\nThe Entomancer repeats a fixed three-move cycle:\nBeeeees!\n, then\nSpear!\n, then\nPheromone Spit\n, and back to the start."
+    },
+    {
+      "id": "exoskeleton",
+      "name": "Exoskeleton",
+      "contexts": [
+        {
+          "act": "Hive",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Exoskeleton\nHP\n24-28\n25-29\n8\nDebut\nHive\nPowers\n9\nHard to Kill\nHard to Kill\nReduce all damage taken and HP lost by it to 9.\nExoskeleton\nis a normal Enemy found in\nHive\n.\nPattern\nName\nIntent\nEffect\nSkitter\nDeals 1 damage ×3.\nDeals 1 damage\n×4\n9\n.\nMandibles\nDeals 8 damage.\nDeals\n9\n9\ndamage.\nEnrage\nGains 2\nStrength\n.\nExoskeletons appear in groups of 3 or 4. Each one's opening move depends on its position in the group: the first uses\nSkitter\n, the second uses\nMandibles\n, the third uses\nEnrage\n, and the fourth (if present) randomly picks\nSkitter\nor\nMandibles\n.\nAfter\nSkitter\n, the next move is randomly\nSkitter\nor\nMandibles\n(cannot repeat the same move twice in a row). After\nMandibles\n, it always uses\nEnrage\n. After\nEnrage\n, the next move is randomly\nSkitter\nor\nMandibles\n.\nIn Party With\nHive\n3 Exoskeletons (Weak)\n4 Exoskeletons (Normal)"
+    },
+    {
+      "id": "eye_with_teeth",
+      "name": "Eye With Teeth",
+      "contexts": [
+        {
+          "act": "Overgrowth",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Eye With Teeth\n\nEye With Teeth\nHP\n6\n8\nDebut\nOvergrowth\nPowers\nIllusion\n\nIllusion\nWhen this dies, it revives next turn at full HP.\n\nThe Eye With Teeth is a minion summoned by Fogmog via\nIllusory Spores\n.\n\nPattern\n\nName\nIntent\nEffect\nDistract\nShuffles 3\nDazed\ninto your discard pile.\n\nUses\nDistract\nevery turn, shuffling 3\nDazed\ninto your discard pile."
+    },
+    {
+      "id": "fabricator",
+      "name": "Fabricator",
+      "contexts": [
+        {
+          "act": "Glory",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Fabricator\nis a normal Enemy found in\nGlory\n. It summons bots to fight alongside it.\n\nFabricator\n\nFabricator\nHP\n150\n155\n8\nDebut\nGlory\n\nPattern\n\nName\nIntent\nEffect\nFabricate\nSummons 1 defensive bot (\nGuardbot\nor\nNoisebot\n) and 1 aggressive bot (\nZapbot\nor\nStabbot\n).\nFabricating Strike\nDeals 18 damage. Summons 1 aggressive bot (\nZapbot\nor\nStabbot\n).\nDeals\n21\n9\ndamage. Summons 1 aggressive bot (\nZapbot\nor\nStabbot\n).\nDisintegrate\nDeals 11 damage.\nDeals\n13\n9\ndamage.\n\nEach turn, the Fabricator checks if it has fewer than 4 living allies. If so, it randomly uses either\nFabricate\nor\nFabricating Strike\n(equal weight). If it already has 4 or more allies, it uses\nDisintegrate\ninstead.\n\nThe Fabricator avoids summoning the same bot type consecutively."
+    },
+    {
+      "id": "fat_gremlin",
+      "name": "Fat Gremlin",
+      "contexts": [
+        {
+          "act": "Underdocks",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Fat Gremlin\n\nFat Gremlin\nHP\n13-17\n14-18\n8\nDebut\nUnderdocks\n\nThe Fat Gremlin is a minion summoned when the Gremlin Merc dies. It carries any gold the Gremlin Merc stole.\n\nPattern\n\nName\nIntent\nEffect\nSpawned\nWakes up. Does nothing.\nFlee\nFlees from combat with any stolen gold.\n\nUses\nSpawned\non its first turn (does nothing), then uses\nFlee\nevery turn after, escaping with the stolen gold."
+    },
+    {
+      "id": "flail_knight",
+      "name": "Flail Knight",
+      "contexts": [
+        {
+          "act": "Glory",
+          "encounter_type": "Elites"
+        }
+      ],
+      "content": "Flail Knight\n\nFlail Knight\nHP\n101\n108\n8\nDebut\nGlory\n\nPattern\n\nName\nIntent\nEffect\nBreaker\nGains 3\nStrength\n.\nFlail\nDeals 9 damage ×2.\nDeals\n10\n9\ndamage ×2.\nRam\nDeals 15 damage.\nDeals\n17\n9\ndamage.\n\nOpens with\nRam\n, then randomly uses\nBreaker\n,\nFlail\n, or\nRam\neach turn.\nBreaker\ncannot be used two turns in a row."
+    },
+    {
+      "id": "flyconid",
+      "name": "Flyconid",
+      "contexts": [
+        {
+          "act": "Overgrowth",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Flyconid\nHP\n47-49\n51-53\n8\nDebut\nOvergrowth\nFlyconid\nis a normal Enemy found in the\nOvergrowth\n.\nPattern\nName\nIntent\nEffect\nWeakening Spores\nApplies 2\nVulnerable\n.\nFrail Spores\nDeals 8 damage. Applies 2\nFrail\n.\nDeals\n9\n9\ndamage. Applies 2\nFrail\n.\nSmash\nDeals 11 damage.\nDeals\n12\n9\ndamage.\nOn its first turn, it randomly picks\nFrail Spores\n(2/3 chance) or\nSmash\n(1/3 chance).\nAfter that, each turn it randomly picks one of three moves:\nWeakening Spores\n(3/6 chance),\nFrail Spores\n(2/6 chance), or\nSmash\n(1/6 chance). It cannot use the same move twice in a row.\nNotes\nWeakening Spores\napplies\nVulnerable\n, causing you to take 50% more damage from attacks. This is especially dangerous when paired with other enemies.\nFrail Spores\napplies\nFrail\n, reducing your\nBlock\ngained by 25%.\nFlyconid cannot open with\nWeakening Spores\non the first turn."
+    },
+    {
+      "id": "fogmog",
+      "name": "Fogmog",
+      "contexts": [
+        {
+          "act": "Overgrowth",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Fogmog\nis a normal Enemy found in the\nOvergrowth\n. It summons an\nEye With Teeth\nat the start of the fight.\n\nFogmog\n\nFogmog\nHP\n74\n78\n8\nDebut\nOvergrowth\n\nPattern\n\nName\nIntent\nEffect\nIllusory Spores\nSummons an\nEye With Teeth\n.\nThwack\nDeals 8 damage. Gains 1\nStrength\n.\nDeals\n9\n9\ndamage. Gains 1\nStrength\n.\nHeadbutt\nDeals 14 damage.\nDeals\n16\n9\ndamage.\n\nFogmog always opens with\nIllusory Spores\nto summon an\nEye With Teeth\n, then uses\nThwack\n.\n\nAfter that, it randomly picks\nThwack\n(40%) or\nHeadbutt\n(60%), and cannot pick the same one twice in a row. After a random\nThwack\n, it always follows up with\nHeadbutt\n. After\nHeadbutt\n, it always follows up with\nThwack\n, then returns to the random pick."
+    },
+    {
+      "id": "fossil_stalker",
+      "name": "Fossil Stalker",
+      "contexts": [
+        {
+          "act": "Underdocks",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Fossil Stalker\nHP\n51-53\n54-56\n8\nDebut\nUnderdocks\nPowers\n3\nSuck\nFossil Stalker\nis a normal Enemy found in the\nUnderdocks\n.\nPattern\nName\nIntent\nEffect\nLatch\nDeals 12 damage.\nDeals\n14\n9\ndamage.\nTackle\nDeals 9 damage. Applies 1\nFrail\n.\nDeals\n11\n9\ndamage. Applies 1\nFrail\n.\nLash\nDeals 3 damage ×2.\nDeals\n4\n9\ndamage ×2.\nAlways starts with\nLatch\n.\nAfter any move, the next move is chosen randomly with equal probability:\n33% chance of\nLatch\n33% chance of\nTackle\n33% chance of\nLash\nNo restriction on repeating the same move consecutively.\nNotes\nFossil Stalker begins combat with 3 stacks of\nSuck\n, which grants it 3\nStrength\neach time it deals unblocked damage with an attack. This means letting attacks through without\nBlock\nwill cause it to snowball quickly.\nTackle\napplies\nFrail\n, reducing your block gained by 25%, making it harder to defend against subsequent attacks.\nIts multi-hit\nLash\n(3×2) is especially dangerous if it has accumulated\nStrength\nfrom\nSuck\n, as each hit benefits from the bonus.\nIn Party With\nUnderdocks\nAppears as a solo normal encounter."
+    },
+    {
+      "id": "frog_knight",
+      "name": "Frog Knight",
+      "contexts": [
+        {
+          "act": "Glory",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Frog Knight\nHP\n191\n199\n8\nDebut\nGlory\nPowers\nPlating\n15 (\n19\n8\n)\nPlating\nAt the end of your turn, gain X\nBlock\n. Plating is reduced by 1 at the start of your turn.\nFrog Knight\nis a normal Enemy found in\nGlory\n.\nPattern\nName\nIntent\nEffect\nTongue Lash\nDeals 13 damage. Applies 2\nFrail\n.\nDeals\n14\n9\ndamage. Applies 2\nFrail\n.\nStrike Down Evil\nDeals 21 damage.\nDeals\n23\n9\ndamage.\nFor the Queen\nGains 5\nStrength\n.\nBeetle Charge\nDeals 35 damage.\nDeals\n40\n9\ndamage.\nOpens with\nTongue Lash\n, then follows a repeating cycle:\nStrike Down Evil\n,\nFor the Queen\n, then a conditional check.\nIf the Frog Knight's HP is below half and it has not yet used\nBeetle Charge\n, it uses\nBeetle Charge\nonce, then continues with\nTongue Lash\n. Otherwise, it uses\nTongue Lash\nand continues the cycle.\nNotes"
+    },
+    {
+      "id": "fuzzy_wurm_crawler",
+      "name": "Fuzzy Wurm Crawler",
+      "contexts": [
+        {
+          "act": "Overgrowth",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Fuzzy Wurm Crawler\nHP\n55-57\n58-59\n8\nDebut\nOvergrowth\nFuzzy Wurm Crawler\nis a normal Enemy found in the\nOvergrowth\n.\nPattern\nName\nIntent\nEffect\nAcid Goop\nDeals 4 damage.\nDeals\n6\n9\ndamage.\nInhale\nGains 7\nStrength\n.\nRepeats a fixed three-turn cycle:\nAcid Goop\nInhale\nAcid Goop\nThen the cycle starts over.\nNotes\nInhale\ngrants 7\nStrength\n, which greatly increases the damage of the following\nAcid Goop\n. However, this\nStrength\nalso carries over to future cycles, so each\nAcid Goop\nhits harder than the last.\nThe base damage of\nAcid Goop\nis low (4), but after the first\nInhale\nit deals 11 damage, and it continues to scale with each cycle."
+    },
+    {
+      "id": "gas_bomb",
+      "name": "Gas Bomb",
+      "contexts": [
+        {
+          "act": "Underdocks",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Gas Bomb\n\nGas Bomb\nHP\n10\n12\n8\nDebut\nUnderdocks\nPowers\nMinion\n\nMinion\nMinions abandon combat without their leader.\n\nGas Bombs are minions summoned by Living Fog via\nBloat\n.\n\nPattern\n\nName\nIntent\nEffect\nExplode\nDeals 8 damage. Dies.\nDeals\n9\n9\ndamage. Dies.\n\nUses\nExplode\nevery turn, dealing damage and killing itself."
+    },
+    {
+      "id": "globe_head",
+      "name": "Globe Head",
+      "contexts": [
+        {
+          "act": "Glory",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Globe Head\nHP\n148\n158\n8\nDebut\nGlory\nPowers\nGalvanic\n6\nGalvanic\nPowers are afflicted with Galvanized.\nGlobe Head\nis a normal Enemy found in\nGlory\n.\nPattern\nName\nIntent\nEffect\nShocking Slap\nDeals 13 damage. Applies 2\nFrail\n.\nDeals\n14\n9\ndamage. Applies 2\nFrail\n.\nThunder Strike\nDeals 6 damage 3 times.\nDeals\n7\n9\ndamage 3 times.\nGalvanic Burst\nDeals 16 damage. Gains 2\nStrength\n.\nDeals\n17\n9\ndamage. Gains 2\nStrength\n.\nFollows a fixed cycle:\nShocking Slap\n,\nThunder Strike\n,\nGalvanic Burst\n, then repeats.\nNotes"
+    },
+    {
+      "id": "gremlin_merc",
+      "name": "Gremlin Merc",
+      "contexts": [
+        {
+          "act": "Underdocks",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Gremlin Merc\nis a normal Enemy found in the\nUnderdocks\n. It starts with\nSurprise\nand\nThievery\n, stealing gold with each attack. When the Gremlin Merc is killed, it summons a\nFat Gremlin\nand a\nSneaky Gremlin\n.\n\nGremlin Merc\n\nGremlin Merc\nHP\n47-49\n51-53\n8\nDebut\nUnderdocks\nPowers\n1\nSurprise\n20\nThievery\n\nPattern\n\nName\nIntent\nEffect\nGimme\nDeals 7 damage ×2. Steals gold.\nDeals\n8\n8\ndamage ×2. Steals gold.\nDouble Smash\nDeals 6 damage ×2. Applies 2\nWeak\n. Steals gold.\nDeals\n7\n8\ndamage ×2. Applies 2\nWeak\n. Steals gold.\nHehe\nDeals 8 damage. Gains 2\nStrength\n. Steals gold.\nDeals\n9\n8\ndamage. Gains 2\nStrength\n. Steals gold.\n\nCycles through its moves in a fixed order:\n\nGimme\nDouble Smash\nHehe\nBack to\nGimme\n\nWhen the Gremlin Merc dies, its\nSurprise\npower triggers, summoning a\nSneaky Gremlin\nand a\nFat Gremlin\n. The Fat Gremlin inherits the stolen gold via\nHeist\n."
+    },
+    {
+      "id": "guardbot",
+      "name": "Guardbot",
+      "contexts": [
+        {
+          "act": "Glory",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Guardbot\n\nGuardbot\nHP\n21-25\n22-26\n8\nDebut\nGlory\n\nPattern\n\nName\nIntent\nEffect\nGuard\nGives the Fabricator 15\nBlock\n.\n\nUses\nGuard\nevery turn."
+    },
+    {
+      "id": "haunted_ship",
+      "name": "Haunted Ship",
+      "contexts": [
+        {
+          "act": "Underdocks",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Haunted Ship\nHP\n63\n67\n8\nDebut\nUnderdocks\nHaunted Ship\nis a normal Enemy found in the\nUnderdocks\n.\nPattern\nName\nIntent\nEffect\nRamming Speed\nDeals 10 damage. Shuffles 2\nWounds\ninto your discard pile.\nDeals\n11\n9\ndamage. Shuffles 2\nWounds\ninto your discard pile.\nSwipe\nDeals 13 damage.\nDeals\n14\n9\ndamage.\nStomp\nDeals 4 damage ×3.\nDeals\n5\n9\ndamage ×3.\nHaunt\nApplies 2\nWeak\n, 2\nFrail\n, and 2\nVulnerable\n.\nAlways uses\nRamming Speed\nfirst, then\nHaunt\nsecond.\nFrom the third turn onward, randomly uses\nRamming Speed\n,\nSwipe\n, or\nStomp\neach turn. Cannot use the same move twice in a row.\nNotes"
+    },
+    {
+      "id": "hunter_killer",
+      "name": "Hunter Killer",
+      "contexts": [
+        {
+          "act": "Hive",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Hunter Killer\nHP\n121\n126\n8\nDebut\nHive\nHunter Killer\nis a normal Enemy found in\nHive\n.\nPattern\nName\nIntent\nEffect\nTenderizing Goop\nApplies 1\nTender\n.\nBite\nDeals 17 damage.\nDeals\n19\n9\ndamage.\nPuncture\nDeals 7 damage ×3.\nDeals\n8\n9\ndamage ×3.\nAlways opens with\nTenderizing Goop\n. After that, randomly uses\nBite\nor\nPuncture\n, with\nPuncture\nbeing twice as likely.\nBite\ncannot be used twice in a row."
+    },
+    {
+      "id": "infested_prism",
+      "name": "Infested Prism",
+      "contexts": [
+        {
+          "act": "Hive",
+          "encounter_type": "Elites"
+        }
+      ],
+      "content": "Infested Prism\nHP\n200\n215\n8\nDebut\nHive\nPowers\n1\nVital Spark\nVital Spark\nThe first time it takes Attack damage each turn, the attacker gains\n.\nInfested Prism\nis an Elite Enemy found in\nHive\n.\nPattern\nName\nIntent\nEffect\nJab\nDeals 22 damage.\nDeals\n24\n9\ndamage.\nRadiate\nDeals 16 damage. Gains 16\nBlock\n.\nDeals\n18\n9\ndamage. Gains\n18\n9\nBlock\n.\nWhirlwind\nDeals 9 damage ×3.\nDeals\n10\n9\ndamage ×3.\nPulsate\nGains 20\nBlock\nand 4\nStrength\n.\nGains\n22\n8\nBlock\nand\n5\n9\nStrength\n.\nThe Infested Prism repeats a fixed four-move cycle:\nJab\n, then\nRadiate\n, then\nWhirlwind\n, then\nPulsate\n, and back to the start."
+    },
+    {
+      "id": "inklet",
+      "name": "Inklet",
+      "contexts": [
+        {
+          "act": "Overgrowth",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Inklet\nHP\n11-17\n12-18\n8\nDebut\nOvergrowth\nPowers\n1\nSlippery\nSlippery\nThe next X times it loses HP, it only loses 1 HP instead.\nInklet\nis a normal Enemy found in the\nOvergrowth\n. They always appear as a group of three.\nPattern\nName\nIntent\nEffect\nJab\nDeals 3 damage.\nDeals\n4\n9\ndamage.\nWindup Punch\nDeals 2 damage ×3.\nDeals\n3\n9\ndamage ×3.\nPiercing Gaze\nDeals 10 damage.\nDeals\n11\n9\ndamage.\nThe two outer Inklets open with\nJab\n(most likely) or\nWindup Punch\n. The middle Inklet always opens with\nWindup Punch\n.\nAfter\nJab\n, the Inklet randomly picks\nPiercing Gaze\nor\nWindup Punch\n(equal chance, cannot repeat). After either\nWindup Punch\nor\nPiercing Gaze\n, the Inklet always uses\nJab\nnext.\nIn short, the Inklet always uses\nJab\nbetween its bigger attacks.\nNotes\nEach Inklet starts with 1\nSlippery\n, which means the first time it takes damage, it only loses 1 HP. This makes it take at least two hits to kill each Inklet.\nWindup Punch\nhits 3 times at low damage per hit. Each hit is affected separately by\nBlock\n.\nPiercing Gaze\ndeals the highest damage of the three moves, but always follows a\nJab\nturn, giving you a turn to prepare."
+    },
+    {
+      "id": "kin_follower",
+      "name": "Kin Follower",
+      "contexts": [
+        {
+          "act": "Overgrowth",
+          "encounter_type": "Bosses"
+        }
+      ],
+      "content": "Kin Follower\n\nKin Follower\nHP\n58-59\n62-63\n8\nDebut\nOvergrowth\nPowers\nMinion\n\nMinion\nMinions abandon combat without their leader.\n\nPattern\n\nName\nIntent\nEffect\nQuick Slash\nDeals 5 damage.\nBoomerang\nDeals 2 damage ×2.\nPower Dance\nGains 2\nStrength\n.\nGains\n3\n9\nStrength\n.\n\nEach Kin Follower cycles through three moves in a fixed order:\n\nQuick Slash\nBoomerang\nPower Dance\n\nThe two Kin Followers start offset from each other: one begins with\nQuick Slash\nand the other begins with\nPower Dance\n."
+    },
+    {
+      "id": "kin_priest",
+      "name": "Kin Priest",
+      "contexts": [
+        {
+          "act": "Overgrowth",
+          "encounter_type": "Bosses"
+        }
+      ],
+      "content": "Kin Priest\n\nKin Priest\nHP\n190\n199\n8\nDebut\nOvergrowth\n\nPattern\n\nName\nIntent\nEffect\nOrb of Frailty\nDeals 8 damage. Applies 1\nFrail\n.\nDeals\n9\n9\ndamage. Applies 1\nFrail\n.\nOrb of Weakness\nDeals 8 damage. Applies 1\nWeak\n.\nDeals\n9\n9\ndamage. Applies 1\nWeak\n.\nSoul Beam\nDeals 3 damage ×3.\nDark Ritual\nGains 2\nStrength\n.\nGains\n3\n9\nStrength\n.\n\nThe Kin Priest cycles through four moves in a fixed order:\n\nOrb of Frailty\nOrb of Weakness\nSoul Beam\nDark Ritual"
+    },
+    {
+      "id": "knowledge_demon",
+      "name": "Knowledge Demon",
+      "contexts": [
+        {
+          "act": "Hive",
+          "encounter_type": "Bosses"
+        }
+      ],
+      "content": "Knowledge Demon\nHP\n379\n399\n8\nDebut\nHive\nKnowledge Demon\nis a\nBoss\nfound in\nHive\n.\nPattern\nName\nIntent\nEffect\nCurse of Knowledge\nEach player chooses one of two curse cards to receive. The options change each time this move is used.\nSlap\nDeals 17 damage.\nDeals\n18\n9\ndamage.\nKnowledge Overwhelming\nDeals 8 damage ×3.\nDeals\n9\n9\ndamage ×3.\nPonder\nDeals 11 damage. Heals 30 HP per player. Gains 2\nStrength\n.\nDeals\n13\n9\ndamage. Heals 30 HP per player. Gains\n3\n9\nStrength\n.\nKnowledge Demon repeats a fixed four-move cycle:\nCurse of Knowledge\nSlap\nKnowledge Overwhelming\nPonder\nAfter the third\nCurse of Knowledge\n(once all three curse sets have been offered), the cycle changes:\nCurse of Knowledge\nis skipped, and the remaining three moves repeat in order.\nNotes\nCurse of Knowledge\ncurse sets:\nSet 1:\nDisintegration\n(6 damage/turn) or\nMind Rot\n(draw 1 fewer card/turn)\nSet 2:\nDisintegration\n(7 damage/turn) or\nSloth\n(max 3 cards/turn)\nSet 3:\nDisintegration\n(8 damage/turn) or\nWaste Away\n(1 less\nEnergy\n/turn)"
+    },
+    {
+      "id": "lagavulin_matriarch",
+      "name": "Lagavulin Matriarch",
+      "contexts": [
+        {
+          "act": "Underdocks",
+          "encounter_type": "Bosses"
+        }
+      ],
+      "content": "Lagavulin Matriarch\nHP\n222\n233\n8\nDebut\nUnderdocks\nPowers\n12\nPlating\n3\nAsleep\nLagavulin Matriarch\nis a\nBoss\nfound in the\nUnderdocks\n.\nPattern\nName\nIntent\nEffect\nSleep\nAsleep. Does nothing.\nSlash\nDeals 19 damage.\nDeals\n21\n9\ndamage.\nDisembowel\nDeals 9 damage x2.\nDeals\n10\n9\ndamage x2.\nSlash2\nDeals 12 damage. Gains 12\nBlock\n.\nDeals\n14\n9\ndamage. Gains\n14\n8\nBlock\n.\nSoul Siphon\nRemoves 2\nStrength\nand 2\nDexterity\nfrom the player. Gains 2\nStrength\n.\nThe Lagavulin Matriarch starts\nAsleep\nwith 12\nPlating\n. It sleeps for 3 turns or until it takes unblocked damage, whichever comes first. When it wakes up, it loses its\nPlating\n.\nAfter waking, it repeats this four-move cycle:\nSlash\nDisembowel\nSlash2\nSoul Siphon\nWaking the Lagavulin Matriarch early (by dealing unblocked damage) removes its\nPlating\nimmediately, but also ends the free setup turns.\nSoul Siphon\npermanently reduces the player's\nStrength\nand\nDexterity\nby 2 each cycle, making long fights increasingly punishing.\nNotes\nTrivia\nLavagulin Matriarch's appearance, abilities, and name are a reference to the\nLavagulin\nelite from Slay the Spire I."
+    },
+    {
+      "id": "leaf_slime_m",
+      "name": "Leaf Slime (M)",
+      "contexts": [
+        {
+          "act": "Overgrowth",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Leaf Slime (M)\n\nLeaf Slime (M)\nHP\n32-35\n33-36\n8\nDebut\nOvergrowth\n\nPattern\n\nName\nIntent\nEffect\nClump Shot\nDeals 8 damage.\nDeals\n9\n9\ndamage.\nSticky Shot\nShuffles 2\nSlimed\ninto your discard pile.\n\nAlways starts with\nSticky Shot\n, then alternates between\nClump Shot\nand\nSticky Shot\n."
+    },
+    {
+      "id": "leaf_slime_s",
+      "name": "Leaf Slime (S)",
+      "contexts": [
+        {
+          "act": "Overgrowth",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Leaf Slime (S)\n\nLeaf Slime (S)\nHP\n11-15\n12-16\n8\nDebut\nOvergrowth\n\nPattern\n\nName\nIntent\nEffect\nTackle\nDeals 3 damage.\nDeals\n4\n9\ndamage.\nGoop\nShuffles 1\nSlimed\ninto your discard pile.\n\nRandomly picks\nTackle\nor\nGoop\neach turn. Cannot use the same move twice in a row."
+    },
+    {
+      "id": "living_fog",
+      "name": "Living Fog",
+      "contexts": [
+        {
+          "act": "Underdocks",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Living Fog\nis a normal Enemy found in the\nUnderdocks\n. It summons\nGas Bombs\nthat explode for damage and then die.\n\nLiving Fog\nHP\n80\n82\n8\nDebut\nUnderdocks\n\nSmoggy\nYou can only play 1 Skill per turn.\n\nLiving Fog\n\nPattern\n\nName\nIntent\nEffect\nAdvanced Gas\nDeals 8 damage. Applies 1\nSmoggy\n.\nDeals\n9\n9\ndamage. Applies 1\nSmoggy\n.\nBloat\nDeals 5 damage. Summons\nGas Bombs\n(increasing each use).\nDeals\n6\n9\ndamage. Summons\nGas Bombs\n(increasing each use).\nSuper Gas Blast\nDeals 8 damage.\nDeals\n9\n9\ndamage.\n\nAlways uses\nAdvanced Gas\nfirst, then alternates between\nBloat\nand\nSuper Gas Blast\n.\n\nEach time\nBloat\nis used, it summons one more\nGas Bomb\nthan the previous use (1, then 2, then 3, up to 5)."
+    },
+    {
+      "id": "living_shield",
+      "name": "Living Shield",
+      "contexts": [
+        {
+          "act": "Glory",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Living Shield\n\nLiving Shield\nHP\n55\n65\n8\nDebut\nGlory\nPowers\nRampart\n25\n\nRampart\nAt the start of the player's turn, Turret Operator gains X\nBlock\n.\n\nPattern\n\nName\nIntent\nEffect\nShield Slam\nDeals 6 damage.\nSmash\nDeals 16 damage. Gains 3\nStrength\n.\nDeals\n18\n9\ndamage. Gains 3\nStrength\n.\n\nUses\nShield Slam\nevery turn while the Turret Operator is alive. Once the Turret Operator is killed, switches to\nSmash\nevery turn."
+    },
+    {
+      "id": "louse_progenitor",
+      "name": "Louse Progenitor",
+      "contexts": [
+        {
+          "act": "Hive",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Louse Progenitor\nHP\n134-136\n138-141\n8\nDebut\nHive\nPowers\n14 (\n18\n8\n)\nCurl Up\nCurl Up\nGains X\nBlock\nupon first being hit.\nLouse Progenitor\nis a normal Enemy found in\nHive\n.\nPattern\nName\nIntent\nEffect\nWeb Cannon\nDeals 9 damage. Applies 2\nFrail\n.\nDeals\n10\n9\ndamage. Applies 2\nFrail\n.\nCurl and Grow\nGains 14\nBlock\n. Gains 5\nStrength\n.\nGains\n18\n8\nBlock\n. Gains 5\nStrength\n.\nPounce\nDeals 14 damage.\nDeals\n16\n9\ndamage.\nThe Louse Progenitor repeats a fixed three-move cycle:\nWeb Cannon\n, then\nCurl and Grow\n, then\nPounce\n, and back to the start."
+    },
+    {
+      "id": "magi_knight",
+      "name": "Magi Knight",
+      "contexts": [
+        {
+          "act": "Glory",
+          "encounter_type": "Elites"
+        }
+      ],
+      "content": "Magi Knight\n\nMagi Knight\nHP\n82\n89\n8\nDebut\nGlory\n\nDampen\nWhile Magi Knight is alive, ALL your cards are Downgraded.\n\nPattern\n\nName\nIntent\nEffect\nPower Shield\nDeals 6 damage. Gains 5\nBlock\n.\nDeals\n7\n9\ndamage. Gains\n9\n8\nBlock\n.\nDampen\nApplies\nDampen\n. While Magi Knight is alive, all your cards are Downgraded.\nRam\nDeals 10 damage.\nDeals\n11\n9\ndamage.\nPrep\nGains 5\nBlock\n.\nGains\n9\n8\nBlock\n.\nMagic Bomb\nDeals 35 damage.\nDeals\n40\n9\ndamage.\n\nStarts with\nPower Shield\n, followed by\nDampen\n.\nThen repeatedly uses\nRam\n,\nPrep\n, and\nMagic Bomb\nin that order."
+    },
+    {
+      "id": "mawler",
+      "name": "Mawler",
+      "contexts": [
+        {
+          "act": "Overgrowth",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Mawler\nHP\n72\n76\n8\nDebut\nOvergrowth\nMawler\nis a normal Enemy found in the\nOvergrowth\n.\nPattern\nName\nIntent\nEffect\nRip and Tear\nDeals 14 damage.\nDeals\n16\n9\ndamage.\nRoar\nApplies 3\nVulnerable\n.\nClaw\nDeals 4 damage ×2.\nDeals\n5\n9\ndamage ×2.\nAlways opens with\nClaw\n.\nAfter that, each turn it randomly picks one of three moves with equal chance:\nRip and Tear\n,\nRoar\n, or\nClaw\n. It cannot use the same move twice in a row, and\nRoar\ncan only be used once per fight.\nNotes\nRoar\napplies 3\nVulnerable\n, causing you to take 50% more damage. Since it can only be used once, the Mawler's debuff pressure is limited.\nOnce\nRoar\nhas been used, the Mawler alternates randomly between\nRip and Tear\nand\nClaw\nwithout repeating the same move consecutively."
+    },
+    {
+      "id": "mecha_knight",
+      "name": "Mecha Knight",
+      "contexts": [
+        {
+          "act": "Glory",
+          "encounter_type": "Elites"
+        }
+      ],
+      "content": "Mecha Knight\nHP\n300\n320\n8\nDebut\nGlory\nPowers\n3\nArtifact\nMecha Knight\nis an Elite found in\nGlory\n.\nPattern\nName\nIntent\nEffect\nCharge\nDeals 25 damage.\nDeals\n30\n9\ndamage.\nFlamethrower\nShuffles 4\nBurns\ninto your hand.\nWindup\nGains 15\nBlock\nand 5\nStrength\n.\nHeavy Cleave\nDeals 35 damage.\nDeals\n40\n9\ndamage.\nStarts with\nCharge\nand then repeats this cycle for the rest of combat:\nFlamethrower\nWindup\nHeavy Cleave\nNotes"
+    },
+    {
+      "id": "myte",
+      "name": "Myte",
+      "contexts": [
+        {
+          "act": "Hive",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Myte\nHP\n61-67\n64-69\n8\nDebut\nHive\nMyte\nis a normal Enemy found in\nHive\n.\nPattern\nName\nIntent\nEffect\nToxic Cornucopia\nAdds 2\nToxic\nto your hand.\nBite\nDeals 13 damage.\nDeals\n15\n9\ndamage.\nSuck\nDeals 4 damage. Gains 2\nStrength\n.\nDeals\n6\n9\ndamage. Gains\n3\n9\nStrength\n.\nMytes always appear in pairs. One opens with\nToxic Cornucopia\nand the other opens with\nSuck\n. After that, each one cycles through\nToxic Cornucopia\n,\nBite\n,\nSuck\nin order, repeating.\nIn Party With\nHive\n2 Mytes"
+    },
+    {
+      "id": "nibbit",
+      "name": "Nibbit",
+      "contexts": [
+        {
+          "act": "Overgrowth",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Nibbit\nHP\n42-46\n44-48\n8\nDebut\nOvergrowth\nNibbit\nis a normal Enemy found in the\nOvergrowth\n.\nPattern\nName\nIntent\nEffect\nButt\nDeals 12 damage.\nDeals\n13\n9\ndamage.\nHesitant Slice\nDeals 6 damage. Gains 5\nBlock\n.\nHiss\nGains 2\nStrength\n.\nWhen alone (Nibbits Weak encounter), the Nibbit opens with\nButt\n.\nWhen paired (Nibbits Normal encounter), the front Nibbit opens with\nHesitant Slice\nand the back Nibbit opens with\nHiss\n.\nAfter the opening move, all Nibbits cycle in a fixed order:\nButt\n, then\nHesitant Slice\n, then\nHiss\n, and repeat.\nNotes\nHiss\ngrants 2\nStrength\n, which increases the damage of all subsequent attacks. Over a long fight, Nibbits can accumulate significant\nStrength\n.\nIn the paired encounter, the two Nibbits start on different points in their cycle, so they use different moves each turn."
+    },
+    {
+      "id": "noisebot",
+      "name": "Noisebot",
+      "contexts": [
+        {
+          "act": "Glory",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Noisebot\n\nNoisebot\nHP\n23-28\n24-29\n8\nDebut\nGlory\n\nPattern\n\nName\nIntent\nEffect\nNoise\nShuffles 2\nDazed\ninto the player's draw and discard piles.\n\nUses\nNoise\nevery turn."
+    },
+    {
+      "id": "ovicopter",
+      "name": "Ovicopter",
+      "contexts": [
+        {
+          "act": "Hive",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Ovicopter\nis a normal Enemy found in the\nHive\n. It summons\nTough Eggs\nthat hatch into Hatchlings.\n\nOvicopter\n\nOvicopter\nHP\n124-130\n126-132\n8\nDebut\nHive\n\nPattern\n\nName\nIntent\nEffect\nLay Eggs\nSummons 3\nTough Eggs\n.\nSmash\nDeals 16 damage.\nDeals\n17\n9\ndamage.\nTenderizer\nDeals 7 damage. Applies 2\nVulnerable\n.\nDeals\n8\n9\ndamage. Applies 2\nVulnerable\n.\nNutritional Paste\nGains 3\nStrength\n.\nGains\n4\n9\nStrength\n.\n\nAlways opens with\nLay Eggs\nto summon 3\nTough Eggs\n, then uses\nSmash\n, then\nTenderizer\n.\n\nAfter\nTenderizer\n, it checks how many allies it has. If it has 3 or fewer living allies, it uses\nLay Eggs\nagain. If it has more than 3, it uses\nNutritional Paste\ninstead. Then the cycle continues with\nSmash\nand\nTenderizer\n."
+    },
+    {
+      "id": "owl_magistrate",
+      "name": "Owl Magistrate",
+      "contexts": [
+        {
+          "act": "Glory",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Owl Magistrate\nHP\n234\n243\n8\nDebut\nGlory\nOwl Magistrate\nis a normal Enemy found in\nGlory\n.\nPattern\nName\nIntent\nEffect\nMagistrate Scrutiny\nDeals 16 damage.\nDeals\n17\n9\ndamage.\nPeck Assault\nDeals 4 damage x6.\nJudicial Flight\nGains\nSoar\n.\nVerdict\nDeals 33 damage. Applies 4\nVulnerable\n. Removes\nSoar\n.\nDeals\n36\n9\ndamage. Applies 4\nVulnerable\n. Removes\nSoar\n.\nFollows a fixed 4-move cycle:\nMagistrate Scrutiny\n,\nPeck Assault\n,\nJudicial Flight\n,\nVerdict\n, then repeats.\nNotes"
+    },
+    {
+      "id": "parafright",
+      "name": "Parafright",
+      "contexts": [
+        {
+          "act": "Hive",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Parafright\n\nParafright\nHP\n21\n8\nDebut\nHive\nPowers\nIllusion\n\nIllusion\nWhen this dies, it revives next turn at full HP.\n\nThe Parafright is a minion summoned by The Obscura via\nIllusion\n.\n\nPattern\n\nName\nIntent\nEffect\nSlam\nDeals 16 damage.\nDeals\n17\n9\ndamage.\n\nUses\nSlam\nevery turn.\n\nNewPP limit report\nCached time: 20260327203830\nCache expiry: 2592000\nReduced expiry: false\nComplications: [show‐toc]\nCPU time usage: 0.120 seconds\nReal time usage: 0.237 seconds\nPreprocessor visited node count: 686/1000000\nRevision size: 885/4194304 bytes\nPost‐expand include size: 19351/4194304 bytes\nTemplate argument size: 773/4194304 bytes\nHighest expansion depth: 8/100\nExpensive parser function count: 1/500\nUnstrip recursion depth: 0/20\nUnstrip post‐expand size: 0/10000000 bytes\nLua time usage: 0.068/15.000 seconds\nLua memory usage: 3299573/52428800 bytes\n\nTransclusion expansion time report (%,ms,calls,template)\n100.00%  209.786      1 -total\n43.92%   92.146      2 Template:Enemy_Infobox\n29.83%   62.570      3 Template:M\n27.60%   57.903      3 Template:Infobox_Styling\n14.88%   31.223      2 Template:Intents\n8.03%   16.841      2 Template:BD\n7.09%   14.866      6 Template:Asc\n4.59%    9.635      1 Template:Keyword_Infobox\n4.11%    8.620      6 Template:Int\n2.01%    4.222      2 Template:KW\n\nSaved in parser cache with key slaythespire_en:pcache:idhash:8524-0!canonical and timestamp 20260327203830 and revision id 21450. Rendering was triggered because: edit-page"
+    },
+    {
+      "id": "phantasmal_gardener",
+      "name": "Phantasmal Gardener",
+      "contexts": [
+        {
+          "act": "Underdocks",
+          "encounter_type": "Elites"
+        }
+      ],
+      "content": "Phantasmal Gardener\nHP\n28-32\n29-33\n8\nDebut\nUnderdocks\nPowers\n6 (\n7\n8\n)\nSkittish\nPhantasmal Gardener\nis an Elite Enemy found in the\nUnderdocks\n. Four appear together in the encounter.\nPattern\nName\nIntent\nEffect\nBite\nDeals 5 damage.\nLash\nDeals 7 damage.\nFlail\nDeals 1 damage ×3.\nEnlarge\nGains 2\nStrength\n.\nGains\n3\n9\nStrength\n.\nAll four Gardeners cycle through the same four moves in order:\nBite\n,\nLash\n,\nFlail\n,\nEnlarge\n, repeating. Each one starts at a different point in the cycle, so they always use different moves from each other.\nNotes"
+    },
+    {
+      "id": "phrog_parasite",
+      "name": "Phrog Parasite",
+      "contexts": [
+        {
+          "act": "Overgrowth",
+          "encounter_type": "Elites"
+        }
+      ],
+      "content": "Phrog Parasite\nHP\n61-64\n66-68\n8\nDebut\nOvergrowth\nPowers\nInfested\nPhrog Parasite\nis an Elite found in the\nOvergrowth\n.\nPattern\nName\nIntent\nEffect\nInfect\nShuffles 3\nInfection\ninto your discard pile.\nLash\nDeals 4 damage ×4.\nDeals\n5\n9\ndamage ×4.\nPhrog Parasite alternates between its two moves:\nInfect\nLash\nBack to\nInfect\n, and so on.\nWhen Phrog Parasite dies,\nInfested\ntriggers and 4\nWriggler\ns are summoned. They will be stunned and do nothing on their first turn. The fight continues until all Wrigglers are defeated.\nNotes\nWhether the Wrigglers remain stunned on the player's next turn depends on whether the Phrog dies on the player's turn or its own turn.\nIf the Phrog is killed normally with an attack card, the Wrigglers will\nnot\nbe stunned on the player's next turn.\nIf the Phrog is killed by damage from an Orb, then the Wrigglers will\nnot\nbe stunned on the player's next turn.\nIf the Phrog dies to either\nPoison\nor\nDoom\n, then this counts as dying on its own turn, and so the Wrigglers\nwill\nbe stunned on the player's next turn.\nUseful Cards\nFrontloaded damage cards like\nPerfected Strike\n,\nBackstab\n, and\nDefile\ncan be useful for taking down the Phrog Parasite before it can add too many copies of Infection to your deck, as well as for finishing off individual Wrigglers quickly.\nDeathbringer\n,\nDeadly Poison\nand other cards which apply\nPoison\nor\nDoom\ncan give you an extra turn before the Wrigglers attack if the Phrog dies to their damage.\nAttacks which target all enemies like\nDagger Spray\n,\nBone Shards\nor\nWhirlwind\ncan damage all of the Wrigglers at once.\nCards which can exhaust or discard the Infections, such as\nBurning Pact\nor\nHidden Daggers\n, can prevent them from damaging you.\nTrivia\nThe\nPaper Phrog\nresembles the Phrog Parasite."
+    },
+    {
+      "id": "punch_construct",
+      "name": "Punch Construct",
+      "contexts": [
+        {
+          "act": "Glory",
+          "encounter_type": "Monsters"
+        },
+        {
+          "act": "Underdocks",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Punch Construct\nHP\n55\n60\n8\nDebut\nUnderdocks\nPowers\n1\nArtifact\nPunch Construct\nis a normal Enemy found in the\nUnderdocks\nand\nGlory\n.\nPattern\nName\nIntent\nEffect\nREADY\nGains 10\nBlock\n.\nStrong Punch\nDeals 14 damage.\nDeals\n16\n9\ndamage.\nFast Punch\nDeals 5 damage ×2. Applies 1\nWeak\n.\nDeals\n6\n9\ndamage ×2. Applies 1\nWeak\n.\nCycles through its moves in a fixed order:\nREADY\n, then\nStrong Punch\n, then\nFast Punch\n, repeating.\nNotes"
+    },
+    {
+      "id": "queen",
+      "name": "Queen",
+      "contexts": [
+        {
+          "act": "Glory",
+          "encounter_type": "Bosses"
+        }
+      ],
+      "content": "Queen\nHP\n400\n419\n8\nDebut\nGlory\n\nChains of Binding\nThe first X cards drawn each turn are Afflicted with Bound.\n\nQueen\nis a\nBoss\nfound in\nGlory\n. She fights alongside the\nTorch Head Amalgam\n."
+    },
+    {
+      "id": "rocket",
+      "name": "Rocket",
+      "contexts": [
+        {
+          "act": "Hive",
+          "encounter_type": "Bosses"
+        }
+      ],
+      "content": "Rocket\n\nRocket\nHP\n189\n199\n8\nDebut\nHive\nPowers\nBack Attack\nCrab Rage\n\nPattern\n\nName\nIntent\nEffect\nTargeting Reticle\nDeals 3 damage.\nDeals\n4\n9\ndamage.\nPrecision Beam\nDeals 18 damage.\nDeals\n20\n9\ndamage.\nCharge Up\nGains 2\nStrength\n.\nLaser\nDeals 31 damage.\nDeals\n35\n9\ndamage.\nRecharge\nDoes nothing.\n\nRocket cycles through its five moves in a fixed order, repeating forever:\n\nTargeting Reticle\nPrecision Beam\nCharge Up\nLaser\nRecharge"
+    },
+    {
+      "id": "scroll_of_biting",
+      "name": "Scroll of Biting",
+      "contexts": [
+        {
+          "act": "Glory",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Scroll of Biting\nHP\n31-38\n32-39\n8\nDebut\nGlory\nPowers\nPaper Cuts\n2\nPaper Cuts\nWhenever it deals unblocked attack damage to you, you lose X Max HP.\nScroll of Biting\nis a normal Enemy found in\nGlory\n. It appears in groups of 3 (weak) or 4 (normal), each starting on a different move.\nPattern\nName\nIntent\nEffect\nChomp\nDeals 14 damage.\nDeals\n16\n9\ndamage.\nChew\nDeals 5 damage 2 times.\nDeals\n6\n9\ndamage 2 times.\nMore Teeth\nGains 2\nStrength\n.\nEach Scroll of Biting starts on a different move in the cycle. The pattern is:\nChomp\n, then\nMore Teeth\n, then\nChew\n.\nAfter\nChew\n, it randomly picks either\nChomp\n(cannot repeat) or\nChew\n(weight 2), then continues the cycle from that point.\nIn Party With\nGlory\n3 Scrolls of Biting (Weak)\n4 Scrolls of Biting\nNotes"
+    },
+    {
+      "id": "seapunk",
+      "name": "Seapunk",
+      "contexts": [
+        {
+          "act": "Underdocks",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Seapunk\nHP\n44-46\n47-49\n8\nDebut\nUnderdocks\nSeapunk\nis a normal Enemy found in the\nUnderdocks\n.\nPattern\nName\nIntent\nEffect\nSea Kick\nDeals 11 damage.\nDeals\n12\n9\ndamage.\nSpinning Kick\nDeals 2 damage ×4.\nBubble Burp\nGains 7\nBlock\nand 1\nStrength\n.\nGains\n8\n8\nBlock\nand\n2\n9\nStrength\n.\nCycles through its moves in a fixed order:\nSea Kick\nSpinning Kick\nBubble Burp\nBack to\nSea Kick\nNotes"
+    },
+    {
+      "id": "sewer_clam",
+      "name": "Sewer Clam",
+      "contexts": [
+        {
+          "act": "Underdocks",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Sewer Clam\nHP\n56\n58\n8\nDebut\nUnderdocks\nPowers\n8 (\n9\n8\n)\nPlating\nSewer Clam\nis a normal Enemy found in the\nUnderdocks\n.\nPattern\nName\nIntent\nEffect\nJet\nDeals 10 damage.\nDeals\n11\n9\ndamage.\nPressurize\nGains 4\nStrength\n.\nAlways uses\nJet\nfirst. Then alternates between\nPressurize\nand\nJet\nevery turn.\nNotes"
+    },
+    {
+      "id": "shrinker_beetle",
+      "name": "Shrinker Beetle",
+      "contexts": [
+        {
+          "act": "Overgrowth",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Shrinker Beetle\nHP\n38-40\n40-42\n8\nDebut\nOvergrowth\nShrink\nAttacks deal 30% less damage. Removed when the applier dies.\nShrinker Beetle\nis a normal\nEnemy\nfound in the\nOvergrowth\n.\nPattern\nName\nIntent\nEffect\nShrinker\nApplies\nShrink\n.\nChomp\nDeals 7 damage.\nDeals\n8\n9\ndamage.\nStomp\nDeals 13 damage.\nDeals\n14\n9\ndamage.\nAlways opens with\nShrinker\n, then alternates between\nChomp\nand\nStomp\n.\nTrivia\nThis enemy resembles the\nPreserved Insect\nfrom the original Slay the Spire, which made Elites smaller when in use.\nThe effect applied by its Shrinker ability is the same as that of the\nBeetle Juice\n."
+    },
+    {
+      "id": "skulking_colony",
+      "name": "Skulking Colony",
+      "contexts": [
+        {
+          "act": "Underdocks",
+          "encounter_type": "Elites"
+        }
+      ],
+      "content": "Skulking Colony\nHP\n79\n84\n8\nDebut\nUnderdocks\nPowers\n20\nHardened Shell\nSkulking Colony\nis an Elite Enemy found in the\nUnderdocks\n.\nPattern\nName\nIntent\nEffect\nSmash\nDeals 9 damage. Shuffles 4\nDazed\ninto your discard pile.\nDeals\n11\n9\ndamage. Shuffles 4\nDazed\ninto your discard pile.\nZoom\nDeals 16 damage.\nDeals\n17\n9\ndamage.\nInertia\nGains 10\nBlock\nand 3\nStrength\n.\nGains\n13\n8\nBlock\nand 3\nStrength\n.\nSuper Crab\nDeals 6 damage x2.\nDeals\n7\n9\ndamage x2.\nThe Skulking Colony repeats the same four moves in order:\nSmash\nZoom\nInertia\nSuper Crab\nNotes\nTrivia\nSkulking Colony is male.\n↑\n\"Additionally I found that the Dazed statuses actually worked against the design goals of his power\"\nhttps://store.steampowered.com/news/app/2868840/view/507357499795439629?l=english"
+    },
+    {
+      "id": "slimed_berserker",
+      "name": "Slimed Berserker",
+      "contexts": [
+        {
+          "act": "Glory",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Slimed Berserker\nHP\n266\n276\n8\nDebut\nGlory\nSlimed Berserker\nis a normal Enemy found in\nGlory\n.\nPattern\nName\nIntent\nEffect\nVomit Ichor\nShuffles 10\nSlimed\ninto the discard pile.\nFurious Pummeling\nDeals 4 damage x4.\nDeals\n5\n9\ndamage x4.\nLeeching Hug\nApplies 3\nWeak\n. Gains 3\nStrength\n.\nSmother\nDeals 30 damage.\nDeals\n33\n9\ndamage.\nFollows a fixed 4-move cycle:\nVomit Ichor\n,\nFurious Pummeling\n,\nLeeching Hug\n,\nSmother\n, then repeats.\nNotes"
+    },
+    {
+      "id": "slithering_strangler",
+      "name": "Slithering Strangler",
+      "contexts": [
+        {
+          "act": "Overgrowth",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Slithering Strangler\nHP\n53-55\n54-56\n8\nDebut\nOvergrowth\nConstrict\nWhile the Slithering Strangler is alive, at the end of your turn, take X damage.\nSlithering Strangler\nis a normal Enemy found in the\nOvergrowth\n.\nPattern\nName\nIntent\nEffect\nConstrict\nApplies 3\nConstrict\n.\nThwack\nDeals 7 damage. Gains 5\nBlock\n.\nDeals\n8\n9\ndamage. Gains 5\nBlock\n.\nLash\nDeals 12 damage.\nDeals\n13\n9\ndamage.\nAlways opens with\nConstrict\n. After that, it randomly picks\nThwack\nor\nLash\n(equal chance, can repeat). After either attack, it always uses\nConstrict\nagain, then returns to the random pick.\nThe pattern is:\nConstrict\n50/50 chance to use\nLash\nor\nThwack\nConstrict\n50/50 chance to use\nLash\nor\nThwack"
+    },
+    {
+      "id": "sludge_spinner",
+      "name": "Sludge Spinner",
+      "contexts": [
+        {
+          "act": "Underdocks",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Sludge Spinner\nHP\n37-39\n41-42\n8\nDebut\nUnderdocks\nSludge Spinner\nis a normal Enemy found in the\nUnderdocks\n.\nPattern\nName\nIntent\nEffect\nOil Spray\nDeals 8 damage. Applies 1\nWeak\n.\nDeals\n9\n9\ndamage. Applies 1\nWeak\n.\nSlam\nDeals 11 damage.\nDeals\n12\n9\ndamage.\nRage\nDeals 6 damage. Gains 3\nStrength\n.\nDeals\n7\n9\ndamage. Gains 3\nStrength\n.\nAlways uses\nOil Spray\nfirst. After that, randomly uses one of its three moves each turn. Cannot use the same move twice in a row.\nNotes"
+    },
+    {
+      "id": "slumbering_beetle",
+      "name": "Slumbering Beetle",
+      "contexts": [
+        {
+          "act": "Hive",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Slumbering Beetle\nHP\n86\n89\n8\nDebut\nHive\nPowers\n15 (\n18\n8\n)\nPlating\n3\nSlumber\nSlumber\nAwakens upon taking turns or losing HP X times.\nSlumbering Beetle\nis a normal Enemy found in\nHive\n.\nPattern\nName\nIntent\nEffect\nSnore\nDoes nothing. Asleep.\nRoll Out\nDeals 16 damage. Gains 2\nStrength\n.\nDeals\n18\n9\ndamage. Gains 2\nStrength\n.\nThe Slumbering Beetle starts asleep and uses\nSnore\neach turn while it has\nSlumber\n. Once\nSlumber\nwears off (after taking turns or losing HP 3 times), it wakes up, loses its\nPlating\n, and uses\nRoll Out\nevery turn.\nIn Party With\nHive\n+ Bowlbug (Rock) + Bowlbug (Silk)"
+    },
+    {
+      "id": "snapping_jaxfruit",
+      "name": "Snapping Jaxfruit",
+      "contexts": [
+        {
+          "act": "Overgrowth",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Snapping Jaxfruit\nHP\n31-33\n34-36\n8\nDebut\nOvergrowth\nSnapping Jaxfruit\nis a normal\nEnemy\nfound in the\nOvergrowth\n.\nPattern\nName\nIntent\nEffect\nEnergy Orb\nDeals 3 damage. Gains 2\nStrength\n.\nDeals\n4\n9\ndamage. Gains 2\nStrength\n.\nUses\nEnergy Orb\nevery turn.\nNotes\nAlthough its starting damage is low, the\nStrength\naccumulation means it becomes increasingly threatening if left alive."
+    },
+    {
+      "id": "sneaky_gremlin",
+      "name": "Sneaky Gremlin",
+      "contexts": [
+        {
+          "act": "Underdocks",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Sneaky Gremlin\n\nSneaky Gremlin\nHP\n10-14\n11-15\n8\nDebut\nUnderdocks\n\nThe Sneaky Gremlin is a minion summoned when the Gremlin Merc dies.\n\nPattern\n\nName\nIntent\nEffect\nSpawned\nWakes up. Does nothing.\nTackle\nDeals 9 damage.\nDeals\n10\n9\ndamage.\n\nUses\nSpawned\non its first turn (does nothing), then uses\nTackle\nevery turn after.\n\nThe Fat Gremlin will flee with any gold the Gremlin Merc stole during the fight. Kill it before it escapes to recover the gold."
+    },
+    {
+      "id": "soul_fysh",
+      "name": "Soul Fysh",
+      "contexts": [
+        {
+          "act": "Underdocks",
+          "encounter_type": "Bosses"
+        }
+      ],
+      "content": "Soul Fysh\nHP\n211\n221\n8\nDebut\nUnderdocks\nSoul Fysh\nis a\nBoss\nfound in the\nUnderdocks\n.\nPattern\nName\nIntent\nEffect\nBeckon\nShuffles 2\nBeckon\ninto your deck (1 into draw pile, 1 into discard pile).\nDe-Gas\nDeals 16 damage.\nDeals\n17\n9\ndamage.\nGaze\nDeals 7 damage. Shuffles 1\nBeckon\ninto your discard pile.\nDeals\n8\n9\ndamage. Shuffles 1\nBeckon\ninto your discard pile.\nFade\nGains 2\nIntangible\n.\nScream\nDeals 11 damage. Applies 3\nVulnerable\n.\nDeals\n12\n9\ndamage. Applies 3\nVulnerable\n.\nThe Soul Fysh repeats the same five moves in order:\nBeckon\nDe-Gas\nGaze\nFade\nScream\nNotes"
+    },
+    {
+      "id": "soul_nexus",
+      "name": "Soul Nexus",
+      "contexts": [
+        {
+          "act": "Glory",
+          "encounter_type": "Elites"
+        }
+      ],
+      "content": "Soul Nexus\nHP\n234\n254\n8\nDebut\nGlory\nSoul Nexus\nis an Elite Enemy found in\nGlory\n.\nPattern\nName\nIntent\nEffect\nSoul Burn\nDeals 29 damage.\nDeals\n31\n9\ndamage.\nMaelstrom\nDeals 6 damage ×4.\nDeals\n7\n9\ndamage ×4.\nDrain Life\nDeals 18 damage. Applies 2\nVulnerable\nand 2\nWeak\n.\nDeals\n19\n9\ndamage. Applies 2\nVulnerable\nand 2\nWeak\n.\nOpens with\nSoul Burn\n, then randomly uses\nSoul Burn\n,\nMaelstrom\n, or\nDrain Life\neach turn. No move can be used two turns in a row. All three moves are equally weighted.\nNotes"
+    },
+    {
+      "id": "spectral_knight",
+      "name": "Spectral Knight",
+      "contexts": [
+        {
+          "act": "Glory",
+          "encounter_type": "Elites"
+        }
+      ],
+      "content": "Spectral Knight\n\nSpectral Knight\nHP\n93\n97\n8\nDebut\nGlory\n\nHex\nWhile Spectral Knight is alive, ALL your cards are\nEthereal\n.\n\nPattern\n\nName\nIntent\nEffect\nHex\nApplies 2\nHex\n.\nSoul Slash\nDeals 15 damage.\nDeals\n17\n9\ndamage.\nSoul Flame\nDeals 3 damage ×3.\nDeals\n4\n9\ndamage ×3.\n\nOpens with\nHex\n. After that, alternates between\nSoul Slash\nand\nSoul Flame\n."
+    },
+    {
+      "id": "spiny_toad",
+      "name": "Spiny Toad",
+      "contexts": [
+        {
+          "act": "Hive",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Spiny Toad\nHP\n116-119\n121-124\n8\nDebut\nHive\nSpiny Toad\nis a normal Enemy found in\nHive\n.\nPattern\nName\nIntent\nEffect\nProtruding Spikes\nGains 5\nThorns\n.\nSpike Explosion\nDeals 23 damage. Loses 5\nThorns\n.\nDeals\n25\n9\ndamage. Loses 5\nThorns\n.\nTongue Lash\nDeals 17 damage.\nDeals\n19\n9\ndamage.\nCycles through\nProtruding Spikes\n,\nSpike Explosion\n,\nTongue Lash\nin order, repeating."
+    },
+    {
+      "id": "stabbot",
+      "name": "Stabbot",
+      "contexts": [
+        {
+          "act": "Glory",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Stabbot\n\nStabbot\nHP\n23-28\n24-29\n8\nDebut\nGlory\n\nPattern\n\nName\nIntent\nEffect\nStab\nDeals 11 damage. Applies 1\nFrail\n.\nDeals\n12\n9\ndamage. Applies 1\nFrail\n.\n\nUses\nStab\nevery turn."
+    },
+    {
+      "id": "terror_eel",
+      "name": "Terror Eel",
+      "contexts": [
+        {
+          "act": "Underdocks",
+          "encounter_type": "Elites"
+        }
+      ],
+      "content": "Terror Eel\nHP\n140\n150\n8\nDebut\nUnderdocks\nPowers\n70 (\n75\n8\n)\nShriek\nTerror Eel\nis an Elite Enemy found in the\nUnderdocks\n.\nPattern\nName\nIntent\nEffect\nCrash\nDeals 17 damage.\nDeals\n19\n9\ndamage.\nThrash\nDeals 3 damage x3. Gains 7\nVigor\n.\nDeals\n4\n9\ndamage x3. Gains 7\nVigor\n.\nStun\nStunned. Does nothing.\nTerror\nApplies 99\nVulnerable\n.\nThe Terror Eel alternates between\nCrash\nand\nThrash\n, starting with\nCrash\n.\nWhen its HP drops to its\nShriek\nthreshold (70, or\n75\n8\n), it becomes\nStunned\nand then uses\nTerror\nbefore resuming the Crash/Thrash cycle.\nTerror\napplies 99\nVulnerable\n, which effectively makes the player take 50% more damage from attacks for the rest of the fight.\nNotes\nTrivia\nTerror Eel's name and\nTerror\nskill are a reference to the card\nTerror\nfrom Slay the Spire I."
+    },
+    {
+      "id": "test_subject",
+      "name": "Test Subject",
+      "contexts": [
+        {
+          "act": "Glory",
+          "encounter_type": "Bosses"
+        }
+      ],
+      "content": "Test Subject\nis a\nBoss\nfound in\nGlory\n. It has three phases, reviving twice with increasing HP and new powers.\nPhase 1\nTest Subject\nHP\n100\n111\n8\nDebut\nGlory\nPowers\nAdaptable\n,\nEnrage\n2 (\n3\n9\n)\nAdaptable\nWhen it would be defeated, it instead revives even stronger.\nEnrage\nWhenever you play a Skill, gains X\nStrength\n.\nPattern\nName\nIntent\nEffect\nBite\nDeals 20 damage.\nDeals\n22\n9\ndamage.\nSkull Bash\nDeals 14 damage. Applies 1\nVulnerable\n.\nDeals\n16\n9\ndamage. Applies 1\nVulnerable\n.\nStarts with\nAdaptable\nand\nEnrage\n2 (\n3\n9\n). Alternates between\nBite\nand\nSkull Bash\n.\nWhen reduced to 0 HP,\nAdaptable\nprevents death and it revives into Phase 2.\nPhase 2\nTest Subject (Phase 2)\nHP\n200\n212\n8\nDebut\nGlory\nPowers\nPainful Stabs\nPainful Stabs\nShuffle X Wounds into your Discard Pile each time you receive unblocked attack damage.\nPattern\nName\nIntent\nEffect\nMulti-Claw\nDeals 10 damage x3 (increases by 1 hit each use).\nDeals\n11\n9\ndamage x3 (increases by 1 hit each use).\nPounce\nDeals 30 damage.\nDeals\n32\n9\ndamage.\nRevives with 200 (\n212\n8\n) HP and gains\nPainful Stabs\n. Alternates between\nMulti-Claw\nand\nPounce\n.\nMulti-Claw\nstarts at 3 hits and gains +1 hit each use.\nWhen reduced to 0 HP again, it revives into Phase 3.\nPhase 3\nTest Subject (Phase 3)\nHP\n300\n313\n8\nDebut\nGlory\nPowers\nNemesis\nNemesis\nAt the end of every other turn, gains\nIntangible\n1.\nPattern\nName\nIntent\nEffect\nLacerate\nDeals 10 damage x3.\nDeals\n11\n9\ndamage x3.\nBig Pounce\nDeals 45 damage.\nBurning Growl\nShuffles 3\nBurn\ninto discard pile. Gains 2\nStrength\n.\nShuffles\n5\n9\nBurn\ninto discard pile. Gains\n3\n9\nStrength\n.\nRevives with 300 (\n313\n8\n) HP, gains\nNemesis\n, and loses\nAdaptable\nand\nPainful Stabs\n. Cycles through:\nLacerate\nBig Pounce\nBurning Growl\nBack to\nLacerate\nThis is the final phase — the Test Subject can now be killed permanently.\nNotes\nAny Strength which the Test Subject gains from Enrage in the first phase will be lost when it transitions to the second phase.\nTrivia\nEach phase of the Test Subject's boss battle is based on an Elite enemy from the original Slay the Spire:\nPhase 1's\nEnrage\nbuff is shared with the Act 1 elite\nGremlin Nob\n. The Test Subject's claws and the spikes on its back also resemble the Gremlin Nob's horns.\nPhase 2's\nPainful Stabs\nbuff is shared with the Act 2 elite\nBook of Stabbing\n.\nPhase 3's\nNemesis\nbuff is identical to the ability of the Act 3 elite\nNemesis\n, and its icon depicts the mask worn by Nemesis."
+    },
+    {
+      "id": "the_forgotten",
+      "name": "The Forgotten",
+      "contexts": [
+        {
+          "act": "Glory",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "The Forgotten\n\nThe Forgotten\nHP\n106\n111\n8\nDebut\nGlory\nPowers\nPossess Speed\n\nPossess Speed\nWhen killed, return all stolen Dexterity to the player.\n\nPattern\n\nName\nIntent\nEffect\nMiasma\nRemoves 2\nDexterity\nfrom the player. Gains 8\nBlock\nand 2\nDexterity\n.\nDread\nDeals 15 damage.\nDeals\n17\n9\ndamage.\n\nAlternates between\nMiasma\nand\nDread\n, starting with\nMiasma\n."
+    },
+    {
+      "id": "the_insatiable",
+      "name": "The Insatiable",
+      "contexts": [
+        {
+          "act": "Hive",
+          "encounter_type": "Bosses"
+        }
+      ],
+      "content": "The Insatiable\nHP\n321\n341\n8\nDebut\nHive\nSandpit\nIn X turns, you will be eaten and die.\nThe Insatiable\nis a\nBoss\nfound in\nHive\n.\nPattern\nName\nIntent\nEffect\nLiquify Ground\nApplies 4\nSandpit\nto each player. Shuffles 6\nFrantic Escape\ninto each player's deck (3 into draw pile, 3 into discard pile).\nThrash\nDeals 8 damage ×2.\nDeals\n9\n9\ndamage ×2.\nLunging Bite\nDeals 28 damage.\nDeals\n31\n9\ndamage.\nSalivate\nGains 2\nStrength\n.\nGains\n3\n9\nStrength\n.\nThe Insatiable always opens with\nLiquify Ground\n, then repeats the following cycle:\nThrash\nLunging Bite\nSalivate\nThrash\nBack to\nLunging Bite"
+    },
+    {
+      "id": "the_lost",
+      "name": "The Lost",
+      "contexts": [
+        {
+          "act": "Glory",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "The Lost\n\nThe Lost\nHP\n93\n99\n8\nDebut\nGlory\nPowers\nPossess Strength\n\nPossess Strength\nWhen killed, return all stolen\nStrength\nto the player.\n\nPattern\n\nName\nIntent\nEffect\nDebilitating Smog\nRemoves 2\nStrength\nfrom the player and gains 2\nStrength\n.\nEye Lasers\nDeals 4 damage x2.\nDeals\n5\n9\ndamage x2.\n\nAlternates between\nDebilitating Smog\nand\nEye Lasers\n, starting with\nDebilitating Smog\n."
+    },
+    {
+      "id": "the_obscura",
+      "name": "The Obscura",
+      "contexts": [
+        {
+          "act": "Hive",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "The Obscura\nis a normal Enemy found in\nHive\n. It summons a\nParafright\nat the start of the fight.\n\nThe Obscura\n\nThe Obscura\nHP\n123\n129\n8\nDebut\nHive\n\nPattern\n\nName\nIntent\nEffect\nIllusion\nSummons a\nParafright\n.\nPiercing Gaze\nDeals 10 damage.\nDeals\n11\n9\ndamage.\nWail\nAll enemies gain 3\nStrength\n.\nHardening Strike\nDeals 6 damage. Gains 6\nBlock\n.\nDeals\n7\n9\ndamage. Gains\n7\n9\nBlock\n.\n\nThe Obscura always opens with\nIllusion\nto summon a\nParafright\n. After that, it randomly picks one of three moves —\nPiercing Gaze\n,\nWail\n, or\nHardening Strike\n— and cannot use the same move twice in a row."
+    },
+    {
+      "id": "thieving_hopper",
+      "name": "Thieving Hopper",
+      "contexts": [
+        {
+          "act": "Hive",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Thieving Hopper\nHP\n79\n84\n8\nDebut\nHive\nPowers\n5\nEscape Artist\nSwipe\nUpon killing this enemy, the stolen card is returned.\nFlutter\nReceives 50% less damage from Attacks. Deal attack damage X times to\nStun\nit.\nThieving Hopper\nis a normal Enemy found in\nHive\n.\nPattern\nName\nIntent\nEffect\nThievery\nDeals 17 damage. Steals a card from your deck.\nDeals\n19\n9\ndamage. Steals a card from your deck.\nFlutter\nGains\nFlutter\n(takes 50% less Attack damage; must be hit 5 times to\nStun\nit).\nHat Trick\nDeals 21 damage.\nDeals\n23\n9\ndamage.\nNab\nDeals 14 damage.\nDeals\n16\n9\ndamage.\nEscape\nFlees the combat, taking any stolen cards with it.\nThe Thieving Hopper follows a fixed sequence:\nThievery\n(stealing a card and dealing damage), then\nFlutter\n(gaining damage reduction), then\nHat Trick\n, then\nNab\n, and finally\nEscape\n(fleeing the fight permanently).\nIf it escapes, any cards it stole are lost for the rest of the run. Killing it before it escapes returns the stolen cards."
+    },
+    {
+      "id": "toadpole",
+      "name": "Toadpole",
+      "contexts": [
+        {
+          "act": "Underdocks",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Toadpole\nHP\n21-25\n22-26\n8\nDebut\nUnderdocks\nToadpole\nis a normal Enemy found in the\nUnderdocks\n.\nPattern\nName\nIntent\nEffect\nSpike Spit\nDeals 3 damage ×3. Removes 2\nThorns\nfrom self.\nDeals\n4\n9\ndamage ×3. Removes 2\nThorns\nfrom self.\nWhirl\nDeals 7 damage.\nDeals\n8\n9\ndamage.\nSpiken\nGains 2\nThorns\n.\nCycles through its moves in a fixed order:\nWhirl\n, then\nSpiken\n, then\nSpike Spit\n, repeating. In the Toadpoles (Weak) encounter, the front Toadpole starts with\nSpiken\ninstead.\nNotes"
+    },
+    {
+      "id": "torch_head_amalgam",
+      "name": "Torch Head Amalgam",
+      "contexts": [
+        {
+          "act": "Glory",
+          "encounter_type": "Bosses"
+        }
+      ],
+      "content": "Torch Head Amalgam\n\nTorch Head Amalgam\nHP\n199\n211\n8\nDebut\nGlory\nPowers\nMinion\n\nPattern\n\nName\nIntent\nEffect\nTackle\nDeals 18 damage.\nDeals\n19\n9\ndamage.\nBeam\nDeals 8 damage x3.\nWeak Tackle\nDeals 14 damage.\nDeals\n15\n9\ndamage.\n\nThe Torch Head Amalgam follows a fixed sequence:\n\nTackle\nTackle\nBeam\nWeak Tackle\nWeak Tackle\nBack to\nBeam\n(repeats steps 3-5)"
+    },
+    {
+      "id": "tough_egg",
+      "name": "Tough Egg",
+      "contexts": [
+        {
+          "act": "Hive",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Tough Egg\n\nTough Egg\nHP\n14-18\n15-19\n8\nDebut\nHive\nPowers\nHatch\n\nHatch\nHatches after X turns.\n\nThe Tough Egg is a minion summoned by Ovicopter via\nLay Eggs\n. It starts with the\nHatch\npower, which counts down over turns.\n\nPattern\n\nName\nIntent\nEffect\nHatch\nHatches into a Hatchling with 19-22 HP. Removes all powers except\nMinion\n.\nHatches into a Hatchling with\n20-23\n8\nHP. Removes all powers except\nMinion\n.\nNibble\nDeals 4 damage.\nDeals\n5\n9\ndamage.\n\nThe Tough Egg waits while its\nHatch\ntimer counts down. When the timer expires, it uses\nHatch\nto transform into a Hatchling with new HP, then uses\nNibble\nevery turn after."
+    },
+    {
+      "id": "tracker_raider",
+      "name": "Tracker Raider",
+      "contexts": [
+        {
+          "act": "Overgrowth",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Tracker Raider\n\nTracker Raider\nHP\n21-25\n22-26\n8\nDebut\nOvergrowth\n\nPattern\n\nName\nIntent\nEffect\nTrack\nApplies 2\nFrail\n.\nUnleash the Hounds\nDeals 1 damage x8.\nDeals 1 damage\nx9\n9\n.\n\nOpens with\nTrack\n, then uses\nUnleash the Hounds\nevery turn after."
+    },
+    {
+      "id": "tunneler",
+      "name": "Tunneler",
+      "contexts": [
+        {
+          "act": "Hive",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Tunneler\nHP\n87\n92\n8\nDebut\nHive\nBurrowed\nBlock\nis not removed at the start of its turn.\nStunned\nif all\nBlock\nis removed.\nTunneler\nis a normal Enemy found in\nHive\n.\nPattern\nName\nIntent\nEffect\nBite\nDeals 13 damage.\nDeals\n15\n9\ndamage.\nBurrow\nGains\nBurrowed\nand 32\nBlock\n.\nGains\nBurrowed\nand\n37\n8\nBlock\n.\nAttack from Below\nDeals 23 damage.\nDeals\n26\n9\ndamage.\nEmerging Strike\nStunned\n. Does nothing this turn.\nOpens with\nBite\n, then uses\nBurrow\n. While burrowed, uses\nAttack from Below\nevery turn.\nIf its\nBlock\nis fully broken while burrowed, it uses\nEmerging Strike\n, then starts the cycle over with\nBite\n.\nIn Party With\nHive\nSolo (Weak)\n+ 1 Bowlbug (Egg) or Bowlbug (Silk)"
+    },
+    {
+      "id": "turret_operator",
+      "name": "Turret Operator",
+      "contexts": [
+        {
+          "act": "Glory",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Turret Operator\nis a weak Enemy encounter found in\nGlory\n, featuring a Living Shield and a Turret Operator.\n\nTurret Operator\n\nTurret Operator\nHP\n41\n51\n8\nDebut\nGlory\n\nPattern\n\nName\nIntent\nEffect\nUnload!\nDeals 3 damage x5.\nDeals\n4\n9\ndamage x5.\nLoading\nGains 1\nStrength\n.\n\nFollows a fixed 3-move cycle:\nUnload!\n,\nUnload!\n,\nLoading\n, then repeats."
+    },
+    {
+      "id": "twig_slime_m",
+      "name": "Twig Slime (M)",
+      "contexts": [
+        {
+          "act": "Overgrowth",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Twig Slime (M)\n\nTwig Slime (M)\nHP\n26-28\n27-29\n8\nDebut\nOvergrowth\n\nPattern\n\nName\nIntent\nEffect\nChomp\nDeals 11 damage.\nDeals\n12\n9\ndamage.\nSticky Shot\nShuffles 1\nSlimed\ninto your discard pile.\n\nAlways starts with\nSticky Shot\n. After that, each turn it randomly picks\nChomp\n(67%) or\nSticky Shot\n(33%). Cannot use\nSticky Shot\ntwice in a row."
+    },
+    {
+      "id": "twig_slime_s",
+      "name": "Twig Slime (S)",
+      "contexts": [
+        {
+          "act": "Overgrowth",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Twig Slime (S)\n\nTwig Slime (S)\nHP\n7-11\n8-12\n8\nDebut\nOvergrowth\n\nPattern\n\nName\nIntent\nEffect\nTackle\nDeals 4 damage.\nDeals\n5\n9\ndamage.\n\nUses\nTackle\nevery turn."
+    },
+    {
+      "id": "two_tailed_rat",
+      "name": "Two-Tailed Rat",
+      "contexts": [
+        {
+          "act": "Underdocks",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Two-Tailed Rat\nHP\n17-21\n18-22\n8\nDebut\nUnderdocks\nTwo-Tailed Rat\nis a normal Enemy found in the\nUnderdocks\n. Three appear together in the encounter.\nPattern\nName\nIntent\nEffect\nScratch\nDeals 8 damage.\nDeals\n9\n9\ndamage.\nDisease Bite\nDeals 6 damage.\nDeals\n7\n9\ndamage.\nScreech\nApplies 1\nFrail\n.\nCall for Backup\nSummons a new\nTwo-Tailed Rat\n.\nEach rat starts with a different move: one uses\nScratch\n, one uses\nDisease Bite\n, and one uses\nScreech\n. After the first turn, each rat randomly picks from\nScratch\n,\nDisease Bite\n, or\nScreech\neach turn. Cannot use the same move twice in a row.\nAfter at least two turns, a rat may use\nCall for Backup\nto summon a new rat. Each rat can only summon once, and the group can summon up to three times total.\nNotes\nDespite its name, the Two-Tailed Rat doesn't visually have two tails and instead has one tail that is forked at the end.\nFungi Beasts\nappear to be Two-Tailed Rats corpses with a fungal infection controlling them."
+    },
+    {
+      "id": "vantom",
+      "name": "Vantom",
+      "contexts": [
+        {
+          "act": "Overgrowth",
+          "encounter_type": "Bosses"
+        }
+      ],
+      "content": "Vantom\nHP\n173\n183\n8\nDebut\nOvergrowth\nPowers\n9\nSlippery\nSlippery\nThe next X times it loses HP, it only loses 1 HP instead.\nVantom\nis a\nBoss\nfound in the\nOvergrowth\n.\nPattern\nName\nIntent\nEffect\nInk Blot\nDeals 7 damage.\nDeals\n8\n9\ndamage.\nInky Lance\nDeals 6 damage ×2.\nDeals\n7\n9\ndamage ×2.\nDismember\nDeals 27 damage. Shuffles 3\nWound\ninto your discard pile.\nDeals\n30\n9\ndamage. Shuffles 3\nWound\ninto your discard pile.\nPrepare\nGains 2\nStrength\n.\nVantom cycles through its four moves in a fixed order, repeating forever:\nInk Blot\nInky Lance\nDismember\nPrepare\nNotes\nVantom begins combat with 9 stacks of\nSlippery\n, which causes it to take only 1 HP of damage per hit for the first 9 times it loses HP. Multi-hit attacks are effective at removing\nSlippery\nstacks quickly.\nPrepare\ngrants 2\nStrength\neach cycle, so Vantom's damage increases steadily over the fight.\nDismember\nshuffles 3\nWound\ncards into your discard pile.\nWound\ncards are\nUnplayable\nand clog your hand."
+    },
+    {
+      "id": "vine_shambler",
+      "name": "Vine Shambler",
+      "contexts": [
+        {
+          "act": "Overgrowth",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Vine Shambler\nHP\n61\n64\n8\nDebut\nOvergrowth\nTangled\nAttacks cost an additional\nfor 2 turns.\nVine Shambler\nis a normal\nEnemy\nfound in the\nOvergrowth\n.\nPattern\nName\nIntent\nEffect\nGrasping Vines\nDeals 8 damage. Applies 1\nTangled\n.\nDeals\n9\n9\ndamage. Applies 1\nTangled\n.\nSwipe\nDeals 6 damage ×2.\nDeals\n7\n9\ndamage ×2.\nChomp\nDeals 16 damage.\nDeals\n18\n9\ndamage.\nFollows a fixed repeating cycle:\nSwipe\nGrasping Vines\nChomp\nBack to\nSwipe"
+    },
+    {
+      "id": "waterfall_giant",
+      "name": "Waterfall Giant",
+      "contexts": [
+        {
+          "act": "Underdocks",
+          "encounter_type": "Bosses"
+        }
+      ],
+      "content": "Waterfall Giant\nHP\n250\n260\n8\nDebut\nUnderdocks\nSteam Eruption\nWhen killed, deals X damage at the end of your next turn.\nWaterfall Giant\nis a\nBoss\nfound in the\nUnderdocks\n.\nPattern\nName\nIntent\nEffect\nPressurize\nGains 15\nSteam Eruption\n.\nGains\n20\n9\nSteam Eruption\n.\nStomp\nDeals 15 damage. Applies 1\nWeak\n. Gains 3\nSteam Eruption\n.\nDeals\n16\n9\ndamage. Applies 1\nWeak\n. Gains 3\nSteam Eruption\n.\nRam\nDeals 10 damage. Gains 3\nSteam Eruption\n.\nDeals\n11\n9\ndamage. Gains 3\nSteam Eruption\n.\nSiphon\nHeals 15 HP per player. Gains 3\nSteam Eruption\n.\nPressure Gun\nDeals 20 damage (increases by 5 each use). Gains 3\nSteam Eruption\n.\nDeals\n23\n9\ndamage (increases by 5 each use). Gains 3\nSteam Eruption\n.\nPressure Up\nDeals 13 damage. Gains 3\nSteam Eruption\n.\nDeals\n14\n9\ndamage. Gains 3\nSteam Eruption\n.\nAbout To Blow\nBecomes invulnerable. Removes\nSteam Eruption\nand prepares to explode.\nExplode\nDeals damage equal to its stored\nSteam Eruption\namount, then dies.\nThe Waterfall Giant uses\nPressurize\non its first turn, then follows a repeating cycle:\nStomp\nRam\nSiphon\nPressure Gun\nPressure Up\nBack to\nStomp\nAlmost every move also adds 3\nSteam Eruption\n. When the Waterfall Giant is killed while it has\nSteam Eruption\n, it becomes invulnerable and uses\nAbout To Blow\n, followed by\nExplode\non the next turn, dealing damage equal to its accumulated\nSteam Eruption\nbefore dying.\nIf the Waterfall Giant is killed when it has no\nSteam Eruption\n(e.g. via\nDoom\n), it dies normally without triggering the explosion sequence.\nNotes\nEven though the HP bar in the last phase shows as \"infinity\", it is actually set to the finite number of 999,999,999 HP. As such, it is theoretically possible to kill the Waterfall Giant in its last phase."
+    },
+    {
+      "id": "zapbot",
+      "name": "Zapbot",
+      "contexts": [
+        {
+          "act": "Glory",
+          "encounter_type": "Monsters"
+        }
+      ],
+      "content": "Zapbot\n\nZapbot\nHP\n23-28\n24-29\n8\nDebut\nGlory\nPowers\nHigh Voltage\n2\n\nHigh Voltage\nAt the start of its turn, it gains X\nStrength\n.\n\nPattern\n\nName\nIntent\nEffect\nZap\nDeals 14 damage.\nDeals\n15\n9\ndamage.\n\nUses\nZap\nevery turn."
+    }
+  ]
+}

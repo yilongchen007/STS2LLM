@@ -1,0 +1,134 @@
+{
+  "keywords": [
+    {
+      "id": "block",
+      "name": "Block",
+      "content": "Prevents damage until next turn."
+    },
+    {
+      "id": "energy",
+      "name": "Energy",
+      "content": "Is used to play cards from your hand."
+    },
+    {
+      "id": "transform",
+      "name": "Transform",
+      "content": "Transformed cards become a random card of the same color, of any rarity, unless specified"
+    },
+    {
+      "id": "upgrade",
+      "name": "Upgrade",
+      "content": "Upgraded cards makes them more powerful. Most cards can only be upgraded once."
+    },
+    {
+      "id": "eternal",
+      "name": "Eternal",
+      "content": "Cards cannot be removed or transformed from your Deck."
+    },
+    {
+      "id": "ethereal",
+      "name": "Ethereal",
+      "content": "Cards Exhaust if they are in your hand at the end of your turn."
+    },
+    {
+      "id": "exhaust",
+      "name": "Exhaust",
+      "content": "Removed from your deck until the end of combat."
+    },
+    {
+      "id": "fatal",
+      "name": "Fatal",
+      "content": "Triggers when this card kills a non-minion enemy."
+    },
+    {
+      "id": "innate",
+      "name": "Innate",
+      "content": "Cards draw at the start of combat."
+    },
+    {
+      "id": "retain",
+      "name": "Retain",
+      "content": "Cards are not discarded at the end of your turn."
+    },
+    {
+      "id": "replay",
+      "name": "Replay",
+      "content": "Cards are played an additional time."
+    },
+    {
+      "id": "unplayable",
+      "name": "Unplayable",
+      "content": "Cards cannot be played."
+    },
+    {
+      "id": "poison",
+      "name": "Poison",
+      "content": "Poisoned creatures lose HP at the start of their turn. Each turn, poison is reduced by 1."
+    },
+    {
+      "id": "sly",
+      "name": "Sly",
+      "content": "If this card is discarded from your hand during your turn, play it for free."
+    },
+    {
+      "id": "stars",
+      "name": "Stars",
+      "content": "Are an alternative resource needed to play certain cards as the Regent."
+    },
+    {
+      "id": "forge",
+      "name": "Forge",
+      "content": "The first time you Forge each combat add Sovereign Blade into your Hand. Add X damage to Sovereign Blade ."
+    },
+    {
+      "id": "doom",
+      "name": "Doom",
+      "content": "At the end of all enemies turns, if it has at least as much Doom as HP, it dies."
+    },
+    {
+      "id": "summon",
+      "name": "Summon",
+      "content": "Osty with X HP. if already summoned, raise his Max HP by X for this combat."
+    },
+    {
+      "id": "channel",
+      "name": "Channel",
+      "content": "Ing an Orb puts it into your first empty Orb Slot . If you have no empty slots, your first Orb is automatically Evoked to make room."
+    },
+    {
+      "id": "evoke",
+      "name": "Evoke",
+      "content": "Consume your rightmost orb and use its evoke effect."
+    },
+    {
+      "id": "focus",
+      "name": "Focus",
+      "content": "Increases the effectiveness of Orbs by X."
+    },
+    {
+      "id": "lighting_orb",
+      "name": "Lighting Orb",
+      "content": "Passive Deal 3 damage to a random enemy.\n\nEvoke deal 8 damage to a random enemy."
+    },
+    {
+      "id": "frost_orb",
+      "name": "Frost Orb",
+      "content": "Passive Gain 2 block.\n\nEvoke Gain 5 block."
+    },
+    {
+      "id": "dark_orb",
+      "name": "Dark Orb",
+      "content": "Passive Increases stored damage by 6.\n\nEvoke Deal stored damage to the enemy with the lowest HP."
+    },
+    {
+      "id": "plasma_orb",
+      "name": "Plasma Orb",
+      "content": "Passive Start your next turn with 1 more Energy .\n\nEvoke Gain 2 Energy ."
+    },
+    {
+      "id": "glass_orb",
+      "name": "Glass Orb",
+      "content": "Passive Deal 4 damage to ALL enemies. Decrease this damage by 1 at the start of your turn.\n\nEvoke Deal damage equal to twice its would deal as Passive damage to All enemies."
+    }
+  ]
+}
