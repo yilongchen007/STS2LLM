@@ -3,6 +3,57 @@ from __future__ import annotations
 TOOLS: list[dict] = [
     {
         "type": "function",
+        "name": "get_card_info",
+        "description": "Look up a card by exact runtime card id and return its reference entry.",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "card_id": {
+                    "type": "string",
+                    "description": "Exact runtime card id, for example BASH or DEFEND_IRONCLAD.",
+                }
+            },
+            "required": ["card_id"],
+            "additionalProperties": False,
+        },
+    },
+    {
+        "type": "function",
+        "name": "get_enemy_info",
+        "description": "Look up an enemy by entity_id or exact monster_id and return its reference entry.",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "entity_id": {
+                    "type": "string",
+                    "description": "Runtime entity_id, for example TOADPOLE_1.",
+                },
+                "monster_id": {
+                    "type": "string",
+                    "description": "Exact base monster id, for example TOADPOLE.",
+                },
+            },
+            "additionalProperties": False,
+        },
+    },
+    {
+        "type": "function",
+        "name": "get_relic_info",
+        "description": "Look up a relic by exact runtime relic id and return its reference entry.",
+        "parameters": {
+            "type": "object",
+            "properties": {
+                "relic_id": {
+                    "type": "string",
+                    "description": "Exact runtime relic id, for example BURNING_BLOOD.",
+                }
+            },
+            "required": ["relic_id"],
+            "additionalProperties": False,
+        },
+    },
+    {
+        "type": "function",
         "name": "get_game_state",
         "description": "Read the current Slay the Spire 2 game state. Use format=json when making decisions.",
         "parameters": {

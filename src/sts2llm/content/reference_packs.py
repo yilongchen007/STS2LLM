@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import re
+from collections import defaultdict
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
@@ -13,6 +14,7 @@ from bs4 import BeautifulSoup
 class ReferencePacksReport:
     output_dir: Path
     card_count: int
+    relic_count: int
     keyword_count: int
     buff_count: int
     debuff_count: int
@@ -52,6 +54,66 @@ def _write_json(path: Path, payload: dict[str, Any]) -> None:
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
+def _load_runtime_card_ids(cards_json_path: str | Path) -> tuple[dict[str, str], dict[tuple[str, str], str]]:
+    payload = json.loads(Path(cards_json_path).read_text(encoding="utf-8"))
+    title_to_ids: dict[str, list[str]] = defaultdict(list)
+    for key, value in payload.items():
+        if key.endswith(".title"):
+            title_to_ids[value].append(key[:-6])
+
+    unique_by_name: dict[str, str] = {}
+    for title, ids in title_to_ids.items():
+        if len(ids) == 1:
+            unique_by_name[title] = ids[0]
+
+    by_name_and_color = {
+        ("Defend (Ironclad)", "Ironclad"): "DEFEND_IRONCLAD",
+        ("Strike (Ironclad)", "Ironclad"): "STRIKE_IRONCLAD",
+        ("Defend (Silent)", "Silent"): "DEFEND_SILENT",
+        ("Strike (Silent)", "Silent"): "STRIKE_SILENT",
+        ("Defend (Regent)", "Regent"): "DEFEND_REGENT",
+        ("Strike (Regent)", "Regent"): "STRIKE_REGENT",
+        ("Defend (Necrobinder)", "Necrobinder"): "DEFEND_NECROBINDER",
+        ("Strike (Necrobinder)", "Necrobinder"): "STRIKE_NECROBINDER",
+        ("Defend (Defect)", "Defect"): "DEFEND_DEFECT",
+        ("Strike (Defect)", "Defect"): "STRIKE_DEFECT",
+    }
+    return unique_by_name, by_name_and_color
+
+
+def _resolve_runtime_card_id(
+    *,
+    name: str,
+    color: str,
+    runtime_card_ids: dict[str, str],
+    runtime_card_ids_by_name_and_color: dict[tuple[str, str], str],
+) -> str:
+    runtime_id = runtime_card_ids.get(name)
+    if runtime_id is not None:
+        return runtime_id
+
+    runtime_id = runtime_card_ids_by_name_and_color.get((name, color))
+    if runtime_id is not None:
+        return runtime_id
+
+    raise ValueError(f"Could not find unique runtime id for wiki card {name!r} ({color!r})")
+
+
+def _load_runtime_relic_ids(relics_json_path: str | Path) -> dict[str, str]:
+    payload = json.loads(Path(relics_json_path).read_text(encoding="utf-8"))
+    title_to_ids: dict[str, list[str]] = defaultdict(list)
+    for key, value in payload.items():
+        if key.endswith(".title"):
+            title_to_ids[value].append(key[:-6])
+
+    result: dict[str, str] = {}
+    for title, ids in title_to_ids.items():
+        if len(ids) != 1:
+            raise ValueError(f"Runtime relic title {title!r} is not unique: {ids}")
+        result[title] = ids[0]
+    return result
+
+
 def _card_content(card_box: Any) -> str:
     base_node = card_box.select_one(".desc-base")
     upgrade_node = card_box.select_one(".desc-upg")
@@ -63,9 +125,15 @@ def _card_content(card_box: Any) -> str:
     return base_text or upgrade_text
 
 
-def build_card_pack(*, source_dir: str | Path, output_path: str | Path) -> int:
+def build_card_pack(
+    *,
+    source_dir: str | Path,
+    output_path: str | Path,
+    runtime_cards_path: str | Path,
+) -> int:
     html_path = Path(source_dir) / "html" / "Slay_the_Spire_2_Cards_List.html"
     root = _root_from_html(html_path)
+    runtime_card_ids, runtime_card_ids_by_name_and_color = _load_runtime_card_ids(runtime_cards_path)
 
     cards = []
     for card_box in root.select(".card-box"):
@@ -73,14 +141,20 @@ def build_card_pack(*, source_dir: str | Path, output_path: str | Path) -> int:
         if title_node is None:
             continue
         name = title_node.get_text(" ", strip=True)
+        color = (card_box.get("data-color") or "").strip()
         content = _card_content(card_box)
         if not content:
             continue
         cards.append(
             {
-                "id": _make_id(name),
+                "id": _resolve_runtime_card_id(
+                    name=name,
+                    color=color,
+                    runtime_card_ids=runtime_card_ids,
+                    runtime_card_ids_by_name_and_color=runtime_card_ids_by_name_and_color,
+                ),
                 "name": name,
-                "color": (card_box.get("data-color") or "").strip(),
+                "color": color,
                 "type": (card_box.get("data-type") or "").strip(),
                 "rarity": (card_box.get("data-rarity") or "").strip(),
                 "content": content,
@@ -89,6 +163,53 @@ def build_card_pack(*, source_dir: str | Path, output_path: str | Path) -> int:
 
     _write_json(Path(output_path), {"cards": cards})
     return len(cards)
+
+
+def build_relic_pack(
+    *,
+    source_dir: str | Path,
+    output_path: str | Path,
+    runtime_relics_path: str | Path,
+) -> int:
+    html_path = Path(source_dir) / "html" / "Slay_the_Spire_2_Relics_List.html"
+    root = _root_from_html(html_path)
+    runtime_relic_ids = _load_runtime_relic_ids(runtime_relics_path)
+
+    relics = []
+    for relic_box in root.select(".relic-box"):
+        title_node = relic_box.select_one(".relic-title")
+        if title_node is None:
+            continue
+        name = title_node.get_text(" ", strip=True)
+        runtime_id = runtime_relic_ids.get(name)
+        if runtime_id is None:
+            raise ValueError(f"Could not find unique runtime id for wiki relic {name!r}")
+
+        desc_node = relic_box.select_one(".relic-desc .relic-desc") or relic_box.select_one(".relic-desc")
+        flavor_node = relic_box.select_one(".relic-flavor")
+        requirements_node = relic_box.select_one(".relic-requirements")
+
+        description = _normalize_text(desc_node.get_text(" ", strip=True) if desc_node else "")
+        flavor = _normalize_text(flavor_node.get_text(" ", strip=True) if flavor_node else "")
+        requirements = _normalize_text(requirements_node.get_text(" ", strip=True) if requirements_node else "")
+
+        parts = [part for part in [description, f"Flavor: {flavor}" if flavor else "", f"Requirements: {requirements}" if requirements else ""] if part]
+        content = _normalize_text("\n".join(parts))
+        if not content:
+            continue
+
+        relics.append(
+            {
+                "id": runtime_id,
+                "name": name,
+                "rarity": (relic_box.get("data-rarity") or "").strip(),
+                "character": (relic_box.get("data-character") or "").strip(),
+                "content": content,
+            }
+        )
+
+    _write_json(Path(output_path), {"relics": relics})
+    return len(relics)
 
 
 def build_keyword_pack(*, source_dir: str | Path, output_path: str | Path) -> int:
@@ -185,11 +306,19 @@ def build_reference_packs(
     *,
     source_dir: str | Path,
     output_dir: str | Path,
+    runtime_cards_path: str | Path = "data/raw/game_pck/localization/eng/cards.json",
+    runtime_relics_path: str | Path = "data/raw/game_pck/localization/eng/relics.json",
 ) -> ReferencePacksReport:
     destination = Path(output_dir)
     card_count = build_card_pack(
         source_dir=source_dir,
         output_path=destination / "card_pack.json",
+        runtime_cards_path=runtime_cards_path,
+    )
+    relic_count = build_relic_pack(
+        source_dir=source_dir,
+        output_path=destination / "relic_pack.json",
+        runtime_relics_path=runtime_relics_path,
     )
     keyword_count = build_keyword_pack(
         source_dir=source_dir,
@@ -207,6 +336,7 @@ def build_reference_packs(
     return ReferencePacksReport(
         output_dir=destination,
         card_count=card_count,
+        relic_count=relic_count,
         keyword_count=keyword_count,
         buff_count=buff_count,
         debuff_count=debuff_count,

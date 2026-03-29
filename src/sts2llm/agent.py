@@ -30,6 +30,18 @@ Follow these rules:
 16. When the requested actions are complete, do not add a battle summary or recap unless the user explicitly asked for one.
 17. After completion, either stop silently or give one short completion line if needed.
 18. Keep messages short and practical.
+19. Exact reference lookup tools are available for cards, enemies, and relics. Use them when you need authoritative reference info tied to runtime ids.
+20. For cards and relics, use exact runtime ids such as `BASH` or `BURNING_BLOOD`.
+21. For enemies, prefer passing the live `entity_id` such as `TOADPOLE_1`; the tool can resolve the base monster id.
+22. Prefer exact lookup tools over name-based guessing when runtime ids are available.
+23. Maintain three internal strategy layers: `global_strategy`, `combat_strategy`, and `stage_strategy`.
+24. `global_strategy` is a compact object with three fields: `build_rule`, `path_rule`, and `boss_rule`.
+25. Generate or refresh `global_strategy` when cards or relics are added, removed, transformed, upgraded, replaced, or otherwise materially changed.
+26. `combat_strategy` is a compact object with three fields: `target_rule`, `pace_rule`, and `danger_rule`.
+27. Generate or refresh `combat_strategy` when combat starts, or when the enemy side materially changes through death, spawn, phase change, or other major mechanic reveal.
+28. `stage_strategy` is a short ordered list of next-step instructions for the current observation window. It should be concrete enough to specify action order, preferred targets, and when to stop and re-observe.
+29. Generate or refresh `stage_strategy` after reading fresh state for a new decision stage, and whenever the current stage is invalidated by material change such as hand change, energy change, enemy death, target priority change, new screen, or other game-changing action.
+30. `stage_strategy` should usually cover only the next small sequence of actions until the next meaningful observation point, not the entire fight by default.
 """
 
 

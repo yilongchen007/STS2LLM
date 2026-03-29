@@ -5,10 +5,13 @@ import json
 import traceback
 from typing import TYPE_CHECKING, Any
 
-from .enemy_pack import build_enemy_pack
-from .games_gg_guides import crawl_games_gg_guides
-from .reference_packs import build_reference_packs
-from .wiki_gg_crawler import crawl_wiki_gg, crawl_wiki_gg_act_enemies
+from .content import (
+    build_enemy_pack,
+    build_reference_packs,
+    crawl_games_gg_guides,
+    crawl_wiki_gg,
+    crawl_wiki_gg_act_enemies,
+)
 
 if TYPE_CHECKING:
     from .agent import SessionAgent
@@ -198,6 +201,11 @@ def _build_parser() -> argparse.ArgumentParser:
         default="data/processed/wiki_gg/enemy_pack.json",
         help="Destination path for the simplified enemy pack JSON.",
     )
+    build_enemy_pack_parser.add_argument(
+        "--runtime-monsters-path",
+        default="data/raw/game_pck/localization/eng/monsters.json",
+        help="Game localization monsters.json used to map wiki enemy names onto runtime monster ids.",
+    )
 
     build_reference_packs_parser = subparsers.add_parser(
         "build-reference-packs",
@@ -212,6 +220,16 @@ def _build_parser() -> argparse.ArgumentParser:
         "--output-dir",
         default="data/processed/wiki_gg",
         help="Destination directory for the generated reference pack JSON files.",
+    )
+    build_reference_packs_parser.add_argument(
+        "--runtime-cards-path",
+        default="data/raw/game_pck/localization/eng/cards.json",
+        help="Game localization cards.json used to map wiki card names onto runtime card ids.",
+    )
+    build_reference_packs_parser.add_argument(
+        "--runtime-relics-path",
+        default="data/raw/game_pck/localization/eng/relics.json",
+        help="Game localization relics.json used to map wiki relic names onto runtime relic ids.",
     )
 
     return parser
@@ -421,6 +439,7 @@ def main() -> None:
         report = build_enemy_pack(
             source_dir=args.source_dir,
             output_path=args.output_path,
+            runtime_monsters_path=args.runtime_monsters_path,
         )
         print(f"Built {report.enemy_count} enemy records from {report.page_count} canonical pages.")
         print(f"Output: {report.output_path}")
@@ -430,8 +449,11 @@ def main() -> None:
         report = build_reference_packs(
             source_dir=args.source_dir,
             output_dir=args.output_dir,
+            runtime_cards_path=args.runtime_cards_path,
+            runtime_relics_path=args.runtime_relics_path,
         )
         print(f"Built {report.card_count} cards.")
+        print(f"Built {report.relic_count} relics.")
         print(f"Built {report.keyword_count} keywords.")
         print(f"Built {report.buff_count} buffs.")
         print(f"Built {report.debuff_count} debuffs.")

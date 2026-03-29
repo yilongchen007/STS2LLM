@@ -21,6 +21,7 @@ Sources:
 - Uses the OpenAI Responses API tool loop
 - Talks to the local `STS2MCP` HTTP API
 - Prefers `card_instance_id` over unstable card indices
+- Supports exact local reference lookup for `card`, `enemy`, and `relic`
 - Supports common singleplayer actions:
   - reading game state
   - playing cards
@@ -32,6 +33,62 @@ Sources:
   - relic selection
   - shop purchase
   - potion use
+
+## Project Layout
+
+- `src/sts2llm/`
+  - runtime agent, local tool definitions, API client, prompt, config, and CLI
+- `src/sts2llm/content/`
+  - offline content pipeline modules: crawlers, unpack helpers, and pack builders
+- `data/raw/`
+  - raw crawl and unpack artifacts
+- `data/processed/wiki_gg/`
+  - processed lookup packs consumed by the local reference layer
+
+## Reference Data Layer
+
+The repo currently maintains three exact-reference packs for runtime lookup:
+
+- `data/processed/wiki_gg/card_pack.json`
+  - top key: `cards`
+  - fields: `id`, `name`, `color`, `type`, `rarity`, `content`
+  - `id` uses exact runtime card ids such as `BASH` and `DEFEND_IRONCLAD`
+- `data/processed/wiki_gg/enemy_pack.json`
+  - top key: `enemies`
+  - fields: `id`, `name`, `contexts`, `content`
+  - `id` uses exact base monster ids such as `TOADPOLE` and `TEST_SUBJECT`
+  - live combat `entity_id` values such as `TOADPOLE_1` are normalized back to base `monster_id`
+- `data/processed/wiki_gg/relic_pack.json`
+  - top key: `relics`
+  - fields: `id`, `name`, `rarity`, `character`, `content`
+  - `id` uses exact runtime relic ids such as `BURNING_BLOOD`
+
+Additional text-only packs are also generated for keyword and status reference:
+
+- `data/processed/wiki_gg/keyword_pack.json`
+- `data/processed/wiki_gg/buffs_pack.json`
+- `data/processed/wiki_gg/debuffs_pack.json`
+
+The local exact lookup tools exposed to the model are:
+
+- `get_card_info(card_id)`
+- `get_enemy_info(entity_id | monster_id)`
+- `get_relic_info(relic_id)`
+
+## Strategy Layers
+
+The agent prompt uses three internal strategy layers:
+
+- `global_strategy`
+  - fields: `build_rule`, `path_rule`, `boss_rule`
+  - refreshed when cards or relics materially change
+- `combat_strategy`
+  - fields: `target_rule`, `pace_rule`, `danger_rule`
+  - refreshed when combat starts or when the enemy side materially changes
+- `stage_strategy`
+  - field: `steps`
+  - `steps` is an ordered short list of next actions for the current observation window
+  - refreshed when a new decision stage begins or the current stage is invalidated by material change
 
 ## Setup
 
@@ -143,7 +200,7 @@ and writes:
 
 - `data/processed/wiki_gg/enemy_pack.json`
 
-Build simplified card, keyword, buff, and debuff packs from the saved wiki.gg main crawl:
+Build simplified card, relic, keyword, buff, and debuff packs from the saved wiki.gg main crawl:
 
 ```bash
 uv run sts2llm build-reference-packs
@@ -154,6 +211,7 @@ By default this reads
 and writes:
 
 - `data/processed/wiki_gg/card_pack.json`
+- `data/processed/wiki_gg/relic_pack.json`
 - `data/processed/wiki_gg/keyword_pack.json`
 - `data/processed/wiki_gg/buffs_pack.json`
 - `data/processed/wiki_gg/debuffs_pack.json`

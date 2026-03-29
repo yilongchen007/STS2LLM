@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import re
+from collections import defaultdict
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
@@ -32,6 +33,12 @@ def _normalize_text(text: str) -> str:
     text = re.sub(r"\n[ \t]+", "\n", text)
     text = re.sub(r"\n{3,}", "\n\n", text)
     return text.strip()
+
+
+def _normalize_runtime_display_name(name: str) -> str:
+    value = re.sub(r"#C\{[^}]+\}", "", name)
+    value = re.sub(r"\s+", " ", value)
+    return value.strip()
 
 
 def _make_enemy_id(name: str) -> str:
@@ -131,6 +138,35 @@ def _merge_source_context(records: list[dict[str, Any]]) -> list[dict[str, str]]
     ]
 
 
+def _load_runtime_enemy_ids(monsters_json_path: str | Path) -> dict[str, str]:
+    payload = json.loads(Path(monsters_json_path).read_text(encoding="utf-8"))
+    normalized_name_to_ids: dict[str, list[str]] = defaultdict(list)
+    for key, value in payload.items():
+        if key.endswith(".name"):
+            normalized_name = _normalize_runtime_display_name(value)
+            normalized_name_to_ids[normalized_name].append(key[:-5])
+
+    result: dict[str, str] = {}
+    for normalized_name, ids in normalized_name_to_ids.items():
+        if len(ids) != 1:
+            raise ValueError(
+                f"Runtime monster name {normalized_name!r} is not unique: {ids}"
+            )
+        result[normalized_name] = ids[0]
+    return result
+
+
+def _resolve_runtime_enemy_id(
+    *,
+    name: str,
+    runtime_enemy_ids: dict[str, str],
+) -> str:
+    runtime_id = runtime_enemy_ids.get(_normalize_runtime_display_name(name))
+    if runtime_id is not None:
+        return runtime_id
+    raise ValueError(f"Could not find unique runtime id for wiki enemy {name!r}")
+
+
 def _pick_representative_record(records: list[dict[str, Any]]) -> dict[str, Any]:
     def score(record: dict[str, Any]) -> tuple[int, int]:
         requested_url = record.get("requested_url")
@@ -208,11 +244,13 @@ def build_enemy_pack(
     *,
     source_dir: str | Path,
     output_path: str | Path,
+    runtime_monsters_path: str | Path = "data/raw/game_pck/localization/eng/monsters.json",
 ) -> EnemyPackReport:
     source_path = Path(source_dir)
     jsonl_path = source_path / "pages.jsonl"
     if not jsonl_path.exists():
         raise FileNotFoundError(f"Could not find pages.jsonl under {source_path}")
+    runtime_enemy_ids = _load_runtime_enemy_ids(runtime_monsters_path)
 
     raw_records = [json.loads(line) for line in jsonl_path.read_text(encoding="utf-8").splitlines() if line.strip()]
     grouped_records: dict[str, list[dict[str, Any]]] = {}
@@ -225,6 +263,10 @@ def build_enemy_pack(
         contexts = _merge_source_context(records)
         entries = _build_entries_for_record(representative, contexts)
         for entry in entries:
+            entry["id"] = _resolve_runtime_enemy_id(
+                name=entry["name"],
+                runtime_enemy_ids=runtime_enemy_ids,
+            )
             existing = enemies_by_id.get(entry["id"])
             if existing is None:
                 enemies_by_id[entry["id"]] = entry

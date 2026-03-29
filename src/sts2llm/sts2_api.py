@@ -5,10 +5,13 @@ from typing import Any
 
 import httpx
 
+from .reference_index import ReferenceIndex
+
 
 class Sts2ApiClient:
     def __init__(self, base_url: str) -> None:
         self._endpoint = f"{base_url}/api/v1/singleplayer"
+        self._reference_index = ReferenceIndex()
 
     def get_game_state(self, format: str = "json") -> str:
         response = httpx.get(self._endpoint, params={"format": format}, timeout=15)
@@ -41,8 +44,36 @@ class Sts2ApiClient:
             payload["target"] = target
         return payload
 
+    @staticmethod
+    def _reference_lookup_result(callback: Any) -> str:
+        try:
+            return json.dumps(callback(), ensure_ascii=False)
+        except (KeyError, ValueError) as exc:
+            return json.dumps(
+                {
+                    "status": "error",
+                    "error": str(exc),
+                },
+                ensure_ascii=False,
+            )
+
     def tool_call(self, name: str, args: dict[str, Any]) -> str:
         match name:
+            case "get_card_info":
+                return self._reference_lookup_result(
+                    lambda: self._reference_index.get_card(args["card_id"])
+                )
+            case "get_enemy_info":
+                return self._reference_lookup_result(
+                    lambda: self._reference_index.get_enemy(
+                        entity_id=args.get("entity_id"),
+                        monster_id=args.get("monster_id"),
+                    )
+                )
+            case "get_relic_info":
+                return self._reference_lookup_result(
+                    lambda: self._reference_index.get_relic(args["relic_id"])
+                )
             case "get_game_state":
                 return self.get_game_state(format=args.get("format", "json"))
             case "combat_play_card":
