@@ -206,6 +206,11 @@ def _build_parser() -> argparse.ArgumentParser:
         default="data/raw/game_pck/localization/eng/monsters.json",
         help="Game localization monsters.json used to map wiki enemy names onto runtime monster ids.",
     )
+    build_enemy_pack_parser.add_argument(
+        "--enemy-annotations-path",
+        default="data/manual/enemy_annotations.json",
+        help="Optional curated enemy annotations JSON merged into enemy_pack.json.",
+    )
 
     build_reference_packs_parser = subparsers.add_parser(
         "build-reference-packs",
@@ -440,6 +445,7 @@ def main() -> None:
             source_dir=args.source_dir,
             output_path=args.output_path,
             runtime_monsters_path=args.runtime_monsters_path,
+            enemy_annotations_path=args.enemy_annotations_path,
         )
         print(f"Built {report.enemy_count} enemy records from {report.page_count} canonical pages.")
         print(f"Output: {report.output_path}")

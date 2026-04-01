@@ -27,6 +27,27 @@ class EnemyPackReport:
     enemy_count: int
 
 
+def _load_enemy_annotations(path: str | Path | None) -> dict[str, dict[str, Any]]:
+    if path is None:
+        return {}
+
+    source = Path(path)
+    if not source.exists():
+        return {}
+
+    payload = json.loads(source.read_text(encoding="utf-8"))
+    rows = payload.get("enemies")
+    if not isinstance(rows, dict):
+        raise ValueError(f"Enemy annotations file must contain an 'enemies' object: {source}")
+
+    result: dict[str, dict[str, Any]] = {}
+    for enemy_id, fields in rows.items():
+        if not isinstance(fields, dict):
+            raise ValueError(f"Enemy annotation for {enemy_id!r} must be an object")
+        result[enemy_id] = dict(fields)
+    return result
+
+
 def _normalize_text(text: str) -> str:
     text = text.replace("\xa0", " ")
     text = re.sub(r"[ \t]+\n", "\n", text)
@@ -245,12 +266,14 @@ def build_enemy_pack(
     source_dir: str | Path,
     output_path: str | Path,
     runtime_monsters_path: str | Path = "data/raw/game_pck/localization/eng/monsters.json",
+    enemy_annotations_path: str | Path | None = "data/manual/enemy_annotations.json",
 ) -> EnemyPackReport:
     source_path = Path(source_dir)
     jsonl_path = source_path / "pages.jsonl"
     if not jsonl_path.exists():
         raise FileNotFoundError(f"Could not find pages.jsonl under {source_path}")
     runtime_enemy_ids = _load_runtime_enemy_ids(runtime_monsters_path)
+    enemy_annotations = _load_enemy_annotations(enemy_annotations_path)
 
     raw_records = [json.loads(line) for line in jsonl_path.read_text(encoding="utf-8").splitlines() if line.strip()]
     grouped_records: dict[str, list[dict[str, Any]]] = {}
@@ -285,6 +308,11 @@ def build_enemy_pack(
 
             if len(entry["content"]) > len(existing["content"]):
                 existing["content"] = entry["content"]
+
+    for enemy_id, entry in enemies_by_id.items():
+        annotations = enemy_annotations.get(enemy_id)
+        if annotations:
+            entry.update(annotations)
 
     payload = {
         "enemies": sorted(enemies_by_id.values(), key=lambda item: item["id"]),

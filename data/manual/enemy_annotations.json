@@ -1,0 +1,304 @@
+{
+  "enemies": {
+    "ASSASSIN_RUBY_RAIDER": {
+      "enemy_advice_zh": "纯定值输出怪，前期见到就优先清掉，避免它稳定白嫖血线。"
+    },
+    "AXEBOT": {
+      "enemy_advice_zh": "别被重生迷惑，优先清另一侧高威胁单位并留格挡顶住它的连击和削弱。"
+    },
+    "AXE_RUBY_RAIDER": {
+      "enemy_advice_zh": "两次小 Swing 后有一次大 Swing，能算节奏就提前防大摆，否则它伤害不高可后清。"
+    },
+    "BOWLBUG_EGG": {
+      "enemy_advice_zh": "每回合都打并起盾，输出一般，前期缺伤害时可后处理，但别让它白嫖太多格挡。"
+    },
+    "BOWLBUG_NECTAR": {
+      "enemy_advice_zh": "在 Buff 前后尽快击杀，别让 15 力后的每回合攻击滚起来。"
+    },
+    "BOWLBUG_ROCK": {
+      "enemy_advice_zh": "能整挡就整挡把它打晕一回合；做不到时把它当高伤单体优先规划防御。"
+    },
+    "BOWLBUG_SILK": {
+      "enemy_advice_zh": "弱化比伤害更烦，缺输出回合可先吃伤后清高威胁怪，但别让它长期循环上弱。"
+    },
+    "BRUTE_RUBY_RAIDER": {
+      "enemy_advice_zh": "会稳定涨力，前期最好早点收掉，拖久后每下 Beat 都会变疼。"
+    },
+    "BYGONE_EFFIGY": {
+      "enemy_advice_zh": "它睡前有两回合白送窗口，尽量全力爆发在出手前带走，做不到就准备硬吃 25+ 重击。"
+    },
+    "BYRDONIS": {
+      "enemy_advice_zh": "它每回合都会涨力，多段 Peck 会随之暴涨，优先爆发压死或用虚弱削掉危险回合。"
+    },
+    "CALCIFIED_CULTIST": {
+      "enemy_advice_zh": "第一回合 Ritual 后只会平砍，尽量尽快处理别让 Ritual 白滚。"
+    },
+    "CEREMONIAL_BEAST": {
+      "enemy_advice_zh": "关键是半血前后要留足爆发：压到 Plow 阈值会触发 Ringing，下一回合只能打一张牌，若没提前压低就很难同时顾到输出和防御。"
+    },
+    "CHOMPER": {
+      "enemy_advice_zh": "成对出现且会塞 Dazed，优先击杀准备 Clamp 的那只，避免手牌和血线一起被压垮。"
+    },
+    "CORPSE_SLUG": {
+      "enemy_advice_zh": "别随便把小怪打死给它吃尸体涨力，最好同回合集火一只或先杀最危险目标再补刀它。"
+    },
+    "CROSSBOW_RUBY_RAIDER": {
+      "enemy_advice_zh": "它隔回合才开火，看到 Reload 就趁机输出，Fire! 回合留够格挡即可。"
+    },
+    "CRUSHER": {
+      "enemy_advice_zh": "Kaiser Crab 里优先级通常低于 Rocket，但 Bug Sting 的弱化和脆弱很烦，若能快速秒掉也能大减压。"
+    },
+    "CUBEX_CONSTRUCT": {
+      "enemy_advice_zh": "它会越打越涨力且有 Artifact，前期尽量连续输出压死，别给它多轮 Submerge。"
+    },
+    "DAMP_CULTIST": {
+      "enemy_advice_zh": "看似首回合不痛，实则 Ritual 很高，能秒就秒，不能秒也别让它多轮白砍。"
+    },
+    "DECIMILLIPEDE_SEGMENT": {
+      "enemy_advice_zh": "三段要尽量同速压血，别太早单杀一节让它 Reattach；优先收快死的同时准备吃弱化。"
+    },
+    "DEVOTED_SCULPTOR": {
+      "enemy_advice_zh": "开局 9 Ritual 后就是纯成长木桩，越早击杀越好，拖长线会被平砍滚死。"
+    },
+    "DOOR": {
+      "enemy_advice_zh": "目标很明确：尽量别让 Door 活到第三回合加力，保留爆发在开门和 Doormaker 发呆回合一起用。"
+    },
+    "DOORMAKER": {
+      "enemy_advice_zh": "Doormaker 出现后的发呆回合是最大输出窗，门阶段求快，Boss 阶段把爆发和药水全压上。"
+    },
+    "ENTOMANCER": {
+      "enemy_advice_zh": "多段 Attack 会喂 Personal Hive 塞满 Dazed，优先用高质量单段输出和非攻击伤害处理它。"
+    },
+    "EXOSKELETON": {
+      "enemy_advice_zh": "单次伤害封顶 9，别交大招溢出；更适合用多段、低费或非攻击来源慢慢磨死。"
+    },
+    "EYE_WITH_TEETH": {
+      "enemy_advice_zh": "它会反复复活并塞 Dazed，通常别浪费主输出打它，先处理 Fogmog 本体。"
+    },
+    "FABRICATOR": {
+      "enemy_advice_zh": "优先击杀本体阻止继续下机器人；若场面已满，再按 Zapbot、Stabbot 这种高伤小怪的顺序清。"
+    },
+    "FAT_GREMLIN": {
+      "enemy_advice_zh": "它只想卷钱跑路，Merc 死后要立刻补掉它，不然偷走的金币就回不来了。"
+    },
+    "FLAIL_KNIGHT": {
+      "enemy_advice_zh": "随机性高但都是硬伤害，看到 Breaker 涨力后要提前顶住 Flail 多段；通常值得尽快集火。"
+    },
+    "FLYCONID": {
+      "enemy_advice_zh": "它主要靠易伤、虚弱和脆弱恶心你，能早点杀就早点杀，避免后续被别的怪趁虚而入。"
+    },
+    "FOGMOG": {
+      "enemy_advice_zh": "真正麻烦的是它召的 Eye 持续塞 Dazed，所以优先压本体血线，别被假目标带偏。"
+    },
+    "FOSSIL_STALKER": {
+      "enemy_advice_zh": "起手 Latch 伤害高，且 Frail 会放大后续压力；如果同房还有别的输出怪，最好先处理它。"
+    },
+    "FROG_KNIGHT": {
+      "enemy_advice_zh": "Plating 会拖节奏，最好在 For the Queen 或 Beetle Charge 前集火，不要让 35+ 的大招稳定落地。"
+    },
+    "FUZZY_WURM_CRAWLER": {
+      "enemy_advice_zh": "Inhale 后下一下 Acid Goop 会暴涨，看到蓄力就优先打断节奏或至少把防御准备满。"
+    },
+    "GAS_BOMB": {
+      "enemy_advice_zh": "它只负责自爆，能顺手清就清，清不掉也至少算好爆炸伤害别在低血硬吃。"
+    },
+    "GLOBE_HEAD": {
+      "enemy_advice_zh": "固定循环很好算，Galvanic Burst 后会继续涨力；若你很怕 Frail，就别让它多转两轮。"
+    },
+    "GREMLIN_MERC": {
+      "enemy_advice_zh": "本体和偷钱都很烦，最好在它死后的小鬼逃跑前把 Merc 和 Fat Gremlin 一起规划掉。"
+    },
+    "GUARDBOT": {
+      "enemy_advice_zh": "它不打人只给 Fabricator 上盾，若本体快死可无视；否则顺手清掉能明显提升斩杀效率。"
+    },
+    "HAUNTED_SHIP": {
+      "enemy_advice_zh": "第二回合 Haunt 很恶心，若这房还有别的输出怪要优先杀船，避免三种减益一起吃满。"
+    },
+    "HUNTER_KILLER": {
+      "enemy_advice_zh": "开局 Tender 会放大后续 Bite 和 Puncture，最好先上虚弱或尽快带走，别让多段咬穿防线。"
+    },
+    "INFESTED_PRISM": {
+      "enemy_advice_zh": "固定循环里 Whirlwind 和 Pulsate 最危险，优先在涨力前爆发，并用非攻击或首段低价值攻击吃掉 Vital Spark。"
+    },
+    "INKLET": {
+      "enemy_advice_zh": "有 Slippery 时重击很亏，多段和低费最好用；通常先清没叠甲或准备大招的那只。"
+    },
+    "KIN_FOLLOWER": {
+      "enemy_advice_zh": "Follower 自己不算难，关键是别让它们陪 Priest 多轮涨力；通常跟着 Priest 的斩杀节奏一起处理。"
+    },
+    "KIN_PRIEST": {
+      "enemy_advice_zh": "优先打 Priest，本体一死 Followers 会跟着退场；但最好提前备一点 AOE，避免小怪多轮涨力和多段把你拖垮。"
+    },
+    "KNOWLEDGE_DEMON": {
+      "enemy_advice_zh": "核心是尽快在第三轮诅咒前结束战斗；选咒通常优先吃掉血类负面，尽量别拿卡抽牌、限出牌或减能量这类会直接拆你节奏的诅咒。"
+    },
+    "LAGAVULIN_MATRIARCH": {
+      "enemy_advice_zh": "先决定是贪三回合铺场还是主动打醒去掉 Plating；一旦开打就要尽量快，别让 Soul Siphon 多转。"
+    },
+    "LEAF_SLIME_M": {
+      "enemy_advice_zh": "会稳定塞 Slimed，若你怕卡手就优先击杀中号；否则可按当前伤害最高的怪排序处理。"
+    },
+    "LEAF_SLIME_S": {
+      "enemy_advice_zh": "小怪本身不痛，但会持续塞 Slimed，能顺手清就清，避免牌堆越来越脏。"
+    },
+    "LIVING_FOG": {
+      "enemy_advice_zh": "首回合 Smoggy 限技能、后面气弹会连爆，优先杀本体并在 Bloat 后尽快清 Gas Bomb，别把防御和技能节奏都丢掉。"
+    },
+    "LIVING_SHIELD": {
+      "enemy_advice_zh": "有 Turret Operator 时它只是护卫，优先杀操作员断 Rampart；单独剩下后再慢慢收盾人。"
+    },
+    "LOUSE_PROGENITOR": {
+      "enemy_advice_zh": "Curl and Grow 后的 Pounce 很疼，看到涨力起盾回合就准备下回合防守或直接提前爆发斩掉。"
+    },
+    "MAGI_KNIGHT": {
+      "enemy_advice_zh": "它活着时全牌降级非常伤，通常是 Glory 精英房第一击杀目标，并且 Magic Bomb 回合一定要留防。"
+    },
+    "MAWLER": {
+      "enemy_advice_zh": "Roar 的 3 Vulnerable 最致命，若它还没交吼可以适当贪输出，吃到易伤后就别再硬扛。"
+    },
+    "MECHA_KNIGHT": {
+      "enemy_advice_zh": "固定循环很清楚：Flamethrower 后准备清 Burn，Windup 后务必顶住 Heavy Cleave；能快杀就别拖。"
+    },
+    "MYTE": {
+      "enemy_advice_zh": "成对出现会一边塞 Toxic 一边涨力，优先击杀当前要 Bite 的那只，避免手牌和血线一起被磨。"
+    },
+    "NIBBIT": {
+      "enemy_advice_zh": "成对时后排会先涨力，若缺防守就先杀在蓄力的那只；单只 Nibbit 总体是稳定过渡怪。"
+    },
+    "NOISEBOT": {
+      "enemy_advice_zh": "纯塞 Dazed 的工具人，和 Fabricator 同房时不是第一优先，但场面脏到影响抽牌时要顺手清掉。"
+    },
+    "OVICOPTER": {
+      "enemy_advice_zh": "它的核心威胁是不断下蛋，所以优先压本体；若暂时斩不掉，就在 Hatch 前处理 Tough Egg。"
+    },
+    "OWL_MAGISTRATE": {
+      "enemy_advice_zh": "Verdict 会给 4 Vulnerable 后接大伤，最好在 Judicial Flight 到 Verdict 这一轮前留够防御或直接斩杀。"
+    },
+    "PARAFRIGHT": {
+      "enemy_advice_zh": "它会复活且每回合 16 伤，不要空过；若 Obscura 还活着通常先杀本体，再用群伤或顺手清它。"
+    },
+    "PHANTASMAL_GARDENER": {
+      "enemy_advice_zh": "四只一起上时最怕被分散火力，先压最接近 Enlarge 或血量最低的那只，尽量减少场上行动数。"
+    },
+    "PHROG_PARASITE": {
+      "enemy_advice_zh": "击杀本体前先留好第二波处理手段，不然 4 只 Wriggler 会把你反杀；最好在能连收残局的回合再补刀。"
+    },
+    "PUNCH_CONSTRUCT": {
+      "enemy_advice_zh": "READY 回合是白送窗口，后面强拳和二连都会来，若你怕 Weak 就别让它多循环。"
+    },
+    "QUEEN": {
+      "enemy_advice_zh": "主线通常是直接集火 Queen，因为 Torch Head 死前 Queen 不会主动攻击；同时要注意 Bound 很容易卡住循环，所以比起铺垫更重视高质量单卡和稳定回合。"
+    },
+    "ROCKET": {
+      "enemy_advice_zh": "Kaiser Crab 里通常先杀 Rocket，它的 Laser 是主要爆发点；在 Recharge 或壳子掉下来的窗口狠狠干。"
+    },
+    "SCROLL_OF_BITING": {
+      "enemy_advice_zh": "纸卷多段会偷 Max HP，越拖越亏，优先清当前要多段咬人的那只并尽量别吃未格挡伤害。"
+    },
+    "SEAPUNK": {
+      "enemy_advice_zh": "伤害节奏平滑但会慢慢涨力，若这房里还有更爆发的怪可后清；单独放久了也会越打越疼。"
+    },
+    "SEWER_CLAM": {
+      "enemy_advice_zh": "它隔回合 Pressurize 涨力，很适合在加力回合狠狠干；别让它无压力多轮 Jet。"
+    },
+    "SHRINKER_BEETLE": {
+      "enemy_advice_zh": "Shrink 会直接砍你输出，通常是同房第一优先之一，早点杀掉比硬吃高伤怪更划算。"
+    },
+    "SKULKING_COLONY": {
+      "enemy_advice_zh": "Hardened Shell 让它很耐打，但真正恶心的是 Smash 塞 4 Dazed；能爆发就早点压死，拖久会越来越卡。"
+    },
+    "SLIMED_BERSERKER": {
+      "enemy_advice_zh": "首回合灌 10 张 Slimed 后压力会持续变差，最好在 Smother 前结束或至少留好防御顶那一下。"
+    },
+    "SLITHERING_STRANGLER": {
+      "enemy_advice_zh": "Constrict 是持续掉血源，通常要尽快先清它，别让它一边白烧你一边靠 Block 拖节奏。"
+    },
+    "SLUDGE_SPINNER": {
+      "enemy_advice_zh": "首回合 Weak 很烦，但它本质还是中等数值怪；若房里有更高威胁目标可先处理别的，只是别让它白涨力。"
+    },
+    "SLUMBERING_BEETLE": {
+      "enemy_advice_zh": "睡着时是铺场窗口，但打醒后会失去 Plating；如果当前爆发不够，就干脆多贪一两回合准备大回合。"
+    },
+    "SNAPPING_JAXFRUIT": {
+      "enemy_advice_zh": "每回合都涨力，看着不痛其实越拖越危险，前期最好尽快点掉。"
+    },
+    "SNEAKY_GREMLIN": {
+      "enemy_advice_zh": "Merc 死后它只会平砍，通常不是第一优先，但若你想保回被偷的金币就要连着 Fat Gremlin 一起收。"
+    },
+    "SOUL_FYSH": {
+      "enemy_advice_zh": "按 5 回合节奏打，优先处理手里的 Beckon，并把大输出留给非 Intangible 的安全窗口。"
+    },
+    "SOUL_NEXUS": {
+      "enemy_advice_zh": "三种动作都痛而且随机，默认把它当硬爆发精英打，减伤和虚弱价值很高，别指望慢慢磨。"
+    },
+    "SPECTRAL_KNIGHT": {
+      "enemy_advice_zh": "它活着时全牌 Ethereal，手牌管理压力极大，通常应优先集火，避免关键牌被迫空烧。"
+    },
+    "SPINY_TOAD": {
+      "enemy_advice_zh": "有 Thorns 时别用多段白撞，在 Spike Explosion 前准备整挡或用非攻击、单段高伤解决。"
+    },
+    "STABBOT": {
+      "enemy_advice_zh": "就是稳定单体高伤加 Frail，小机器人里优先级很高，Fabricator 房里能先杀就先杀。"
+    },
+    "TERROR_EEL": {
+      "enemy_advice_zh": "把血线压到 Shriek 眩晕阈值前要先准备好下一回合对 99 Vulnerable 的处理，否则后续任何一轮都可能暴毙。"
+    },
+    "TEST_SUBJECT": {
+      "enemy_advice_zh": "按阶段分配资源：一阶段少打 Skill，二阶段尽量整挡避免白塞 Wound，三阶段卡着 Intangible 窗口爆发。"
+    },
+    "THE_FORGOTTEN": {
+      "enemy_advice_zh": "它会偷 Dex，越早杀越能拿回防御属性；如果房里还有别的高伤怪，通常先清这只更稳。"
+    },
+    "THE_INSATIABLE": {
+      "enemy_advice_zh": "这是计时 Boss，核心是边推进边挑合适窗口打掉 Frantic Escape 延长计时；Liquify Ground 后别把回合浪费在无效防御上。"
+    },
+    "THE_LOST": {
+      "enemy_advice_zh": "它偷 Strength 后自己会痛很多，能快杀就快杀，至少别让 debuff 回合后接激光白吃。"
+    },
+    "THE_OBSCURA": {
+      "enemy_advice_zh": "先认清真正目标是 Obscura 本体，别被会复活的 Parafright 拖住；若它要 Wail，最好在那回合前减员。"
+    },
+    "THIEVING_HOPPER": {
+      "enemy_advice_zh": "它不但偷卡还会跑路，优先在 Escape 前击杀；Flutter 阶段用多段攻击或非攻击伤害拆护罩最稳。"
+    },
+    "TOADPOLE": {
+      "enemy_advice_zh": "它的威胁主要来自 Thorns 和三连击，看到 Spiken 后别用低伤多段乱撞。"
+    },
+    "TORCH_HEAD_AMALGAM": {
+      "enemy_advice_zh": "Queen 房里这只是前排压力源，最好先压掉它减轻 Beam 多段和单体重击，再转 Queen。"
+    },
+    "TOUGH_EGG": {
+      "enemy_advice_zh": "本身不痛，但放着会孵化更多行动数，若 Ovicopter 暂时杀不掉就优先踩蛋。"
+    },
+    "TRACKER_RUBY_RAIDER": {
+      "enemy_advice_zh": "Track 后的 8 连击很吃 Frail，看到挂脆弱那回合就提前留防或直接先手击杀。"
+    },
+    "TUNNELER": {
+      "enemy_advice_zh": "核心是拆光 Burrow 的 Block 让它眩晕，所以多段和集中爆发都很强；做不到就准备吃连续 Attack from Below。"
+    },
+    "TURRET_OPERATOR": {
+      "enemy_advice_zh": "这房真正的核心目标是操作员，本体死了 Living Shield 就废一半，而且 Unload 多段很容易偷血。"
+    },
+    "TWIG_SLIME_M": {
+      "enemy_advice_zh": "中号会稳定塞 Slimed 且偶尔 11 伤，若手牌质量依赖抽牌就应早点处理。"
+    },
+    "TWIG_SLIME_S": {
+      "enemy_advice_zh": "小号只是廉价行动数，能群伤顺手带走最好，单点优先级通常不高。"
+    },
+    "TWO_TAILED_RAT": {
+      "enemy_advice_zh": "三只一起时最怕 Call for Backup 滚场面，优先清要叫援兵或血量最低的那只，别让怪数失控。"
+    },
+    "VANTOM": {
+      "enemy_advice_zh": "这只要提前准备多段伤害；开局先靠 hit 数拆 Slippery，别急着交重击，等 9 层滑溜掉完再把爆发砸下去。"
+    },
+    "VINE_SHAMBLER": {
+      "enemy_advice_zh": "Tangled 会直接卡攻击费用，通常值得尽快先杀，至少别在被缠住前把手里高费攻击囤满。"
+    },
+    "WATERFALL_GIANT": {
+      "enemy_advice_zh": "这战也要尽快打，因为 Steam Eruption 会随回合越滚越大；收尾前先算好爆炸，能挡下一回合或能绕过爆炸时再补最后一刀。"
+    },
+    "ZAPBOT": {
+      "enemy_advice_zh": "会自己涨力的高伤小怪，Fabricator 房里优先级很高，不早点清掉会被每回合 Zap 直接点穿。"
+    }
+  }
+}

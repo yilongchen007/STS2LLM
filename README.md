@@ -52,10 +52,14 @@ The repo currently maintains three exact-reference packs for runtime lookup:
 - `data/processed/wiki_gg/card_pack.json`
   - top key: `cards`
   - fields: `id`, `name`, `color`, `type`, `rarity`, `content`
+  - optional fields when matched from `data/raw/winning_rate.csv`: `internal_name`, `name_zh`, `win_rate`, `pick_rate`, `skip_rate`
+  - optional override fields when matched from `data/raw/xhh/ironclad_latest.csv`: latest `name_zh`, `win_rate`, `pick_rate`, `skip_rate` for Ironclad cards
+  - optional curated field when matched from `data/manual/card_annotations.json`: `pick_advice_zh`
   - `id` uses exact runtime card ids such as `BASH` and `DEFEND_IRONCLAD`
 - `data/processed/wiki_gg/enemy_pack.json`
   - top key: `enemies`
   - fields: `id`, `name`, `contexts`, `content`
+  - optional curated field when matched from `data/manual/enemy_annotations.json`: `enemy_advice_zh`
   - `id` uses exact base monster ids such as `TOADPOLE` and `TEST_SUBJECT`
   - live combat `entity_id` values such as `TOADPOLE_1` are normalized back to base `monster_id`
 - `data/processed/wiki_gg/relic_pack.json`
@@ -81,12 +85,20 @@ The agent prompt uses three internal strategy layers:
 
 - `global_strategy`
   - fields: `build_rule`, `path_rule`, `boss_rule`
+  - `path_rule` should be based on the visible full map structure when on the map screen, not only the immediate next choice
+  - `path_rule` should connect route preference to current HP, deck strength, relics, and boss prep needs
+  - `boss_rule` should use `map.boss.encounter_id` / `encounter_name` as the exact current-act boss when those fields are present, instead of reasoning over the whole act roster
+  - when newly created or refreshed, it should be emitted through one event-style `Strategy:` line rather than repeated every turn
+  - it should not be re-emitted just because combat started; only refresh it when its own inputs changed
   - refreshed when cards or relics materially change
 - `combat_strategy`
-  - fields: `target_rule`, `pace_rule`, `danger_rule`
+  - fields: `target_rule`, `pace_rule`
+  - `target_rule` only answers which enemy should receive priority damage right now
+  - `pace_rule` only answers whether the current turn should lean offensive or defensive, and why
   - refreshed when combat starts or when the enemy side materially changes
 - `stage_strategy`
   - field: `steps`
+  - `stage_strategy` must always be emitted as `{"steps":[...]}`
   - `steps` is an ordered short list of next actions for the current observation window
   - refreshed when a new decision stage begins or the current stage is invalidated by material change
 
@@ -196,6 +208,7 @@ uv run sts2llm build-enemy-pack
 
 By default this reads
 `data/raw/wiki_gg/slaythespire.wiki.gg/Slay_the_Spire_2_Act_Enemies/pages.jsonl`
+plus curated enemy annotations from `data/manual/enemy_annotations.json`,
 and writes:
 
 - `data/processed/wiki_gg/enemy_pack.json`
@@ -208,6 +221,9 @@ uv run sts2llm build-reference-packs
 
 By default this reads
 `data/raw/wiki_gg/slaythespire.wiki.gg/Slay_the_Spire_2_Main`
+plus card pick-rate data from `data/raw/winning_rate.csv`,
+plus optional latest Ironclad overrides from `data/raw/xhh/ironclad_latest.csv`,
+plus curated card annotations from `data/manual/card_annotations.json`,
 and writes:
 
 - `data/processed/wiki_gg/card_pack.json`
@@ -270,6 +286,8 @@ Per user request, the assistant should follow this shape:
 
 - one `Boundary:` line before the first tool call
 - then one `State:` line and one `Decision:` line at the start of a turn or phase
+- only when a strategy layer is created or updated, emit one `Strategy:` line with compact JSON and only the changed layers
+- on reward screens, do not use `proceed_to_map` until every reward item was explicitly handled
 - during execution, use short `Action:` lines
 - only use `State Update:` and `Decision Update:` when the plan genuinely needs to change
 - after finishing, do not add a battle recap unless the user asked for one
@@ -280,6 +298,7 @@ Example:
 ```text
 Boundary: 只打这一回合，回合结束后停止。
 State: 当前是玩家回合，能量 2/3，对面总意图伤害 12。
+Strategy: {"event":"init","updated_layers":["combat_strategy","stage_strategy"],"combat_strategy":{"target_rule":"先击杀 3 血小怪。","pace_rule":"这回合偏进攻，因为能低成本减少即时伤害。"},"stage_strategy":{"steps":["先用两张打击击杀 3 血小怪","再用剩余能量补防御","若敌人死亡后手牌/能量结构变化，重新观察"]}}
 Decision: 先击杀 3 血小怪，再用防御降低剩余伤害。
 Action: 防御(card_32)
 Action: 防御(card_35)

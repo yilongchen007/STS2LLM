@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import csv
 import json
 import re
 from collections import defaultdict
@@ -52,6 +53,96 @@ def _root_from_html(path: Path) -> BeautifulSoup:
 def _write_json(path: Path, payload: dict[str, Any]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+_CARD_INTERNAL_NAME_RUNTIME_ID_OVERRIDES = {
+    "IAmInvincible": "I_AM_INVINCIBLE",
+    "ExpectAFight": "EXPECT_A_FIGHT",
+    "BansheeCry": "BANSHEES_CRY",
+}
+
+
+def _camel_to_runtime_id(value: str) -> str:
+    normalized = re.sub(r"([a-z0-9])([A-Z])", r"\1_\2", value)
+    normalized = re.sub(r"[^A-Za-z0-9]+", "_", normalized)
+    return normalized.upper().strip("_")
+
+
+def _parse_percent(value: str) -> float:
+    return float(value.strip())
+
+
+def _load_card_win_rate_rows(path: str | Path) -> dict[str, dict[str, Any]]:
+    rows_by_card_id: dict[str, dict[str, Any]] = {}
+    with Path(path).open(encoding="utf-8-sig", newline="") as handle:
+        reader = csv.DictReader(handle)
+        for row in reader:
+            internal_name = (row.get("InternalName") or "").strip()
+            if not internal_name:
+                continue
+            runtime_id = _CARD_INTERNAL_NAME_RUNTIME_ID_OVERRIDES.get(internal_name) or _camel_to_runtime_id(internal_name)
+            if runtime_id in rows_by_card_id:
+                raise ValueError(f"Duplicate winning-rate row for card id {runtime_id}")
+            rows_by_card_id[runtime_id] = {
+                "internal_name": internal_name,
+                "name_zh": (row.get("卡牌名称") or "").strip(),
+                "win_rate": _parse_percent(row["胜率"]),
+                "pick_rate": _parse_percent(row["选取率"]),
+                "skip_rate": _parse_percent(row["略过率"]),
+            }
+    return rows_by_card_id
+
+
+def _load_card_stat_overrides(path: str | Path | None) -> dict[str, dict[str, Any]]:
+    if path is None:
+        return {}
+
+    source = Path(path)
+    if not source.exists():
+        return {}
+
+    rows_by_card_id: dict[str, dict[str, Any]] = {}
+    with source.open(encoding="utf-8-sig", newline="") as handle:
+        reader = csv.DictReader(handle)
+        for row in reader:
+            runtime_id = (row.get("runtime_id") or "").strip().upper()
+            if not runtime_id:
+                continue
+            if runtime_id in rows_by_card_id:
+                raise ValueError(f"Duplicate card stat override row for card id {runtime_id}")
+
+            item: dict[str, Any] = {}
+            if row.get("name_zh"):
+                item["name_zh"] = row["name_zh"].strip()
+            if row.get("win_rate"):
+                item["win_rate"] = _parse_percent(row["win_rate"])
+            if row.get("pick_rate"):
+                item["pick_rate"] = _parse_percent(row["pick_rate"])
+            if row.get("skip_rate"):
+                item["skip_rate"] = _parse_percent(row["skip_rate"])
+            rows_by_card_id[runtime_id] = item
+    return rows_by_card_id
+
+
+def _load_card_annotations(path: str | Path | None) -> dict[str, dict[str, Any]]:
+    if path is None:
+        return {}
+
+    source = Path(path)
+    if not source.exists():
+        return {}
+
+    payload = json.loads(source.read_text(encoding="utf-8"))
+    rows = payload.get("cards")
+    if not isinstance(rows, dict):
+        raise ValueError(f"Card annotations file must contain a 'cards' object: {source}")
+
+    result: dict[str, dict[str, Any]] = {}
+    for card_id, fields in rows.items():
+        if not isinstance(fields, dict):
+            raise ValueError(f"Card annotation for {card_id!r} must be an object")
+        result[card_id] = dict(fields)
+    return result
 
 
 def _load_runtime_card_ids(cards_json_path: str | Path) -> tuple[dict[str, str], dict[tuple[str, str], str]]:
@@ -130,10 +221,16 @@ def build_card_pack(
     source_dir: str | Path,
     output_path: str | Path,
     runtime_cards_path: str | Path,
+    winning_rate_csv_path: str | Path | None = "data/raw/winning_rate.csv",
+    card_stat_overrides_path: str | Path | None = "data/raw/xhh/ironclad_latest.csv",
+    card_annotations_path: str | Path | None = "data/manual/card_annotations.json",
 ) -> int:
     html_path = Path(source_dir) / "html" / "Slay_the_Spire_2_Cards_List.html"
     root = _root_from_html(html_path)
     runtime_card_ids, runtime_card_ids_by_name_and_color = _load_runtime_card_ids(runtime_cards_path)
+    card_win_rates = _load_card_win_rate_rows(winning_rate_csv_path) if winning_rate_csv_path is not None else {}
+    card_stat_overrides = _load_card_stat_overrides(card_stat_overrides_path)
+    card_annotations = _load_card_annotations(card_annotations_path)
 
     cards = []
     for card_box in root.select(".card-box"):
@@ -145,21 +242,41 @@ def build_card_pack(
         content = _card_content(card_box)
         if not content:
             continue
-        cards.append(
-            {
-                "id": _resolve_runtime_card_id(
-                    name=name,
-                    color=color,
-                    runtime_card_ids=runtime_card_ids,
-                    runtime_card_ids_by_name_and_color=runtime_card_ids_by_name_and_color,
-                ),
-                "name": name,
-                "color": color,
-                "type": (card_box.get("data-type") or "").strip(),
-                "rarity": (card_box.get("data-rarity") or "").strip(),
-                "content": content,
-            }
+        runtime_id = _resolve_runtime_card_id(
+            name=name,
+            color=color,
+            runtime_card_ids=runtime_card_ids,
+            runtime_card_ids_by_name_and_color=runtime_card_ids_by_name_and_color,
         )
+        card = {
+            "id": runtime_id,
+            "name": name,
+            "color": color,
+            "type": (card_box.get("data-type") or "").strip(),
+            "rarity": (card_box.get("data-rarity") or "").strip(),
+            "content": content,
+        }
+        stats = card_win_rates.get(runtime_id)
+        if stats is not None:
+            card.update(stats)
+        stat_overrides = card_stat_overrides.get(runtime_id)
+        if stat_overrides is not None:
+            card.update(stat_overrides)
+        annotations = card_annotations.get(runtime_id)
+        if annotations is not None:
+            card.update(annotations)
+        cards.append(card)
+
+    card_ids_in_pack = {card["id"] for card in cards}
+    unmatched_stat_ids = set(card_win_rates) - card_ids_in_pack - {"DEPRECATED_CARD"}
+    if unmatched_stat_ids:
+        raise ValueError(f"Winning-rate rows could not be matched to card pack ids: {sorted(unmatched_stat_ids)}")
+    unmatched_override_ids = set(card_stat_overrides) - card_ids_in_pack
+    if unmatched_override_ids:
+        raise ValueError(f"Card stat overrides could not be matched to card pack ids: {sorted(unmatched_override_ids)}")
+    unmatched_annotation_ids = set(card_annotations) - card_ids_in_pack
+    if unmatched_annotation_ids:
+        raise ValueError(f"Card annotations could not be matched to card pack ids: {sorted(unmatched_annotation_ids)}")
 
     _write_json(Path(output_path), {"cards": cards})
     return len(cards)
@@ -308,12 +425,18 @@ def build_reference_packs(
     output_dir: str | Path,
     runtime_cards_path: str | Path = "data/raw/game_pck/localization/eng/cards.json",
     runtime_relics_path: str | Path = "data/raw/game_pck/localization/eng/relics.json",
+    winning_rate_csv_path: str | Path | None = "data/raw/winning_rate.csv",
+    card_stat_overrides_path: str | Path | None = "data/raw/xhh/ironclad_latest.csv",
+    card_annotations_path: str | Path | None = "data/manual/card_annotations.json",
 ) -> ReferencePacksReport:
     destination = Path(output_dir)
     card_count = build_card_pack(
         source_dir=source_dir,
         output_path=destination / "card_pack.json",
         runtime_cards_path=runtime_cards_path,
+        winning_rate_csv_path=winning_rate_csv_path,
+        card_stat_overrides_path=card_stat_overrides_path,
+        card_annotations_path=card_annotations_path,
     )
     relic_count = build_relic_pack(
         source_dir=source_dir,
