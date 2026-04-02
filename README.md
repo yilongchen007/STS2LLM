@@ -133,6 +133,22 @@ Interactive chat:
 uv run sts2llm chat
 ```
 
+Local web UI:
+
+```bash
+uv run sts2llm web --host 127.0.0.1 --port 8765
+```
+
+Then open `http://127.0.0.1:8765` in a browser. The page shows:
+
+- the full agent `SYSTEM_PROMPT`
+- a text area for each new user prompt
+- the live event stream for `assistant_text`
+- every `tool_call` with raw arguments
+- every `tool_output` with full output payload
+
+The web UI keeps the same conversation context across turns until you click `Reset`.
+
 Raw guide crawl for local data collection:
 
 ```bash

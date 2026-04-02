@@ -64,6 +64,13 @@ def _build_parser() -> argparse.ArgumentParser:
         help="Directory for session logs.",
     )
 
+    web_parser = subparsers.add_parser("web", help="Start a local web UI for interactive prompting and tool tracing.")
+    web_parser.add_argument("--model", help="Override OPENAI_MODEL.")
+    web_parser.add_argument("--max-rounds", type=int, default=40, help="Maximum tool loop rounds.")
+    web_parser.add_argument("--log-dir", default="logs", help="Directory for session logs.")
+    web_parser.add_argument("--host", default="127.0.0.1", help="Bind host for the local web server.")
+    web_parser.add_argument("--port", type=int, default=8765, help="Bind port for the local web server.")
+
     crawl_games_gg_parser = subparsers.add_parser(
         "crawl-games-gg-guides",
         help="Fetch raw guide data from games.gg and save it under data/raw.",
@@ -387,6 +394,23 @@ def main() -> None:
 
     if args.command in {"chat", "repl"}:
         _chat(args.model, args.max_rounds, args.mode, args.show_tool_output, args.log_dir)
+        return
+
+    if args.command == "web":
+        from .config import load_settings
+        from .web import serve_web_ui
+
+        settings = load_settings()
+        model = args.model or settings.openai_model
+        session = _build_session(model, args.max_rounds)
+        serve_web_ui(
+            agent=session,
+            model=model,
+            max_rounds=args.max_rounds,
+            log_dir=args.log_dir,
+            host=args.host,
+            port=args.port,
+        )
         return
 
     if args.command == "crawl-games-gg-guides":
